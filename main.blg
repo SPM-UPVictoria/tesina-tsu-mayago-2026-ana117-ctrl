@@ -1,0 +1,16 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'main.blg'
+[68] biber:340> INFO - === Wed May 20, 2026, 16:54:04
+[83] Biber.pm:418> INFO - Reading 'main.bcf'
+[138] Biber.pm:972> INFO - Found 9 citekeys in bib section 0
+[149] Biber.pm:4383> INFO - Processing section 0
+[158] Biber.pm:4574> INFO - Looking for bibtex file 'Referencias.bib' for section 0
+[159] bibtex.pm:1713> INFO - LaTeX decoding ...
+[168] bibtex.pm:1518> INFO - Found BibTeX data source 'Referencias.bib'
+[235] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[236] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[236] Biber.pm:4203> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'es-ES'
+[240] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[243] bbl.pm:757> INFO - Output to main.bbl
+[244] Biber.pm:130> WARN - Entry 'Sistema:2018:Ivan' (Referencias.bib): Invalid format '28-11-2018' of date field 'urldate' - ignoring
+[244] Biber.pm:132> INFO - WARNINGS: 1
