@@ -1,7 +1,17 @@
 \section{Introducción}
 \label{ch:introduccion}
 
-La introducción es la primera sección sustantiva de la tesis y tiene como propósito principal guiar al lector a través del contexto y la relevancia del estudio. En ella, se presenta el problema de investigación, se establecen los objetivos, se justifica la realización del trabajo y se delinean los alcances y limitaciones. Debe ser escrita de forma clara y concisa, capturando el interés del lector y proporcionando una visión general de lo que se abordará en los capítulos subsiguientes.
+En los últimos años ha surgido la necesidad de digitalizar la mayoría de los procesos, incluyendo los procesos de las instituciones públicas, por lo que los sistemas de empresas gubernamentales atraviesan un proceso de digitalización, en el cual hay muchos módulos que requieren complementar su sistema para garantizar la eficiencia y agilidad en los procesos administrativos. El Poder Judicial del Estado de Tamaulipas (PJETAM) tiene una gran cantidad de archivos que requieren de urgente organización para asegurar un acceso rápido y un almacenamiento adecuado. El proyecto abordado en esta tesina surge como una respuesta tecnológica para modernizar la forma en que manejan y acceden a los archivos en las distintas áreas de la organización.
+
+El principal propósito de este proyecto es documentar el desarrollo e implementación de una aplicación web capaz de manejar la carga, conversión, almacenamiento y gestión de documentos, a través del uso de tecnologías modernas para crear una interfaz completa, además de almacenamiento en la nube. El proyecto busca crear una aplicación segura, escalable y eficiente.
+
+Para lograr el objetivo, se busca realizar una aplicación que permita a las diferentes áreas del PJETAM cargar, convertir, almacenar y gestionar documentos e imágenes, generando códigos QR vinculados a cada archivo para facilitar su referenciación, e integrándose con los sistemas de escritorio existentes mediante autenticación por parámetro cifrado en la URL. Para realizar este proyecto se tienen objetivos específicos, que abarcan desde el análisis de requerimientos funcionales y el diseño de la arquitectura tecnológica, hasta la implementación de módulos de conversión automática de archivos ODT, DOC, DOCX a PDF, implementación de mecanismos de seguridad y la documentación del proyecto.
+
+El propósito de este trabajo es optimizar la eficacia en la gestión de documentos. Ya que actualmente no existe un sistema que haga todo lo mencionado anteriormente, por lo que es fundamental hacer un sistema que cumpla estos requerimientos. La adopción de un sistema con conversión automática a PDF e integración utilizando códigos QR ayuda enormemente a reducir la cantidad de tiempo dedicada a la búsqueda de información, y facilita la navegación entre documentos. Además, simplifica la transición de formatos de documento de papel al digital.
+
+El alcance de este proyecto se centra en el desarrollo, implementación y pruebas de una aplicación web para la gestión de documentos orientada únicamente a los trabajadores del Poder Judicial del Estado de Tamaulipas (PJETAM). Las limitaciones del proyecto se centran en el acceso al público externo, ya que estará estrictamente limitado a la visualización de aquellos archivos que sean marcados como públicos o puestos a disposición del público. En la parte del desarrollo una limitación es que los procesos de seguridad funcionarán temporalmente usando la autenticación URL cifrada procedente de otros módulos actuales.
+
+Para detallar la elaboración de este proyecto, este documento se estructura en las siguientes secciones: Introducción, que aborda el planteamiento del problema y los objetivos del proyecto, después se presenta la sección de Metodología, que describe la metodología de desarrollo y diseño de la arquitectura del sistema; y finalmente, se presentan los resultados obtenidos, las pruebas de integración y las conclusiones del proyecto.
 
 \subsection{Antecedentes}
 \label{sec:antecedentes}
@@ -26,7 +36,20 @@ La primera Constitución Política de Tamaulipas consagró el Título III al Pod
 \subsection{Definición del Problema}
 \label{sec:problema}
 
-Aquí se describe de manera clara y precisa el problema que la tesis busca resolver. Es fundamental articular el problema de forma que sea comprensible, relevante y factible de investigar. Esta sección debe responder a preguntas como: ¿Qué situación actual es insatisfactoria o genera una necesidad? ¿Qué aspectos de este problema no han sido abordados adecuadamente por investigaciones anteriores? La definición del problema puede ser formulada como una pregunta de investigación o una declaración clara de la brecha de conocimiento.
+El manejo de la información y archivos dentro de las instituciones públicas es un elemento esencial para el cumplimiento eficiente de sus tareas. Sin embargo, el Poder Judicial del Estado de Tamaulipas (PJETAM) actualmente presenta una brecha tecnológica en la administración de sus archivos recurrentes. El problema central consiste en la desorganización de los documentos institucionales y la dificultad que presentan los sistemas actuales para proporcionar una navegación fácil y rápida al consultar expedientes o documentos. Tales factores generan un entorno insatisfactorio que tiene consecuencias directas sobre el desempeño de las áreas jurídicas. 
+
+Del problema mencionado se derivan distintas complicaciones que no han sido abordadas individualmente:
+
+\begin{itemize}
+    \item \textbf{Falta de estandarización de formatos:} Los documentos son generados en múltiples formatos (ODT, DOC, DOCX), lo que provoca incompatibilidades y problemas de formato al compartirlos entre distintas áreas o al intentar visualizarlos rápidamente.
+    \item \textbf{Desconexión entre el documento físico y el digital:} Los procesos judiciales a menudo requieren referenciar documentos digitales en expedientes físicos. Actualmente, buscar el formato digital de un documento impreso es un proceso lento y manual, propenso a errores humanos.
+    \item \textbf{Riesgo de pérdida o duplicidad de información:} La ausencia de un sistema centralizado de almacenamiento fomenta que los archivos se guarden de manera local o fragmentada, dificultando su organización, consulta y eventual eliminación o depuración.
+\end{itemize}
+
+La falta de una herramienta que convierta y organice estos archivos es igual a horas de trabajo invertidas en tareas puramente administrativas y de búsqueda, en lugar de otras labores de mayor importancia.
+
+Ante este contexto, se plantea la siguiente pregunta de investigación para guiar el desarrollo de este proyecto:
+¿De qué manera el desarrollo e implementación de un Sistema Web de Gestión Documental, con capacidades de conversión automática de formatos, generación de códigos QR y autenticación mediante URL cifrada, mejorará la organización, el acceso y la interoperabilidad de los documentos en las diferentes áreas del PJETAM?
 
 \subsection{Objetivos}
 \label{sec:objetivos}
@@ -43,33 +66,32 @@ Desarrollar una aplicación web que permita a las diferentes áreas del Poder Ju
 
 Los objetivos específicos detallan los pasos o las acciones concretas que se llevarán a cabo para alcanzar el objetivo general. Son tareas más pequeñas y desglosadas que, al ser cumplidas, permiten la consecución del objetivo principal.
 \begin{itemize}
-    \item \textbf{Objetivo 1:} Analizar los requerimientos funcionales de las áreas usuarias del PJETAM, identificando los tipos de documentos, flujos de trabajo y necesidades de integración con los sistemas de escritorio existentes.
-    \item \textbf{Objetivo 2:} Diseñar la arquitectura de la aplicación web, definiendo las tecnologías de frontend, backend y almacenamiento que garanticen seguridad, rendimiento y escalabilidad.
-    \item \textbf{Objetivo 3:} Implementar el módulo de carga y conversión de archivos, permitiendo recibir documentos en formatos ODT, DOC y DOCX para su conversión automática a PDF, así como imágenes y URLs.
-    \item \textbf{Objetivo 4:} Desarrollar el módulo de almacenamiento y gestión documental, que permita guardar, consultar y eliminar los archivos registrados en el sistema.
-    \item \textbf{Objetivo 5:} Implementar la generación automática de códigos QR vinculados a cada documento o archivo almacenado, permitiendo su descarga e inserción en documentos físicos o digitales de las diferentes áreas jurídicas.
-    \item \textbf{Objetivo 6:} Desarrollar el mecanismo de autenticación mediante parámetro cifrado en la URL, que permita la apertura segura de la aplicación web desde los distintos sistemas de gestión de escritorio del PJETAM.
-    \item \textbf{Objetivo 7:} Realizar pruebas de integración con los sistemas de escritorio existentes, verificando el correcto funcionamiento del acceso autenticado y la interoperabilidad entre plataformas.
-    \item \textbf{Objetivo 8:} Elaborar la documentación técnica y manuales de usuario para la operación, administración y mantenimiento de la aplicación.
+    \item Analizar los requerimientos funcionales de las áreas usuarias del PJETAM, identificando los tipos de documentos, flujos de trabajo y necesidades de integración con los sistemas de escritorio existentes.
+    \item Diseñar la arquitectura de la aplicación web, definiendo las tecnologías de frontend, backend y almacenamiento que garanticen seguridad, rendimiento y escalabilidad.
+    \item Implementar el módulo de carga y conversión de archivos, permitiendo recibir documentos en formatos ODT, DOC y DOCX para su conversión automática a PDF, así como imágenes y URLs.
+    \item Desarrollar el módulo de almacenamiento y gestión documental, que permita guardar, consultar y eliminar los archivos registrados en el sistema.
+    \item Implementar la generación automática de códigos QR vinculados a cada documento o archivo almacenado, permitiendo su descarga e inserción en documentos físicos o digitales de las diferentes áreas jurídicas.
+    \item Desarrollar el mecanismo de autenticación mediante parámetro cifrado en la URL, que permita la apertura segura de la aplicación web desde los distintos sistemas de gestión de escritorio del PJETAM.
+    \item Realizar pruebas de integración con los sistemas de escritorio existentes, verificando el correcto funcionamiento del acceso autenticado y la interoperabilidad entre plataformas.
+    \item Elaborar la documentación técnica y manuales de usuario para la operación, administración y mantenimiento de la aplicación.
 \end{itemize}
 
 \subsection{Justificación}
 \label{sec:justificacion}
+La administración del PJETAM requiere procesos administrativos rápidos, claros y altamente organizados, ya que es una institución que maneja procedimientos legales y archivos importantes. El manejo de archivos es una funcion básica y fundamental del PJETAM. La realización de este proyecto se justifica por la necesidad de resolver la desorganización de los archivos institucionales y la falta de agilidad en su consulta, factores que actualmente aumentan los tiempos de respuesta de la organización y complican el flujo de trabajo de los empleados.
 
-La justificación explica por qué es importante y relevante llevar a cabo la investigación. Se deben argumentar los beneficios y la utilidad del estudio desde diferentes perspectivas: teórica, práctica, social, económica, tecnológica, etc. Responde a la pregunta: ¿Por qué vale la pena invertir tiempo y recursos en esta investigación? Aquí se resaltan los aportes que la tesis generará al campo del conocimiento o a la solución de problemas específicos.
-
+El desarrollo del Sistema Web de Gestión Documental y Generación de Códigos QR aporta un beneficio a la institución, ya que uno de los problemas de la organización es la diversidad de formatos en archivos (ODT, DOC, DOCX) y la división de la información que generan un conflicto al momento de visualizar y compartir documentos. Al implementar un sistema de conversión automática a PDF el proyecto garantiza la estandarización de los archivos, asegurando que cualquier documento se visualice de igual manera sin importar el dispositivo o el área que lo consulte, asimismo imparte un estándar al almacenar todos los archivos en un mismo formato. Además, la generación de códigos QR resuelve un problema práctico el cual es el referenciar archivos en otro archivo, haciendo más fácil la navegación entre documentos y facilitando la lectura y comprensión del lector.
 \subsection{Alcances y Limitaciones}
 \label{sec:alcances_limitaciones}
 
 \subsubsection{Alcances}
 \label{subsec:alcances}
-
-Los alcances definen claramente hasta dónde llegará el estudio, qué aspectos cubrirá y cuáles serán sus fronteras. Establecen qué elementos, variables, poblaciones o contextos serán incluidos en la investigación. Es esencial para evitar expectativas irrealistas y para mantener el enfoque del trabajo.
+El alcance de este proyecto incluye el desarrollo, implementación y pruebas de una aplicación web de gestión de archivos destinada al personal del Poder Judicial del Estado de Tamaulipas (PJETAM). La aplicación se centrará en crear un módulo para cargar archivos y gestionar su almacenamiento, lo que implicará usar Amazon Web Services (AWS) S3 y bases de datos SQL Server. La aplicación también ofrecerá la conversión automatizada de  distintos tipos de archivos (como ODT, DOC, DOCX) a formato PDF, así como la transformación de imágenes y URLs a codigos QR. Que es uno de los aspectos clave, la creación automática de códigos QR para cada documento registrado, lo que permitirá su inserción y consulta de forma rápida tanto desde expedientes físicos como digitales. Además, la plataforma web estará diseñada para integrarse con los sistemas de gestión de escritorio existentes, asegurando la interoperabilidad mediante un mecanismo de autenticación basado en parámetros cifrados en la URL.
 
 \subsubsection{Limitaciones}
 \label{subsec:limitaciones}
-
-Las limitaciones son los factores externos o internos que podrían restringir la validez, generalización o profundidad de los resultados de la investigación. Es importante identificarlas honestamente, ya que demuestran un pensamiento crítico por parte del investigador. Pueden incluir restricciones de tiempo, recursos, acceso a datos, metodológicas, etc.
+Las limitaciones de este proyecto son la implementación de un sistema de roles individuales, ya que el sistema sólo registrará el área que hizo alguna operación, por ejemplo qué área subió un documento específico, ya que así será organizado el almacenamiento de archivos. Otra limitación es que el sistema no contará con un módulo de edición de texto en documentos. 
+En el ámbito de desarrollo, una limitación es la creación de módulos de seguridad complejos adicionales a la URL cifrada; de igual forma, el acceso al público externo estará limitado a la visualización de aquellos archivos que sean puestos a disposición de la ciudadanía.
 
 \subsection{Ejemplos de Tablas e Inclusión de Imágenes}
 \label{sec:ejemplos_elementos}
