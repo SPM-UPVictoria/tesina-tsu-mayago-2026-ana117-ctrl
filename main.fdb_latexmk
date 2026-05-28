@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber main"] 1779409852 "main.bcf" "main.bbl" "main" 1779509196
+["biber main"] 1779409852 "main.bcf" "main.bbl" "main" 1779927947
   "Referencias.bib" 1779215519 3573 41c11ceec8649109896d18f1fa5554e2 ""
-  "main.bcf" 1779509196 107118 855cf62c2a76e9bec399a718898ac728 "pdflatex"
+  "main.bcf" 1779927947 107118 855cf62c2a76e9bec399a718898ac728 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1779509194 "/home/anaaz/estadias/tesina-tsu-mayago-2026-ana117-ctrl/main.tex" "main.pdf" "main" 1779509196
+["pdflatex"] 1779927945 "/home/anaaz/estadias/tesina-tsu-mayago-2026-ana117-ctrl/main.tex" "main.pdf" "main" 1779927947
   "/etc/texmf/web2c/texmf.cnf" 1779218431 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/anaaz/.texlive2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1779317618 1405656 74e209f3f5e4d4053889bfff596a9b66 ""
   "/home/anaaz/estadias/tesina-tsu-mayago-2026-ana117-ctrl/main.tex" 1779411012 21602 5915465255b7b75ce50b7e7d8186df3f ""
@@ -273,13 +273,13 @@
   "img/diagrama_proceso.png" 1779215519 112008 44b351836470c55d08613391f89f0950 ""
   "img/grafico_datos1.jpg" 1779215519 61975 499da954c71825bb9a7d1851382fa1c6 ""
   "img/grafico_datos2.jpg" 1779215519 38058 b7609460ad2209fe27a57c178b1daf89 ""
-  "introduccion.tex" 1779509194 17821 be5f0d19c16ca7189f12190dcf4a2d36 ""
-  "main.aux" 1779509196 7931 f1156dfcde7554a95e14eb36d8113d19 "pdflatex"
+  "introduccion.tex" 1779927945 17161 c8a02aa8cd6f8a51aff0096f10755853 ""
+  "main.aux" 1779927947 8167 b74c35456e899171c7ab6d6a61ed1157 "pdflatex"
   "main.bbl" 1779409853 11540 f1d2e90abd0531b2f7c11f6a9d26fd1b "biber main"
-  "main.out" 1779509196 2872 ff139a284428f7b153d745367866a571 "pdflatex"
-  "main.run.xml" 1779509196 2306 628e0087c61ee8036d936d14edcd02fc "pdflatex"
+  "main.out" 1779927947 3048 fc99b54d5aa3e3badc8b51dbd621d8d7 "pdflatex"
+  "main.run.xml" 1779927947 2306 628e0087c61ee8036d936d14edcd02fc "pdflatex"
   "main.tex" 1779411012 21602 5915465255b7b75ce50b7e7d8186df3f ""
-  "main.toc" 1779509196 1715 34799f83cdbca3e38b17e9a5ee9fea3d "pdflatex"
+  "main.toc" 1779927947 1812 2c849511d6a3b4b3608d0b000b38f384 "pdflatex"
   "metodologia.tex" 1779215519 4096 5c32bf02e6a8e1f03c41edcfecebc1da ""
   "resultados.tex" 1779215519 1077 db5af9c18ffdb5d2bd76b6af6b9ea184 ""
   (generated)

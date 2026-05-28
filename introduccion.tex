@@ -1,9 +1,9 @@
 \section{Introducción}
 \label{ch:introduccion}
 
-En los últimos años ha surgido la necesidad de digitalizar la mayoría de los procesos, incluyendo los procesos de las instituciones públicas, por lo que los sistemas de empresas gubernamentales atraviesan un proceso de digitalización, en el cual hay muchos módulos que requieren complementar su sistema para garantizar la eficiencia y agilidad en los procesos administrativos. El Poder Judicial del Estado de Tamaulipas (PJETAM) tiene una gran cantidad de archivos que requieren de urgente organización para asegurar un acceso rápido y un almacenamiento adecuado. El proyecto abordado en esta tesina surge como una respuesta tecnológica para modernizar la forma en que manejan y acceden a los archivos en las distintas áreas de la organización.
+En los últimos años ha surgido la necesidad de digitalizar la mayoría de los procesos, por lo que los sistemas de empresas gubernamentales atraviesan un proceso de digitalización, en el cual hay muchos módulos que requieren complementar su sistema para garantizar la eficiencia y agilidad en los procesos administrativos. El Poder Judicial del Estado de Tamaulipas (PJETAM) tiene una gran cantidad de archivos que requieren de urgente organización para asegurar un acceso rápido y un almacenamiento adecuado. El proyecto abordado en esta tesina surge como una respuesta tecnológica para modernizar la forma en que manejan y acceden a los archivos en las distintas áreas de la organización del PJETAM.
 
-El principal propósito de este proyecto es documentar el desarrollo e implementación de una aplicación web capaz de manejar la carga, conversión, almacenamiento y gestión de documentos, a través del uso de tecnologías modernas para crear una interfaz completa, además de almacenamiento en la nube. El proyecto busca crear una aplicación segura, escalable y eficiente.
+El principal propósito de este proyecto es documentar el desarrollo e implementación de una aplicación web capaz de manejar la carga, conversión, almacenamiento y gestión de documentos, a través del uso de tecnologías modernas para crear una interfaz completa, además de almacenamiento en la nube. El proyecto busca crear una aplicación utilizando la arquitectura MVC  (Modelo-Vista-Controlador) para lograr una aplicación segura, escalable y eficiente.
 
 Para lograr el objetivo, se busca realizar una aplicación que permita a las diferentes áreas del PJETAM cargar, convertir, almacenar y gestionar documentos e imágenes, generando códigos QR vinculados a cada archivo para facilitar su referenciación, e integrándose con los sistemas de escritorio existentes mediante autenticación por parámetro cifrado en la URL. Para realizar este proyecto se tienen objetivos específicos, que abarcan desde el análisis de requerimientos funcionales y el diseño de la arquitectura tecnológica, hasta la implementación de módulos de conversión automática de archivos ODT, DOC, DOCX a PDF, implementación de mecanismos de seguridad y la documentación del proyecto.
 
@@ -19,19 +19,18 @@ En esta sección, se presenta una revisión concisa y pertinente de investigacio
 
 \subsubsection{Antecedentes de la Empresa}
 \label{subsec:antecedentes_empresa}
-\textbf{Orígenes y Fundamentación Legal} \\
-El desarrollo histórico del Poder Judicial del Estado de Tamaulipas formalizó su inicio el 9 de julio de 1824 con la expedición del primer decreto de la Legislatura Constituyente local. Este hecho marcó la extinción de la Diputación Provincial y dio paso a una estructura de gobierno fundamentada en el principio de la división de poderes.
+El Supremo Tribunal de Justicia del Estado de Tamaulipas, ubicado en Boulevard Praxedis Balboa número 2207, entre López Velarde y Díaz Mirón, Colonia Miguel Hidalgo, Código Postal 87090, en Ciudad Victoria, Tamaulipas, México. Formalizó su inicio el 9 de julio de 1824 con la expedición del primer decreto de la Legislatura Constituyente local.
 
-El primer antecedente de la judicatura estatal se plasmó en el Artículo Sexto de dicho decreto, en sintonía con el Artículo 24 del Acta Constitutiva de la Federación de 1824, los cuales determinaron que el Poder Judicial de cada entidad federativa se ejercería de manera soberana a través de los tribunales que establecieran sus propias constituciones.
+La misión de la empresa es Impartir y administrar justicia de manera eficiente y expedita, solucionando conflictos a través de los órganos jurisdiccionales y los medios alternos, contribuyendo a garantizar el estado de derecho y la paz social en Tamaulipas.
 
+La visión de la empresa es Transcender como Institución de excelencia, mediante la profesionalización e institucionalización de sus integrantes, en un ambiente de humanismo y justicia institucional, haciendo uso de la innovación tecnológica y optimización de los recursos, con responsabilidad social y pleno respeto a la ley, los derechos humanos y la igualdad de género.
 
-\textbf{Evolución de los Primeros Órganos Jurisdiccionales}\\
-En cumplimiento de estas disposiciones, el Congreso Constituyente de Tamaulipas promulgó el Decreto Número 13, mediante el cual se constituyó provisionalmente un Tribunal de Segunda Instancia integrado por tres Jueces. Este órgano asumió la competencia de los negocios jurídicos que anteriormente correspondían a las audiencias territoriales y funcionó de manera regular hasta el 29 de enero de 1826, fecha en que se instauró formalmente la Corte Suprema de Justicia.
+Estoy realizando las estadías TSU en el departamento de informática, realizando el proyecto Sistema Web de Gestión Documental y Generación de Códigos QR para el PJETAM, el cual consiste en un sistema diseñado para el personal de la empresa, para una mejor organizacion y almacenamiento de los documentos. 
 
-Por su parte, la justicia de menor cuantía o primera instancia se depositó en la denominada ``administración de la justicia de paz'', la cual se encontraba a cargo de los alcaldes de los municipios. Asimismo, se emite el Decreto Número 12 del 20 de agosto de 1824, el cual obligaba a los magistrados, jueces y letrados a interpretar las leyes conforme a su tenor literal.
+El proyecto presentado en esta tesina es un proyecto desde cero, por lo cual antes de este proyecto la busqueda de documentos y almacenamiento ordenado de los distintos archivos se debía realizar en multiples computadoras y buscar el documento en distintas paginas de la empresa.
 
-\textbf{Consolidación en el Marco Constitucional}\\
-La primera Constitución Política de Tamaulipas consagró el Título III al Poder Judicial del Estado, clasificándolo en cuatro secciones. En la primera se habla de la administración de justicia en general, mientras que en la segunda se comprende a la justicia en el orden civil. La tercera sección abarca a la materia criminal y la cuarta a los jueces y tribunales.
+\subsubsection{Antecedentes Teoricos}
+\label{subsec:antecedentes_teoricos}
 
 \subsection{Definición del Problema}
 \label{sec:problema}
@@ -49,13 +48,12 @@ Del problema mencionado se derivan distintas complicaciones que no han sido abor
 La falta de una herramienta que convierta y organice estos archivos es igual a horas de trabajo invertidas en tareas puramente administrativas y de búsqueda, en lugar de otras labores de mayor importancia.
 
 Ante este contexto, se plantea la siguiente pregunta de investigación para guiar el desarrollo de este proyecto:
-¿De qué manera el desarrollo e implementación de un Sistema Web de Gestión Documental, con capacidades de conversión automática de formatos, generación de códigos QR y autenticación mediante URL cifrada, mejorará la organización, el acceso y la interoperabilidad de los documentos en las diferentes áreas del PJETAM?
+¿De qué manera el desarrollo e implementación de un Sistema Web de gestión documental, con capacidades de conversión automática de formatos y generación de códigos QR, mejorará la organización, el acceso y la interoperabilidad de los documentos en las diferentes áreas del PJETAM?
 
 \subsection{Objetivos}
 \label{sec:objetivos}
 
-Los objetivos son las metas que se esperan alcanzar con la realización de la investigación. Deben ser claros, medibles, alcanzables, relevantes y con un tiempo definido (SMART, por sus siglas en inglés). Se dividen en un objetivo general y varios objetivos específicos.
-
+El objetivo general del proyecto presenta la meta final del proyecto:
 \subsubsection{Objetivo General}
 \label{subsec:objetivo_general}
 
@@ -64,7 +62,7 @@ Desarrollar una aplicación web que permita a las diferentes áreas del Poder Ju
 \subsubsection{Objetivos Específicos}
 \label{subsec:objetivos_especificos}
 
-Los objetivos específicos detallan los pasos o las acciones concretas que se llevarán a cabo para alcanzar el objetivo general. Son tareas más pequeñas y desglosadas que, al ser cumplidas, permiten la consecución del objetivo principal.
+Los objetivos especificos de este proyecto son los siguientes:
 \begin{itemize}
     \item Analizar los requerimientos funcionales de las áreas usuarias del PJETAM, identificando los tipos de documentos, flujos de trabajo y necesidades de integración con los sistemas de escritorio existentes.
     \item Diseñar la arquitectura de la aplicación web, definiendo las tecnologías de frontend, backend y almacenamiento que garanticen seguridad, rendimiento y escalabilidad.
@@ -86,11 +84,12 @@ El desarrollo del Sistema Web de Gestión Documental y Generación de Códigos Q
 
 \subsubsection{Alcances}
 \label{subsec:alcances}
-El alcance de este proyecto incluye el desarrollo, implementación y pruebas de una aplicación web de gestión de archivos destinada al personal del Poder Judicial del Estado de Tamaulipas (PJETAM). La aplicación se centrará en crear un módulo para cargar archivos y gestionar su almacenamiento, lo que implicará usar Amazon Web Services (AWS) S3 y bases de datos SQL Server. La aplicación también ofrecerá la conversión automatizada de  distintos tipos de archivos (como ODT, DOC, DOCX) a formato PDF, así como la transformación de imágenes y URLs a codigos QR. Que es uno de los aspectos clave, la creación automática de códigos QR para cada documento registrado, lo que permitirá su inserción y consulta de forma rápida tanto desde expedientes físicos como digitales. Además, la plataforma web estará diseñada para integrarse con los sistemas de gestión de escritorio existentes, asegurando la interoperabilidad mediante un mecanismo de autenticación basado en parámetros cifrados en la URL.
+El alcance de este proyecto incluye el desarrollo, implementación y pruebas de una aplicación web de gestión de archivos destinada al personal del Poder Judicial del Estado de Tamaulipas (PJETAM). La aplicación se centrará en crear un módulo para cargar archivos y gestionar su almacenamiento, lo que implicará usar Amazon Web Services (AWS) S3 y bases de datos SQL Server. 
+La aplicación ofrecerá la conversión automatizada de  distintos tipos de archivos (como ODT, DOC, DOCX) a formato PDF, así como imágenes y URLs, una vez guardados los archivos con un mismo formato se podran gestionar en el modulo de archivos, en el cual permitira obtener codigos QR vinculado a cada archivo asi como la opcion de descargarlo o elminarlo. Uno de los aspectos clave es la creación automática de códigos QR para cada documento almacenado, lo que permitirá su inserción y consulta de forma rápida tanto desde expedientes físicos como digitales. Además, la plataforma web estará diseñada para integrarse con los sistemas de gestión de escritorio existentes, asegurando la interoperabilidad mediante un mecanismo de autenticación basado en parámetros cifrados en la URL.
 
 \subsubsection{Limitaciones}
 \label{subsec:limitaciones}
-Las limitaciones de este proyecto son la implementación de un sistema de roles individuales, ya que el sistema sólo registrará el área que hizo alguna operación, por ejemplo qué área subió un documento específico, ya que así será organizado el almacenamiento de archivos. Otra limitación es que el sistema no contará con un módulo de edición de texto en documentos. 
+Las limitaciones de este proyecto son la falta de implementación de un sistema de roles individuales, ya que el sistema sólo registrará el área a la que pertenece cada movimiento realizado en la aplicación, ya que así será organizado el almacenamiento de archivos. Otra limitación es que el sistema no contará con un módulo de edición de texto en documentos. 
 En el ámbito de desarrollo, una limitación es la creación de módulos de seguridad complejos adicionales a la URL cifrada; de igual forma, el acceso al público externo estará limitado a la visualización de aquellos archivos que sean puestos a disposición de la ciudadanía.
 
 \subsection{Ejemplos de Tablas e Inclusión de Imágenes}
