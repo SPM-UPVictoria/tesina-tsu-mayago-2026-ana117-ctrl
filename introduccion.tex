@@ -47,17 +47,17 @@ Derivado de lo anterior, surge la necesidad de desarrollar el proyecto denominad
 \label{subsec:antecedentes_teoricos}
 \paragraph{Gestión documental en instituciones gubernamentales de México}
 \label{par:getionDocumentos_antecedentes_teoricos}
-La gestión documental en el sector público mexicano ha cobrado especial relevancia a partir de la entrada en vigor de la Ley General de Archivos en 2018. Ramírez Aceves y Cadena-Inostroza \cite{ramirez2021gestion} señalan que dicha ley define la gestión documental como el tratamiento integral de la documentación a lo largo de su ciclo vital, a través de la ejecución de procesos de producción, organización y acceso, lo que representa un cambio de paradigma para las instituciones públicas mexicanas.
+La gestión documental en el sector público mexicano ha tenido mucha importancia a partir de la entrada en vigor de la Ley General de Archivos en 2018. Ramírez Aceves y Cadena-Inostroza \cite{ramirez2021gestion} señalan que dicha ley define la gestión documental como el tratamiento integral de la documentación a lo largo de su ciclo vital, a través de la ejecución de procesos de producción, organización y acceso, lo que representa un cambio de paradigma para las instituciones públicas mexicanas.
 
-De igual manera, \cite{sosa2022gestion} analizan la gestión documental a través del Sistema Institucional de Archivos desde el orden normativo mexicano, destacando que la correcta implementación de estos sistemas es indispensable para garantizar la transparencia, la rendición de cuentas y el acceso a la información pública en los distintos niveles de gobierno. Este marco normativo establece las condiciones que hacen necesario el desarrollo de soluciones tecnológicas como la propuesta en el presente proyecto. 
+De igual manera, \cite{sosa2022gestion} analizan la gestión documental a través del Sistema Institucional de Archivos desde el orden normativo mexicano, destacando que la correcta implementación de estos sistemas es indispensable para garantizar la transparencia, la rendición de cuentas y el acceso a la información pública en los distintos niveles de gobierno. 
 
-Investigaciones más recientes señalan que la gestión documental pública en México atraviesa un proceso de transformación profunda, impulsado por la incorporación de las tecnologías de la información y la comunicación, y que la innovación documental fortalece la eficiencia institucional. Sin embargo, la brecha entre el marco normativo y la implementación tecnológica real en los poderes judiciales estatales sigue siendo un área de oportunidad poco atendida \cite{foneia2023innovacion}.
+Investigaciones más recientes señalan que la gestión documental pública en México atraviesa un proceso de transformación profunda, impulsado por la incorporación de las tecnologías de la información y la comunicación, y que la innovación documental fortalece la eficiencia institucional. Sin embargo, actualmente hay sistemas de distintas organizaciones públicas que aún no están actualizados debidamente. \cite{foneia2023innovacion}.
 
 \paragraph{Digitalización en el Poder Judicial mexicano}
 \label{par:digitalizacion_antecedentes_teoricos}
 El Poder Judicial en México ha experimentado una transición gradual hacia la digitalización de sus procesos documentales. La justicia digital se define como la digitalización y modernización de todo el ecosistema del Poder Judicial mediante el empleo de las tecnologías de información, con el propósito de mejorar la prestación de los servicios judiciales a la ciudadanía, garantizando principios como el acceso a la información, la impartición de justicia y la igualdad \cite{docusign2022justicia}.
 
-El Poder Judicial de la Ciudad de México ha digitalizado sus expedientes en materia civil y familiar del período 2018–2022, permitiendo que los ciudadanos consulten su expediente desde cualquier parte del mundo, lo que representa un ahorro significativo en tiempo y en costos de mantenimiento de archivos físicos. Experiencias como esta evidencian los beneficios concretos de contar con sistemas de gestión documental integrados en el ámbito judicial, que no solo almacenen documentos, sino que los organicen de forma estructurada y accesible \cite{pjcdmx2023expedientes}.
+El Poder Judicial de la Ciudad de México ha digitalizado sus expedientes en materia civil y familiar del período 2018–2022, permitiendo que los ciudadanos consulten su expediente desde cualquier parte del mundo, lo que representa un ahorro significativo en tiempo y en costos de mantenimiento de archivos físicos. Esto resalta la importancia de contar con sistemas de gestión documental integrados en el ámbito judicial, que no solo almacenen documentos, sino que los organicen de forma estructurada y accesible \cite{pjcdmx2023expedientes}.
 
 \paragraph{Sistemas de gestión documental con códigos QR}
 \label{par:sistemas_antecedentes_teoricos}
@@ -65,14 +65,43 @@ En el contexto internacional, se han desarrollado investigaciones orientadas a r
 
 De manera complementaria, Censoro \cite{censoro2021dms} desarrolló un sistema de gestión documental que incorpora la generación de códigos QR como mecanismo de autenticación, permitiendo verificar que el documento consultado corresponde a la versión oficial y vigente almacenada en el sistema, lo cual resulta especialmente relevante en entornos legales e institucionales donde la integridad documental es indispensable.
 
-Plataformas como OpenKM  \cite{openkm2025qr} emplean los códigos QR como un sello digital que proporciona información sobre la versión y estado actual del documento, siendo esta funcionalidad crítica en sectores como el legal, financiero o de salud, donde la precisión y actualidad de los documentos son fundamentales.
+Plataformas como OpenKM  \cite{openkm2025qr} emplean los códigos QR como un sello digital que proporciona información sobre la versión y estado actual del documento, siendo esta funcionalidad crítica en sectores como el legal, donde la version y vigencia de los documentos es fundamental.
 
 \paragraph{Almacenamiento en la nube para sistemas documentales}
-El almacenamiento en la nube se ha consolidado como una solución viable y ampliamente adoptada para la gestión documental institucional. Amazon S3 es reconocido en la literatura como una infraestructura de almacenamiento altamente duradera, escalable y segura, adecuada para organizaciones de cualquier tamaño, con ventajas que incluyen reducción de costos, escalabilidad y facilidad de uso \cite{ijsrem2023s3}.
+El almacenamiento en la nube es una solución viable y ampliamente utilizada para la gestión de documentos institucionales. Amazon S3 es reconocido como una infraestructura de almacenamiento altamente duradera, escalable y segura, adecuada para organizaciones de cualquier tamaño, con ventajas que incluyen reducción de costos, escalabilidad y facilidad de uso \cite{ijsrem2023s3}.
 
-El proceso actual en el Departamento de Informática del PJETAM representa precisamente el escenario que la literatura identifica como susceptible de optimización: un flujo fragmentado, con múltiples pasos manuales y sin una plataforma centralizada que integre el almacenamiento, la generación de enlaces y la producción de códigos QR en un solo proceso automatizado. El presente proyecto surge para atender ese vacío dentro de la institución.
+El procedimiento que se lleva a cabo en el Departamento de Informática del PJETAM, refleja el caso que la literatura considera que debe de ser optimizado: el de un flujo fragmentado y con pasos manuales. El proyecto que aquí se presenta quiere responder a este vacío de la institución. 
 
-\subsubsection{Tabla comparativa}
+\subsubsection{Tabla comparativa: Justificación del Desarrollo }
+Con el propósito de justificar el desarrollo del sistema desde cero, se realizó un análisis comparativo entre el proceso manual actual llevado a cabo en el Departamento de Informática  del PJETAM, herramientas de gestión documental existentes en el mercado y la solución  propuesta en el presente proyecto. dicho análisis permite identificar las carencias de las alternativas disponibles frente a los requerimientos específicos de la institución, evidenciando la necesidad de contar con un sistema desarrollado a medida que integre el almacenamiento en la nube, la generación automatizada de códigos QR y el control de acceso para el personal interno, dentro de una sola plataforma. 
+
+\begin{table}[h]
+\centering
+\caption{Comparativa de soluciones de gestión documental}
+\label{tab:comparativa}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|p{3.5cm}|p{2cm}|p{2cm}|p{2.5cm}|p{2.5cm}|}
+\hline
+\textbf{Criterio} & \textbf{Proceso Actual} & \textbf{OpenKM} & \textbf{Google Drive / SharePoint} & \textbf{Sistema Propuesto} \\
+\hline
+Generación de QR integrada & No & Parcial & No & Sí \\
+\hline
+Almacenamiento en AWS S3 & No & No & No & Sí \\
+\hline
+Automatización del proceso & No & Parcial & No & Sí \\
+\hline
+Adaptado al flujo de la organización & No & No & No & Sí \\
+\hline
+Acceso controlado para personal & No & Sí & Sí & Sí \\
+\hline
+Integración con infraestructura existente (EC2/S3) & No & No & No & Sí \\
+\hline
+Costo de implementación & Bajo & Medio & Alto & Bajo \\
+\hline
+Desarrollo a medida para la institución & No & No & No & Sí \\
+\hline
+\end{tabular}
+\end{table}
 
 \subsection{Definición del Problema}
 \label{sec:problema}
