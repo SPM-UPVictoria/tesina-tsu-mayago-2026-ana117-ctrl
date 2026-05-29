@@ -19,6 +19,315 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{pjetam2024mision}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b8b5c6ed3fa07d5af4b296910511291c}{%
+           family={{Poder Judicial del Estado de Tamaulipas}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{b8b5c6ed3fa07d5af4b296910511291c}
+      \strng{fullhash}{b8b5c6ed3fa07d5af4b296910511291c}
+      \strng{bibnamehash}{b8b5c6ed3fa07d5af4b296910511291c}
+      \strng{authorbibnamehash}{b8b5c6ed3fa07d5af4b296910511291c}
+      \strng{authornamehash}{b8b5c6ed3fa07d5af4b296910511291c}
+      \strng{authorfullhash}{b8b5c6ed3fa07d5af4b296910511291c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Consultado en mayo de 2026}
+      \field{title}{Misión y Visión}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://pjetam.gob.mx/historia/mision-y-vision/
+      \endverb
+      \verb{url}
+      \verb https://pjetam.gob.mx/historia/mision-y-vision/
+      \endverb
+    \endentry
+    \entry{ramirez2021gestion}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2099a1b5eaf52c2b414281e8f4e9da80}{%
+           family={Ramírez\bibnamedelima Aceves},
+           familyi={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Minerva\bibnamedelima Miryam},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=ef63881c480e1053bd2bee80a75db056}{%
+           family={Cadena-Inostroza},
+           familyi={C\bibinithyphendelim I\bibinitperiod},
+           given={Cecilia},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6c3afb70abf1a8ae80bfc64fbb747cf}
+      \strng{fullhash}{b6c3afb70abf1a8ae80bfc64fbb747cf}
+      \strng{bibnamehash}{b6c3afb70abf1a8ae80bfc64fbb747cf}
+      \strng{authorbibnamehash}{b6c3afb70abf1a8ae80bfc64fbb747cf}
+      \strng{authornamehash}{b6c3afb70abf1a8ae80bfc64fbb747cf}
+      \strng{authorfullhash}{b6c3afb70abf1a8ae80bfc64fbb747cf}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cuadernos de Gobierno y Administración Pública}
+      \field{number}{1}
+      \field{title}{Implicaciones de la gestión documental en México a partir de la Ley General de Archivos}
+      \field{volume}{8}
+      \field{year}{2021}
+      \field{pages}{15\bibrangedash 23}
+      \range{pages}{9}
+      \verb{urlraw}
+      \verb https://revistas.ucm.es/index.php/CGAP/article/download/73441/4564456557460
+      \endverb
+      \verb{url}
+      \verb https://revistas.ucm.es/index.php/CGAP/article/download/73441/4564456557460
+      \endverb
+    \endentry
+    \entry{sosa2022gestion}{article}{}
+      \name{author}{4}{}{%
+        {{hash=f261fe566b935b066715c8c0a8fb417e}{%
+           family={Sosa\bibnamedelimb del\bibnamedelima Ángel},
+           familyi={S\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim Á\bibinitperiod},
+           given={César\bibnamedelima Oswaldo},
+           giveni={C\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=b0562da0ef6334e9ebc8c20de189ee8d}{%
+           family={Caballero\bibnamedelima Rico},
+           familyi={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Fabiola\bibnamedelima Cecilia},
+           giveni={F\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=793a7aa12c82aa4b318c59bf3ac4c665}{%
+           family={Guzmán\bibnamedelima García},
+           familyi={G\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Juan\bibnamedelima Carlos},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=d4a7c4d9dfa00f921d2c1b9fa5b2c9ec}{%
+           family={Perales\bibnamedelima Garza},
+           familyi={P\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Claudia\bibnamedelima Yadira},
+           giveni={C\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{447cdd57343abb510b5435679cdfde91}
+      \strng{fullhash}{a8e9409c44b34876f634d2b944fcadf7}
+      \strng{bibnamehash}{447cdd57343abb510b5435679cdfde91}
+      \strng{authorbibnamehash}{447cdd57343abb510b5435679cdfde91}
+      \strng{authornamehash}{447cdd57343abb510b5435679cdfde91}
+      \strng{authorfullhash}{a8e9409c44b34876f634d2b944fcadf7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista General de Información y Documentación}
+      \field{number}{1}
+      \field{title}{Gestión documental a través del Sistema Institucional de Archivos. Una aproximación desde el orden normativo mexicano}
+      \field{volume}{32}
+      \field{year}{2022}
+      \field{pages}{243\bibrangedash 265}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.5209/rgid.82947
+      \endverb
+    \endentry
+    \entry{foneia2023innovacion}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=ab40531716fec31a6fecb0be1eb37dba}{%
+           family={Nación},
+           familyi={N\bibinitperiod},
+           given={Archivo\bibnamedelima General},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+           prefix={de\bibnamedelima la},
+           prefixi={d\bibinitperiod\bibinitdelim l\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {FONEIA}%
+      }
+      \strng{namehash}{ab40531716fec31a6fecb0be1eb37dba}
+      \strng{fullhash}{ab40531716fec31a6fecb0be1eb37dba}
+      \strng{bibnamehash}{ab40531716fec31a6fecb0be1eb37dba}
+      \strng{authorbibnamehash}{ab40531716fec31a6fecb0be1eb37dba}
+      \strng{authornamehash}{ab40531716fec31a6fecb0be1eb37dba}
+      \strng{authorfullhash}{ab40531716fec31a6fecb0be1eb37dba}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Transformación Digital en la Administración Pública Mexicana}
+      \field{note}{Consultado en mayo de 2026}
+      \field{title}{Innovación en Gestión Documental Pública}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.foneia.org/omp/index.php/foneia/catalog/download/telti/535/1358?inline=1
+      \endverb
+      \verb{url}
+      \verb https://www.foneia.org/omp/index.php/foneia/catalog/download/telti/535/1358?inline=1
+      \endverb
+    \endentry
+    \entry{docusign2022justicia}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=983c701912e42bba3cdb33a6c5893414}{%
+           family={{DocuSign}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{983c701912e42bba3cdb33a6c5893414}
+      \strng{fullhash}{983c701912e42bba3cdb33a6c5893414}
+      \strng{bibnamehash}{983c701912e42bba3cdb33a6c5893414}
+      \strng{authorbibnamehash}{983c701912e42bba3cdb33a6c5893414}
+      \strng{authornamehash}{983c701912e42bba3cdb33a6c5893414}
+      \strng{authorfullhash}{983c701912e42bba3cdb33a6c5893414}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Consultado en mayo de 2026}
+      \field{title}{Justicia digital: ¿qué es y cuál es su futuro?}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.docusign.com/es-mx/blog/justicia-digital
+      \endverb
+      \verb{url}
+      \verb https://www.docusign.com/es-mx/blog/justicia-digital
+      \endverb
+    \endentry
+    \entry{pjcdmx2023expedientes}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=561c6a31ab70c0882977a7bcd9aa2c39}{%
+           family={{Poder Judicial de la Ciudad de México}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{561c6a31ab70c0882977a7bcd9aa2c39}
+      \strng{fullhash}{561c6a31ab70c0882977a7bcd9aa2c39}
+      \strng{bibnamehash}{561c6a31ab70c0882977a7bcd9aa2c39}
+      \strng{authorbibnamehash}{561c6a31ab70c0882977a7bcd9aa2c39}
+      \strng{authornamehash}{561c6a31ab70c0882977a7bcd9aa2c39}
+      \strng{authorfullhash}{561c6a31ab70c0882977a7bcd9aa2c39}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Consultado en mayo de 2026}
+      \field{title}{Expedientes digitales con total legalidad}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.poderjudicialcdmx.gob.mx/expedientes_digitales_legalidad/
+      \endverb
+      \verb{url}
+      \verb https://www.poderjudicialcdmx.gob.mx/expedientes_digitales_legalidad/
+      \endverb
+    \endentry
+    \entry{rtms2023}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=8d5dde7ec76aeb45bdd67d565bdede3c}{%
+           family={Villanueva},
+           familyi={V\bibinitperiod},
+           given={John\bibnamedelima Paul},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{4b624fdd33978af7669fce1a15efad7e}
+      \strng{fullhash}{4b624fdd33978af7669fce1a15efad7e}
+      \strng{bibnamehash}{4b624fdd33978af7669fce1a15efad7e}
+      \strng{authorbibnamehash}{4b624fdd33978af7669fce1a15efad7e}
+      \strng{authornamehash}{4b624fdd33978af7669fce1a15efad7e}
+      \strng{authorfullhash}{4b624fdd33978af7669fce1a15efad7e}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal for Multidisciplinary Research}
+      \field{number}{4}
+      \field{title}{Development of Records Tracking Management System with QR Code}
+      \field{volume}{5}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.ijfmr.com/papers/2023/4/5508.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.ijfmr.com/papers/2023/4/5508.pdf
+      \endverb
+    \endentry
+    \entry{censoro2021dms}{article}{}
+      \name{author}{1}{}{%
+        {{hash=26a1da94f8e63b655b8cf9098a45952c}{%
+           family={Censoro},
+           familyi={C\bibinitperiod},
+           given={Kristian\bibnamedelima C.},
+           giveni={K\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{26a1da94f8e63b655b8cf9098a45952c}
+      \strng{fullhash}{26a1da94f8e63b655b8cf9098a45952c}
+      \strng{bibnamehash}{26a1da94f8e63b655b8cf9098a45952c}
+      \strng{authorbibnamehash}{26a1da94f8e63b655b8cf9098a45952c}
+      \strng{authornamehash}{26a1da94f8e63b655b8cf9098a45952c}
+      \strng{authorfullhash}{26a1da94f8e63b655b8cf9098a45952c}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Unpublished Master's thesis, Central Philippine University, Jaro, Iloilo City}
+      \field{title}{Document Management System Using Optical Character Recognition, Clustering, Watermarking and QR Coding Algorithms}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://repository.cpu.edu.ph/handle/20.500.12852/1519
+      \endverb
+      \verb{url}
+      \verb https://repository.cpu.edu.ph/handle/20.500.12852/1519
+      \endverb
+    \endentry
+    \entry{openkm2025qr}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=0b5b3ea110aec6b9bf4765c539b8f9d1}{%
+           family={{OpenKM}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{0b5b3ea110aec6b9bf4765c539b8f9d1}
+      \strng{fullhash}{0b5b3ea110aec6b9bf4765c539b8f9d1}
+      \strng{bibnamehash}{0b5b3ea110aec6b9bf4765c539b8f9d1}
+      \strng{authorbibnamehash}{0b5b3ea110aec6b9bf4765c539b8f9d1}
+      \strng{authornamehash}{0b5b3ea110aec6b9bf4765c539b8f9d1}
+      \strng{authorfullhash}{0b5b3ea110aec6b9bf4765c539b8f9d1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Consultado en mayo de 2026}
+      \field{title}{Document Management and Version Control with QR Codes}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.openkm.com/blog/document-management-and-version-control-with-qr-codes.html
+      \endverb
+      \verb{url}
+      \verb https://www.openkm.com/blog/document-management-and-version-control-with-qr-codes.html
+      \endverb
+    \endentry
+    \entry{ijsrem2023s3}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=7070b2b62bdb886b39ef9b3a1b6d6d35}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Ravi},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{4fe75a5bf99f55da9e64ea76ed46a40f}
+      \strng{fullhash}{4fe75a5bf99f55da9e64ea76ed46a40f}
+      \strng{bibnamehash}{4fe75a5bf99f55da9e64ea76ed46a40f}
+      \strng{authorbibnamehash}{4fe75a5bf99f55da9e64ea76ed46a40f}
+      \strng{authornamehash}{4fe75a5bf99f55da9e64ea76ed46a40f}
+      \strng{authorfullhash}{4fe75a5bf99f55da9e64ea76ed46a40f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Scientific Research in Engineering and Management}
+      \field{title}{A Study on Cloud Storage: Amazon S3}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://ijsrem.com/download/a-study-on-cloud-storage-amazon-s3/
+      \endverb
+      \verb{url}
+      \verb https://ijsrem.com/download/a-study-on-cloud-storage-amazon-s3/
+      \endverb
+    \endentry
     \entry{Sistema:2018:Ivan}{misc}{}
       \name{author}{1}{}{%
         {{hash=0e7391700c78d80b544872599602b115}{%
@@ -64,8 +373,8 @@
       \strng{authorbibnamehash}{a99ce1573b42821945806f73f25db5a4}
       \strng{authornamehash}{a99ce1573b42821945806f73f25db5a4}
       \strng{authorfullhash}{a99ce1573b42821945806f73f25db5a4}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{16}
@@ -97,8 +406,8 @@
       \strng{authorbibnamehash}{9fd377970fb33bc09a57d0749b982599}
       \strng{authornamehash}{9fd377970fb33bc09a57d0749b982599}
       \strng{authorfullhash}{9fd377970fb33bc09a57d0749b982599}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{13}
@@ -135,8 +444,8 @@
       \strng{authorbibnamehash}{b2ae417fff4b84476940e7fc33a990a5}
       \strng{authornamehash}{b2ae417fff4b84476940e7fc33a990a5}
       \strng{authorfullhash}{b2ae417fff4b84476940e7fc33a990a5}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{11}
@@ -165,8 +474,8 @@
       \strng{authorbibnamehash}{b1a1def5a04b82a913bee6308ec6e425}
       \strng{authornamehash}{b1a1def5a04b82a913bee6308ec6e425}
       \strng{authorfullhash}{b1a1def5a04b82a913bee6308ec6e425}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Harvard Business Review}
@@ -202,8 +511,8 @@
       \strng{authorbibnamehash}{335df3d0c8ae943487bc1142bfe638d0}
       \strng{authornamehash}{335df3d0c8ae943487bc1142bfe638d0}
       \strng{authorfullhash}{335df3d0c8ae943487bc1142bfe638d0}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{4}
@@ -235,8 +544,8 @@
       \strng{authorbibnamehash}{94562000719e09265f5e4a9713eb7b4b}
       \strng{authornamehash}{94562000719e09265f5e4a9713eb7b4b}
       \strng{authorfullhash}{94562000719e09265f5e4a9713eb7b4b}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{6}
@@ -260,8 +569,8 @@
       \strng{authorbibnamehash}{20a37077b38188b2a8310b554035e35d}
       \strng{authornamehash}{20a37077b38188b2a8310b554035e35d}
       \strng{authorfullhash}{20a37077b38188b2a8310b554035e35d}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Journal of Medical Informatics}
@@ -287,8 +596,8 @@
       \strng{authorbibnamehash}{140864078aeca1c7c35b4beb33c53c34}
       \strng{authornamehash}{140864078aeca1c7c35b4beb33c53c34}
       \strng{authorfullhash}{140864078aeca1c7c35b4beb33c53c34}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://code.visualstud io.com/.}}

@@ -9,32 +9,73 @@ Para lograr el objetivo, se busca realizar una aplicación que permita a las dif
 
 El propósito de este trabajo es optimizar la eficacia en la gestión de documentos. Ya que actualmente no existe un sistema que haga todo lo mencionado anteriormente, por lo que es fundamental hacer un sistema que cumpla estos requerimientos. La adopción de un sistema con conversión automática a PDF e integración utilizando códigos QR ayuda enormemente a reducir la cantidad de tiempo dedicada a la búsqueda de información, y facilita la navegación entre documentos. Además, simplifica la transición de formatos de documento de papel al digital.
 
-El alcance de este proyecto se centra en el desarrollo, implementación y pruebas de una aplicación web para la gestión de documentos orientada únicamente a los trabajadores del Poder Judicial del Estado de Tamaulipas (PJETAM). Las limitaciones del proyecto se centran en el acceso al público externo, ya que estará estrictamente limitado a la visualización de aquellos archivos que sean marcados como públicos o puestos a disposición del público. En la parte del desarrollo una limitación es que los procesos de seguridad funcionarán temporalmente usando la autenticación URL cifrada procedente de otros módulos actuales.
+El alcance de este proyecto se centra en el desarrollo, implementación y pruebas de una aplicación web para la gestión de documentos orientada únicamente al personal del Poder Judicial del Estado de Tamaulipas (PJETAM). Las limitaciones del proyecto se centran en el acceso al público externo, ya que estará estrictamente limitado a la visualización de aquellos archivos que sean marcados como públicos o puestos a disposición del público. En la parte del desarrollo una limitación es la creación de módulos de seguridad complejos adicionales a la URL cifrada.
 
 Para detallar la elaboración de este proyecto, este documento se estructura en las siguientes secciones: Introducción, que aborda el planteamiento del problema y los objetivos del proyecto, después se presenta la sección de Metodología, que describe la metodología de desarrollo y diseño de la arquitectura del sistema; y finalmente, se presentan los resultados obtenidos, las pruebas de integración y las conclusiones del proyecto.
 
 \subsection{Antecedentes}
 \label{sec:antecedentes}
-En esta sección, se presenta una revisión concisa y pertinente de investigaciones previas, literatura existente y el estado del arte relacionado con el tema de la tesis. El objetivo es situar el trabajo actual dentro del conocimiento acumulado, identificar vacíos en la investigación y demostrar la originalidad y la necesidad del estudio propuesto. Se deben citar adecuadamente las fuentes, mostrando cómo el trabajo se construye sobre cimientos previos o cómo aborda aspectos no resueltos.
+En esta sección se exponen los fundamentos contextuales y teóricos que dan origen y sustento al presente proyecto. Primero, se abordan los aspectos organizacionales del PJETAM, incluyendo información general de la empresa y detallando la problemática respecto a los procesos manuales de gestión de archivos. Por último, se presenta una revisión de la literatura relacionada a estos temas, analizando el contexto regulatorio de la gestión documental en México, los avances de la justicia digital y la implementación de sistemas tecnológicos basados en códigos QR y almacenamiento en la nube. 
 
 \subsubsection{Antecedentes de la Empresa}
 \label{subsec:antecedentes_empresa}
-El Supremo Tribunal de Justicia del Estado de Tamaulipas, ubicado en Boulevard Praxedis Balboa número 2207, entre López Velarde y Díaz Mirón, Colonia Miguel Hidalgo, Código Postal 87090, en Ciudad Victoria, Tamaulipas, México. Formalizó su inicio el 9 de julio de 1824 con la expedición del primer decreto de la Legislatura Constituyente local.
+\paragraph{Descripción General}
+\label{par:descripcion_antecedentes_empresa}
+El Supremo Tribunal de Justicia del Estado de Tamaulipas (STJET) es la máxima autoridad del Poder Judicial del Estado, ubicada en Boulevard Praxedis Balboa número 2207, entre las calles López Velarde y Díaz Mirón, Colonia Miguel Hidalgo, Código Postal 87090, en Ciudad Victoria, Tamaulipas, México.
 
-La misión de la empresa es Impartir y administrar justicia de manera eficiente y expedita, solucionando conflictos a través de los órganos jurisdiccionales y los medios alternos, contribuyendo a garantizar el estado de derecho y la paz social en Tamaulipas.
+\paragraph{Reseña Histórica}
+\label{par:reseña_antecedentes_empresa}
+La institución formalizó su fundación el 9 de julio de 1824, con la expedición del primer decreto emitido por la Legislatura Constituyente local del Estado de Tamaulipas, convirtiéndose desde entonces en el órgano rector de la impartición de justicia en la entidad. A lo largo de su historia, el Tribunal ha evolucionado de manera constante en sus estructuras jurídicas, administrativas y tecnológicas, adaptándose a las necesidades sociales y legales de cada época, con el firme propósito de garantizar el acceso a la justicia para todos los ciudadanos tamaulipecos.
 
-La visión de la empresa es Transcender como Institución de excelencia, mediante la profesionalización e institucionalización de sus integrantes, en un ambiente de humanismo y justicia institucional, haciendo uso de la innovación tecnológica y optimización de los recursos, con responsabilidad social y pleno respeto a la ley, los derechos humanos y la igualdad de género.
+\paragraph{Misión}
+\label{par:mision_antecedentes_empresa}
+Impartir y administrar justicia de manera eficiente y expedita, solucionando conflictos a través de los órganos jurisdiccionales y los medios alternos, contribuyendo a garantizar el estado de derecho y la paz social en Tamaulipas \cite{pjetam2024mision}.
 
-Estoy realizando las estadías TSU en el departamento de informática, realizando el proyecto Sistema Web de Gestión Documental y Generación de Códigos QR para el PJETAM, el cual consiste en un sistema diseñado para el personal de la empresa, para una mejor organizacion y almacenamiento de los documentos. 
+\paragraph{Visión}
+\label{par:vision_antecedentes_empresa}
+Transcender como institución de excelencia, mediante la profesionalización e institucionalización de sus integrantes, en un ambiente de humanismo y justicia institucional, haciendo uso de la innovación tecnológica y la optimización de los recursos, con responsabilidad social y pleno respeto a la ley, los derechos humanos y la igualdad de género \cite{pjetam2024mision}.
 
-El proyecto presentado en esta tesina es un proyecto desde cero, por lo cual antes de este proyecto la busqueda de documentos y almacenamiento ordenado de los distintos archivos se debía realizar en multiples computadoras y buscar el documento en distintas paginas de la empresa.
+\paragraph{Departamento de Informática y Contexto del Proyecto}
+\label{par:proyecto_antecedentes_empresa}
+Las estadías profesionales correspondientes al nivel de Técnico Superior Universitario se llevan a cabo dentro del Departamento de Informática del Poder Judicial del Estado de Tamaulipas (PJETAM). Dicho departamento tiene a su cargo la administración, soporte y desarrollo de los sistemas tecnológicos que dan sustento a las operaciones de la institución.
+
+En el contexto actual, el proceso de gestión documental y generación de códigos QR se realiza de forma manual: el personal envía los documentos al Departamento de Informática, el cual se encarga de subirlos individualmente a una instancia de servidor Amazon EC2 de acceso público. Una vez almacenado el archivo, se obtiene el enlace correspondiente y, mediante una herramienta externa, se genera el código QR asociado. Este procedimiento, al ejecutarse de manera fragmentada y sin un sistema centralizado, representa una inversión considerable de tiempo y recursos humanos, además de implicar riesgos en la trazabilidad y organización de la documentación institucional.
+
+Derivado de lo anterior, surge la necesidad de desarrollar el proyecto denominado Sistema Web de Gestión Documental y Generación de Códigos QR para el PJETAM, el cual constituye una solución tecnológica diseñada desde cero, orientada al personal de la institución, con el objetivo de centralizar, automatizar y optimizar el almacenamiento, consulta y gestión de documentos, así como la generación de códigos QR de forma integrada dentro de una misma plataforma.
 
 \subsubsection{Antecedentes Teoricos}
 \label{subsec:antecedentes_teoricos}
+\paragraph{Gestión documental en instituciones gubernamentales de México}
+\label{par:getionDocumentos_antecedentes_teoricos}
+La gestión documental en el sector público mexicano ha cobrado especial relevancia a partir de la entrada en vigor de la Ley General de Archivos en 2018. Ramírez Aceves y Cadena-Inostroza \cite{ramirez2021gestion} señalan que dicha ley define la gestión documental como el tratamiento integral de la documentación a lo largo de su ciclo vital, a través de la ejecución de procesos de producción, organización y acceso, lo que representa un cambio de paradigma para las instituciones públicas mexicanas.
+
+De igual manera, \cite{sosa2022gestion} analizan la gestión documental a través del Sistema Institucional de Archivos desde el orden normativo mexicano, destacando que la correcta implementación de estos sistemas es indispensable para garantizar la transparencia, la rendición de cuentas y el acceso a la información pública en los distintos niveles de gobierno. Este marco normativo establece las condiciones que hacen necesario el desarrollo de soluciones tecnológicas como la propuesta en el presente proyecto. 
+
+Investigaciones más recientes señalan que la gestión documental pública en México atraviesa un proceso de transformación profunda, impulsado por la incorporación de las tecnologías de la información y la comunicación, y que la innovación documental fortalece la eficiencia institucional. Sin embargo, la brecha entre el marco normativo y la implementación tecnológica real en los poderes judiciales estatales sigue siendo un área de oportunidad poco atendida \cite{foneia2023innovacion}.
+
+\paragraph{Digitalización en el Poder Judicial mexicano}
+\label{par:digitalizacion_antecedentes_teoricos}
+El Poder Judicial en México ha experimentado una transición gradual hacia la digitalización de sus procesos documentales. La justicia digital se define como la digitalización y modernización de todo el ecosistema del Poder Judicial mediante el empleo de las tecnologías de información, con el propósito de mejorar la prestación de los servicios judiciales a la ciudadanía, garantizando principios como el acceso a la información, la impartición de justicia y la igualdad \cite{docusign2022justicia}.
+
+El Poder Judicial de la Ciudad de México ha digitalizado sus expedientes en materia civil y familiar del período 2018–2022, permitiendo que los ciudadanos consulten su expediente desde cualquier parte del mundo, lo que representa un ahorro significativo en tiempo y en costos de mantenimiento de archivos físicos. Experiencias como esta evidencian los beneficios concretos de contar con sistemas de gestión documental integrados en el ámbito judicial, que no solo almacenen documentos, sino que los organicen de forma estructurada y accesible \cite{pjcdmx2023expedientes}.
+
+\paragraph{Sistemas de gestión documental con códigos QR}
+\label{par:sistemas_antecedentes_teoricos}
+En el contexto internacional, se han desarrollado investigaciones orientadas a resolver la problemática del seguimiento manual de documentos mediante tecnología web y códigos QR. Un estudio desarrollado en la Universidad Estatal de Surigao del Norte \cite{rtms2023} propuso un sistema de rastreo de registros que emplea códigos QR para dar seguimiento al historial, ubicación y tiempos de procesamiento de los documentos, construido como una aplicación web, demostrando que la centralización de registros y la generación automatizada de códigos QR reducen los retrasos, la duplicación de registros y los riesgos de corrupción propios de los procesos manuales
+
+De manera complementaria, Censoro \cite{censoro2021dms} desarrolló un sistema de gestión documental que incorpora la generación de códigos QR como mecanismo de autenticación, permitiendo verificar que el documento consultado corresponde a la versión oficial y vigente almacenada en el sistema, lo cual resulta especialmente relevante en entornos legales e institucionales donde la integridad documental es indispensable.
+
+Plataformas como OpenKM  \cite{openkm2025qr} emplean los códigos QR como un sello digital que proporciona información sobre la versión y estado actual del documento, siendo esta funcionalidad crítica en sectores como el legal, financiero o de salud, donde la precisión y actualidad de los documentos son fundamentales.
+
+\paragraph{Almacenamiento en la nube para sistemas documentales}
+El almacenamiento en la nube se ha consolidado como una solución viable y ampliamente adoptada para la gestión documental institucional. Amazon S3 es reconocido en la literatura como una infraestructura de almacenamiento altamente duradera, escalable y segura, adecuada para organizaciones de cualquier tamaño, con ventajas que incluyen reducción de costos, escalabilidad y facilidad de uso \cite{ijsrem2023s3}.
+
+El proceso actual en el Departamento de Informática del PJETAM representa precisamente el escenario que la literatura identifica como susceptible de optimización: un flujo fragmentado, con múltiples pasos manuales y sin una plataforma centralizada que integre el almacenamiento, la generación de enlaces y la producción de códigos QR en un solo proceso automatizado. El presente proyecto surge para atender ese vacío dentro de la institución.
+
+\subsubsection{Tabla comparativa}
 
 \subsection{Definición del Problema}
 \label{sec:problema}
-
 El manejo de la información y archivos dentro de las instituciones públicas es un elemento esencial para el cumplimiento eficiente de sus tareas. Sin embargo, el Poder Judicial del Estado de Tamaulipas (PJETAM) actualmente presenta una brecha tecnológica en la administración de sus archivos recurrentes. El problema central consiste en la desorganización de los documentos institucionales y la dificultad que presentan los sistemas actuales para proporcionar una navegación fácil y rápida al consultar expedientes o documentos. Tales factores generan un entorno insatisfactorio que tiene consecuencias directas sobre el desempeño de las áreas jurídicas. 
 
 Del problema mencionado se derivan distintas complicaciones que no han sido abordadas individualmente:
@@ -52,17 +93,14 @@ Ante este contexto, se plantea la siguiente pregunta de investigación para guia
 
 \subsection{Objetivos}
 \label{sec:objetivos}
+En el presente apartado se establecen las metas que guiarán el desarrollo e implementación del proyecto. Se define en primer lugar el objetivo general, el cual enuncia el propósito central de la solución propuesta para optimizar la gestión documental y la generación de códigos QR. Posteriormente, se desglosan los objetivos específicos, los cuales representan las etapas metodológicas y técnicas, hasta el desarrollo modular, pruebas de integración y documentación necesarias para concretar con éxito la aplicación web.
 
-El objetivo general del proyecto presenta la meta final del proyecto:
 \subsubsection{Objetivo General}
 \label{subsec:objetivo_general}
-
 Desarrollar una aplicación web que permita a las diferentes áreas del Poder Judicial del Estado de Tamaulipas cargar, convertir, almacenar y gestionar documentos e imágenes, generando códigos QR vinculados a cada archivo para facilitar su referenciación y consulta desde otros documentos institucionales. La aplicación deberá integrarse con los sistemas de gestión de escritorio existentes mediante autenticación por parámetro cifrado en la URL.
 
 \subsubsection{Objetivos Específicos}
 \label{subsec:objetivos_especificos}
-
-Los objetivos especificos de este proyecto son los siguientes:
 \begin{itemize}
     \item Analizar los requerimientos funcionales de las áreas usuarias del PJETAM, identificando los tipos de documentos, flujos de trabajo y necesidades de integración con los sistemas de escritorio existentes.
     \item Diseñar la arquitectura de la aplicación web, definiendo las tecnologías de frontend, backend y almacenamiento que garanticen seguridad, rendimiento y escalabilidad.
@@ -76,7 +114,7 @@ Los objetivos especificos de este proyecto son los siguientes:
 
 \subsection{Justificación}
 \label{sec:justificacion}
-La administración del PJETAM requiere procesos administrativos rápidos, claros y altamente organizados, ya que es una institución que maneja procedimientos legales y archivos importantes. El manejo de archivos es una funcion básica y fundamental del PJETAM. La realización de este proyecto se justifica por la necesidad de resolver la desorganización de los archivos institucionales y la falta de agilidad en su consulta, factores que actualmente aumentan los tiempos de respuesta de la organización y complican el flujo de trabajo de los empleados.
+La administración del PJETAM requiere procesos administrativos rápidos, claros y altamente organizados, ya que es una institución que maneja procedimientos legales y archivos importantes. El manejo de archivos es una funcion básica y fundamental del PJETAM. La realización de este proyecto se justifica por la necesidad de resolver la desorganización de los archivos institucionales y la falta de agilidad en su consulta, factores que actualmente aumentan los tiempos de respuesta de la organización y complican el flujo de trabajo del personal.
 
 El desarrollo del Sistema Web de Gestión Documental y Generación de Códigos QR aporta un beneficio a la institución, ya que uno de los problemas de la organización es la diversidad de formatos en archivos (ODT, DOC, DOCX) y la división de la información que generan un conflicto al momento de visualizar y compartir documentos. Al implementar un sistema de conversión automática a PDF el proyecto garantiza la estandarización de los archivos, asegurando que cualquier documento se visualice de igual manera sin importar el dispositivo o el área que lo consulte, asimismo imparte un estándar al almacenar todos los archivos en un mismo formato. Además, la generación de códigos QR resuelve un problema práctico el cual es el referenciar archivos en otro archivo, haciendo más fácil la navegación entre documentos y facilitando la lectura y comprensión del lector.
 \subsection{Alcances y Limitaciones}
