@@ -1,11 +1,10 @@
 # Fdb version 3
-["biber main"] 1780025103 "main.bcf" "main.bbl" "main" 1780035321
-  "Referencias.bib" 1780025103 7102 c68dc7caebb4ee3f20eacdf8490979c6 ""
-  "main.bcf" 1780035321 108350 404991f9be2e3864f1616941c357fa35 "pdflatex"
+["biber main"] 1780098489 "main.bcf" "main.bbl" "main" 1780099011
+  "main.bcf" 1780099010 108350 404991f9be2e3864f1616941c357fa35 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1780035318 "/home/anaaz/estadias/tesina-tsu-mayago-2026-ana117-ctrl/main.tex" "main.pdf" "main" 1780035321
+["pdflatex"] 1780099008 "/home/anaaz/estadias/tesina-tsu-mayago-2026-ana117-ctrl/main.tex" "main.pdf" "main" 1780099011
   "/etc/texmf/web2c/texmf.cnf" 1779218431 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/anaaz/.texlive2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1779317618 1405656 74e209f3f5e4d4053889bfff596a9b66 ""
   "/home/anaaz/estadias/tesina-tsu-mayago-2026-ana117-ctrl/main.tex" 1779411012 21602 5915465255b7b75ce50b7e7d8186df3f ""
@@ -262,7 +261,6 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1779426570 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "LogoUPV_2023.png" 1779215519 135292 9dc028ee986352f8e0c86763d6b399fc ""
   "Membrete2023.pdf" 1779215519 259207 12c98cc2947acf63d1a72d52ce31a405 ""
-  "Referencias.bib" 1780025103 7102 c68dc7caebb4ee3f20eacdf8490979c6 ""
   "UTYP.png" 1779215519 37831 4ef8c60a90da178fa76c40dc51540bdf ""
   "conclusiones.tex" 1779215519 161 58c97b577cc4a7b765a6392283e7fd37 ""
   "documentosDigitalizados/CartaAceptacion.pdf" 1778560134 315344 bf32c0f3bf38fd7b4856321df261d230 ""
@@ -273,13 +271,13 @@
   "img/diagrama_proceso.png" 1779215519 112008 44b351836470c55d08613391f89f0950 ""
   "img/grafico_datos1.jpg" 1779215519 61975 499da954c71825bb9a7d1851382fa1c6 ""
   "img/grafico_datos2.jpg" 1779215519 38058 b7609460ad2209fe27a57c178b1daf89 ""
-  "introduccion.tex" 1780035317 25974 8fe2529fc97a364ec0ff73a0a415cebb ""
-  "main.aux" 1780035321 12166 2dff2d4c7f7897d93cd4638c0ebcdbfb "pdflatex"
-  "main.bbl" 1780025104 25264 b9c384d766d9305e053bec23dc97f35b "biber main"
-  "main.out" 1780035321 3374 e6963fe36ac3ab301adf7b85d900700f "pdflatex"
-  "main.run.xml" 1780035321 2306 628e0087c61ee8036d936d14edcd02fc "pdflatex"
+  "introduccion.tex" 1780099008 26062 e44e953f77ffc516802b92bf5e0c0753 ""
+  "main.aux" 1780099010 11743 92cfd5f8ef16cc5a5faaa7df6a1c46b9 "pdflatex"
+  "main.bbl" 1780098490 14505 d70a16d055ee7c19017d703e6ed790aa "biber main"
+  "main.out" 1780099010 3582 9eb97af9c015f8eb7b31a335fbdc5745 "pdflatex"
+  "main.run.xml" 1780099010 2306 628e0087c61ee8036d936d14edcd02fc "pdflatex"
   "main.tex" 1779411012 21602 5915465255b7b75ce50b7e7d8186df3f ""
-  "main.toc" 1780035321 2666 1c29bb26f5d5e3d54fb3604f8673b26c "pdflatex"
+  "main.toc" 1780099010 2760 1af52c6ffdd38a6c44de8fd4cac8aad6 "pdflatex"
   "metodologia.tex" 1779215519 4096 5c32bf02e6a8e1f03c41edcfecebc1da ""
   "resultados.tex" 1779215519 1077 db5af9c18ffdb5d2bd76b6af6b9ea184 ""
   (generated)

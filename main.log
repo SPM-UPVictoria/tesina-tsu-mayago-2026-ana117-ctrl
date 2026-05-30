@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.5.20)  29 MAY 2026 00:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.5.20)  29 MAY 2026 17:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1209,9 +1209,67 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl
 
-Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'Sistema:2018:Ivan':
-(biblatex)                - Entry 'Sistema:2018:Ivan' (Referencias.bib): Invalid format '28-11-2018' of date field 'urldate' - ignoring.
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Microsoft:Concepto
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Sistema:2018:Ivan
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                davenport2018
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                heeks2006
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                laudon2020
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                stair2018
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                turban2019
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                ward2016
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                whitman2018
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
 
 )
 Package biblatex Info: Reference section=0 on input line 149.
@@ -1241,12 +1299,12 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 164.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<UTYP.png, id=96, 301.125pt x 156.585pt>
+<UTYP.png, id=100, 301.125pt x 156.585pt>
 File: UTYP.png Graphic file (type png)
 <use UTYP.png>
 Package pdftex.def Info: UTYP.png  used on input line 165.
 (pdftex.def)             Requested size: 123.11743pt x 64.01869pt.
-<LogoUPV_2023.png, id=98, 438.9198pt x 166.7028pt>
+<LogoUPV_2023.png, id=102, 438.9198pt x 166.7028pt>
 File: LogoUPV_2023.png Graphic file (type png)
 <use LogoUPV_2023.png>
 Package pdftex.def Info: LogoUPV_2023.png  used on input line 166.
@@ -1268,7 +1326,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has b
                    \relax 
 l.243 \clearpage
                 
-<Membrete2023.pdf, id=108, 614.295pt x 794.97pt>
+<Membrete2023.pdf, id=112, 614.295pt x 794.97pt>
 File: Membrete2023.pdf Graphic file (type pdf)
 <use Membrete2023.pdf>
 Package pdftex.def Info: Membrete2023.pdf  used on input line 243.
@@ -1480,11 +1538,11 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 File: UTYP.png Graphic file (type png)
 <use UTYP.png>
-Package pdftex.def Info: UTYP.png  used on input line 109.
+Package pdftex.def Info: UTYP.png  used on input line 111.
 (pdftex.def)             Requested size: 65.65956pt x 34.14322pt.
 File: LogoUPV_2023.png Graphic file (type png)
 <use LogoUPV_2023.png>
-Package pdftex.def Info: LogoUPV_2023.png  used on input line 109.
+Package pdftex.def Info: LogoUPV_2023.png  used on input line 111.
 (pdftex.def)             Requested size: 112.36844pt x 42.67912pt.
 
 Overfull \hbox (15.11841pt too wide) has occurred while \output is active
@@ -1501,11 +1559,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [5]
 File: UTYP.png Graphic file (type png)
 <use UTYP.png>
-Package pdftex.def Info: UTYP.png  used on input line 116.
+Package pdftex.def Info: UTYP.png  used on input line 119.
 (pdftex.def)             Requested size: 65.65956pt x 34.14322pt.
 File: LogoUPV_2023.png Graphic file (type png)
 <use LogoUPV_2023.png>
-Package pdftex.def Info: LogoUPV_2023.png  used on input line 116.
+Package pdftex.def Info: LogoUPV_2023.png  used on input line 119.
 (pdftex.def)             Requested size: 112.36844pt x 42.67912pt.
 
 Overfull \hbox (15.11841pt too wide) has occurred while \output is active
@@ -1522,11 +1580,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [6]
 File: UTYP.png Graphic file (type png)
 <use UTYP.png>
-Package pdftex.def Info: UTYP.png  used on input line 136.
+Package pdftex.def Info: UTYP.png  used on input line 137.
 (pdftex.def)             Requested size: 65.65956pt x 34.14322pt.
 File: LogoUPV_2023.png Graphic file (type png)
 <use LogoUPV_2023.png>
-Package pdftex.def Info: LogoUPV_2023.png  used on input line 136.
+Package pdftex.def Info: LogoUPV_2023.png  used on input line 137.
 (pdftex.def)             Requested size: 112.36844pt x 42.67912pt.
 
 Overfull \hbox (15.11841pt too wide) has occurred while \output is active
@@ -1564,11 +1622,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [8]
 File: UTYP.png Graphic file (type png)
 <use UTYP.png>
-Package pdftex.def Info: UTYP.png  used on input line 167.
+Package pdftex.def Info: UTYP.png  used on input line 169.
 (pdftex.def)             Requested size: 65.65956pt x 34.14322pt.
 File: LogoUPV_2023.png Graphic file (type png)
 <use LogoUPV_2023.png>
-Package pdftex.def Info: LogoUPV_2023.png  used on input line 167.
+Package pdftex.def Info: LogoUPV_2023.png  used on input line 169.
 (pdftex.def)             Requested size: 112.36844pt x 42.67912pt.
 
 Overfull \hbox (15.11841pt too wide) has occurred while \output is active
@@ -1583,22 +1641,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-35.02916pt}.
 
 [9]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 186.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 198.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-<img/diagrama_proceso.png, id=251, 1431.3475pt x 1028.84375pt>
+<img/diagrama_proceso.png, id=256, 1431.3475pt x 1028.84375pt>
 File: img/diagrama_proceso.png Graphic file (type png)
 <use img/diagrama_proceso.png>
-Package pdftex.def Info: img/diagrama_proceso.png  used on input line 193.
+Package pdftex.def Info: img/diagrama_proceso.png  used on input line 205.
 (pdftex.def)             Requested size: 340.37885pt x 244.65121pt.
 File: UTYP.png Graphic file (type png)
 <use UTYP.png>
-Package pdftex.def Info: UTYP.png  used on input line 198.
+Package pdftex.def Info: UTYP.png  used on input line 210.
 (pdftex.def)             Requested size: 65.65956pt x 34.14322pt.
 File: LogoUPV_2023.png Graphic file (type png)
 <use LogoUPV_2023.png>
-Package pdftex.def Info: LogoUPV_2023.png  used on input line 198.
+Package pdftex.def Info: LogoUPV_2023.png  used on input line 210.
 (pdftex.def)             Requested size: 112.36844pt x 42.67912pt.
 
 Overfull \hbox (15.11841pt too wide) has occurred while \output is active
@@ -1613,15 +1671,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-35.02916pt}.
 
 [10]
-<img/grafico_datos1.jpg, id=258, 803.0pt x 451.6875pt>
+<img/grafico_datos1.jpg, id=263, 803.0pt x 451.6875pt>
 File: img/grafico_datos1.jpg Graphic file (type jpg)
 <use img/grafico_datos1.jpg>
-Package pdftex.def Info: img/grafico_datos1.jpg  used on input line 202.
+Package pdftex.def Info: img/grafico_datos1.jpg  used on input line 214.
 (pdftex.def)             Requested size: 218.81444pt x 123.08067pt.
-<img/grafico_datos2.jpg, id=259, 702.625pt x 326.21875pt>
+<img/grafico_datos2.jpg, id=264, 702.625pt x 326.21875pt>
 File: img/grafico_datos2.jpg Graphic file (type jpg)
 <use img/grafico_datos2.jpg>
-Package pdftex.def Info: img/grafico_datos2.jpg  used on input line 208.
+Package pdftex.def Info: img/grafico_datos2.jpg  used on input line 220.
 (pdftex.def)             Requested size: 218.81444pt x 101.58968pt.
 )
 File: UTYP.png Graphic file (type png)
@@ -1645,6 +1703,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-35.02916pt}.
 
 [11 <./img/diagrama_proceso.png> <./img/grafico_datos1.jpg> <./img/grafico_datos2.jpg>] (./metodologia.tex
+
+LaTeX Warning: Citation 'Sistema:2018:Ivan' on page 12 undefined on input line 23.
+
+
+LaTeX Warning: Citation 'laudon2020' on page 12 undefined on input line 25.
+
+
+LaTeX Warning: Citation 'stair2018' on page 12 undefined on input line 25.
+
+
+LaTeX Warning: Citation 'turban2019' on page 12 undefined on input line 25.
+
+
+LaTeX Warning: Citation 'davenport2018' on page 12 undefined on input line 25.
+
+
+LaTeX Warning: Citation 'ward2016' on page 12 undefined on input line 27.
+
+
+LaTeX Warning: Citation 'whitman2018' on page 12 undefined on input line 27.
+
+
+LaTeX Warning: Citation 'heeks2006' on page 12 undefined on input line 27.
+
 File: UTYP.png Graphic file (type png)
 <use UTYP.png>
 Package pdftex.def Info: UTYP.png  used on input line 28.
@@ -1668,11 +1750,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [12
 
 ]
-<img/calorias1.png, id=288, 308.65312pt x 546.54187pt>
+<img/calorias1.png, id=280, 308.65312pt x 546.54187pt>
 File: img/calorias1.png Graphic file (type png)
 <use img/calorias1.png>
 Package pdftex.def Info: img/calorias1.png  used on input line 33.
 (pdftex.def)             Requested size: 243.1288pt x 430.52908pt.
+
+
+LaTeX Warning: Citation 'Microsoft:Concepto' on page 13 undefined on input line 34.
+
+
+LaTeX Warning: Citation 'Microsoft:Concepto' on page 13 undefined on input line 34.
+
 File: UTYP.png Graphic file (type png)
 <use UTYP.png>
 Package pdftex.def Info: UTYP.png  used on input line 51.
@@ -1763,29 +1852,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 ]
 File: UTYP.png Graphic file (type png)
 <use UTYP.png>
-Package pdftex.def Info: UTYP.png  used on input line 364.
-(pdftex.def)             Requested size: 65.65956pt x 34.14322pt.
-File: LogoUPV_2023.png Graphic file (type png)
-<use LogoUPV_2023.png>
-Package pdftex.def Info: LogoUPV_2023.png  used on input line 364.
-(pdftex.def)             Requested size: 112.36844pt x 42.67912pt.
-
-Overfull \hbox (15.11841pt too wide) has occurred while \output is active
-[]|[]| 
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 47.02916pt, for example:
-(fancyhdr)                \setlength{\headheight}{47.02916pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-35.02916pt}.
-
-[17
-
-]
-File: UTYP.png Graphic file (type png)
-<use UTYP.png>
 Package pdftex.def Info: UTYP.png  used on input line 366.
 (pdftex.def)             Requested size: 65.65956pt x 34.14322pt.
 File: LogoUPV_2023.png Graphic file (type png)
@@ -1804,8 +1870,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-35.02916pt}.
 
-[18]
-<documentosDigitalizados/SeguroFacultativo.pdf, id=352, 614.295pt x 845.1575pt>
+[17
+
+]
+<documentosDigitalizados/SeguroFacultativo.pdf, id=323, 614.295pt x 845.1575pt>
 File: documentosDigitalizados/SeguroFacultativo.pdf Graphic file (type pdf)
 <use documentosDigitalizados/SeguroFacultativo.pdf>
 Package pdftex.def Info: documentosDigitalizados/SeguroFacultativo.pdf  used on input line 373.
@@ -1814,7 +1882,7 @@ File: documentosDigitalizados/SeguroFacultativo.pdf Graphic file (type pdf)
 <use documentosDigitalizados/SeguroFacultativo.pdf>
 Package pdftex.def Info: documentosDigitalizados/SeguroFacultativo.pdf  used on input line 373.
 (pdftex.def)             Requested size: 614.29349pt x 845.15544pt.
-<documentosDigitalizados/SeguroFacultativo.pdf, id=355, page=1, 614.295pt x 845.1575pt>
+<documentosDigitalizados/SeguroFacultativo.pdf, id=326, page=1, 614.295pt x 845.1575pt>
 File: documentosDigitalizados/SeguroFacultativo.pdf Graphic file (type pdf)
 <use documentosDigitalizados/SeguroFacultativo.pdf, page 1>
 Package pdftex.def Info: documentosDigitalizados/SeguroFacultativo.pdf , page1 used on input line 373.
@@ -1835,10 +1903,10 @@ File: documentosDigitalizados/SeguroFacultativo.pdf Graphic file (type pdf)
 <use documentosDigitalizados/SeguroFacultativo.pdf, page 1>
 Package pdftex.def Info: documentosDigitalizados/SeguroFacultativo.pdf , page1 used on input line 373.
 (pdftex.def)             Requested size: 577.9154pt x 795.10587pt.
- [19
+ [18
 
  <./documentosDigitalizados/SeguroFacultativo.pdf>]
-<documentosDigitalizados/CartaPresentacion.pdf, id=374, 614.295pt x 794.97pt>
+<documentosDigitalizados/CartaPresentacion.pdf, id=344, 614.295pt x 794.97pt>
 File: documentosDigitalizados/CartaPresentacion.pdf Graphic file (type pdf)
 <use documentosDigitalizados/CartaPresentacion.pdf>
 Package pdftex.def Info: documentosDigitalizados/CartaPresentacion.pdf  used on input line 381.
@@ -1847,7 +1915,7 @@ File: documentosDigitalizados/CartaPresentacion.pdf Graphic file (type pdf)
 <use documentosDigitalizados/CartaPresentacion.pdf>
 Package pdftex.def Info: documentosDigitalizados/CartaPresentacion.pdf  used on input line 381.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<documentosDigitalizados/CartaPresentacion.pdf, id=377, page=1, 614.295pt x 794.97pt>
+<documentosDigitalizados/CartaPresentacion.pdf, id=347, page=1, 614.295pt x 794.97pt>
 File: documentosDigitalizados/CartaPresentacion.pdf Graphic file (type pdf)
 <use documentosDigitalizados/CartaPresentacion.pdf, page 1>
 Package pdftex.def Info: documentosDigitalizados/CartaPresentacion.pdf , page1 used on input line 381.
@@ -1867,74 +1935,74 @@ Package pdftex.def Info: documentosDigitalizados/CartaPresentacion.pdf , page1 u
 File: documentosDigitalizados/CartaPresentacion.pdf Graphic file (type pdf)
 <use documentosDigitalizados/CartaPresentacion.pdf, page 1>
 Package pdftex.def Info: documentosDigitalizados/CartaPresentacion.pdf , page1 used on input line 381.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [19
+
+ <./documentosDigitalizados/CartaPresentacion.pdf>]
+<documentosDigitalizados/CartaAceptacion.pdf, id=355, 614.295pt x 794.97pt>
+File: documentosDigitalizados/CartaAceptacion.pdf Graphic file (type pdf)
+<use documentosDigitalizados/CartaAceptacion.pdf>
+Package pdftex.def Info: documentosDigitalizados/CartaAceptacion.pdf  used on input line 386.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: documentosDigitalizados/CartaAceptacion.pdf Graphic file (type pdf)
+<use documentosDigitalizados/CartaAceptacion.pdf>
+Package pdftex.def Info: documentosDigitalizados/CartaAceptacion.pdf  used on input line 386.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<documentosDigitalizados/CartaAceptacion.pdf, id=358, page=1, 614.295pt x 794.97pt>
+File: documentosDigitalizados/CartaAceptacion.pdf Graphic file (type pdf)
+<use documentosDigitalizados/CartaAceptacion.pdf, page 1>
+Package pdftex.def Info: documentosDigitalizados/CartaAceptacion.pdf , page1 used on input line 386.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: documentosDigitalizados/CartaAceptacion.pdf Graphic file (type pdf)
+<use documentosDigitalizados/CartaAceptacion.pdf, page 1>
+Package pdftex.def Info: documentosDigitalizados/CartaAceptacion.pdf , page1 used on input line 386.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: documentosDigitalizados/CartaAceptacion.pdf Graphic file (type pdf)
+<use documentosDigitalizados/CartaAceptacion.pdf, page 1>
+Package pdftex.def Info: documentosDigitalizados/CartaAceptacion.pdf , page1 used on input line 386.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: documentosDigitalizados/CartaAceptacion.pdf Graphic file (type pdf)
+<use documentosDigitalizados/CartaAceptacion.pdf, page 1>
+Package pdftex.def Info: documentosDigitalizados/CartaAceptacion.pdf , page1 used on input line 386.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: documentosDigitalizados/CartaAceptacion.pdf Graphic file (type pdf)
+<use documentosDigitalizados/CartaAceptacion.pdf, page 1>
+Package pdftex.def Info: documentosDigitalizados/CartaAceptacion.pdf , page1 used on input line 386.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [20
 
- <./documentosDigitalizados/CartaPresentacion.pdf>]
-<documentosDigitalizados/CartaAceptacion.pdf, id=384, 614.295pt x 794.97pt>
-File: documentosDigitalizados/CartaAceptacion.pdf Graphic file (type pdf)
-<use documentosDigitalizados/CartaAceptacion.pdf>
-Package pdftex.def Info: documentosDigitalizados/CartaAceptacion.pdf  used on input line 386.
+ <./documentosDigitalizados/CartaAceptacion.pdf>]
+<documentosDigitalizados/CartaLiberacion.pdf, id=367, 614.295pt x 794.97pt>
+File: documentosDigitalizados/CartaLiberacion.pdf Graphic file (type pdf)
+<use documentosDigitalizados/CartaLiberacion.pdf>
+Package pdftex.def Info: documentosDigitalizados/CartaLiberacion.pdf  used on input line 391.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: documentosDigitalizados/CartaAceptacion.pdf Graphic file (type pdf)
-<use documentosDigitalizados/CartaAceptacion.pdf>
-Package pdftex.def Info: documentosDigitalizados/CartaAceptacion.pdf  used on input line 386.
+File: documentosDigitalizados/CartaLiberacion.pdf Graphic file (type pdf)
+<use documentosDigitalizados/CartaLiberacion.pdf>
+Package pdftex.def Info: documentosDigitalizados/CartaLiberacion.pdf  used on input line 391.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<documentosDigitalizados/CartaAceptacion.pdf, id=387, page=1, 614.295pt x 794.97pt>
-File: documentosDigitalizados/CartaAceptacion.pdf Graphic file (type pdf)
-<use documentosDigitalizados/CartaAceptacion.pdf, page 1>
-Package pdftex.def Info: documentosDigitalizados/CartaAceptacion.pdf , page1 used on input line 386.
+<documentosDigitalizados/CartaLiberacion.pdf, id=370, page=1, 614.295pt x 794.97pt>
+File: documentosDigitalizados/CartaLiberacion.pdf Graphic file (type pdf)
+<use documentosDigitalizados/CartaLiberacion.pdf, page 1>
+Package pdftex.def Info: documentosDigitalizados/CartaLiberacion.pdf , page1 used on input line 391.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: documentosDigitalizados/CartaAceptacion.pdf Graphic file (type pdf)
-<use documentosDigitalizados/CartaAceptacion.pdf, page 1>
-Package pdftex.def Info: documentosDigitalizados/CartaAceptacion.pdf , page1 used on input line 386.
+File: documentosDigitalizados/CartaLiberacion.pdf Graphic file (type pdf)
+<use documentosDigitalizados/CartaLiberacion.pdf, page 1>
+Package pdftex.def Info: documentosDigitalizados/CartaLiberacion.pdf , page1 used on input line 391.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: documentosDigitalizados/CartaAceptacion.pdf Graphic file (type pdf)
-<use documentosDigitalizados/CartaAceptacion.pdf, page 1>
-Package pdftex.def Info: documentosDigitalizados/CartaAceptacion.pdf , page1 used on input line 386.
+File: documentosDigitalizados/CartaLiberacion.pdf Graphic file (type pdf)
+<use documentosDigitalizados/CartaLiberacion.pdf, page 1>
+Package pdftex.def Info: documentosDigitalizados/CartaLiberacion.pdf , page1 used on input line 391.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: documentosDigitalizados/CartaAceptacion.pdf Graphic file (type pdf)
-<use documentosDigitalizados/CartaAceptacion.pdf, page 1>
-Package pdftex.def Info: documentosDigitalizados/CartaAceptacion.pdf , page1 used on input line 386.
+File: documentosDigitalizados/CartaLiberacion.pdf Graphic file (type pdf)
+<use documentosDigitalizados/CartaLiberacion.pdf, page 1>
+Package pdftex.def Info: documentosDigitalizados/CartaLiberacion.pdf , page1 used on input line 391.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: documentosDigitalizados/CartaAceptacion.pdf Graphic file (type pdf)
-<use documentosDigitalizados/CartaAceptacion.pdf, page 1>
-Package pdftex.def Info: documentosDigitalizados/CartaAceptacion.pdf , page1 used on input line 386.
+File: documentosDigitalizados/CartaLiberacion.pdf Graphic file (type pdf)
+<use documentosDigitalizados/CartaLiberacion.pdf, page 1>
+Package pdftex.def Info: documentosDigitalizados/CartaLiberacion.pdf , page1 used on input line 391.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [21
-
- <./documentosDigitalizados/CartaAceptacion.pdf>]
-<documentosDigitalizados/CartaLiberacion.pdf, id=396, 614.295pt x 794.97pt>
-File: documentosDigitalizados/CartaLiberacion.pdf Graphic file (type pdf)
-<use documentosDigitalizados/CartaLiberacion.pdf>
-Package pdftex.def Info: documentosDigitalizados/CartaLiberacion.pdf  used on input line 391.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: documentosDigitalizados/CartaLiberacion.pdf Graphic file (type pdf)
-<use documentosDigitalizados/CartaLiberacion.pdf>
-Package pdftex.def Info: documentosDigitalizados/CartaLiberacion.pdf  used on input line 391.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<documentosDigitalizados/CartaLiberacion.pdf, id=399, page=1, 614.295pt x 794.97pt>
-File: documentosDigitalizados/CartaLiberacion.pdf Graphic file (type pdf)
-<use documentosDigitalizados/CartaLiberacion.pdf, page 1>
-Package pdftex.def Info: documentosDigitalizados/CartaLiberacion.pdf , page1 used on input line 391.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: documentosDigitalizados/CartaLiberacion.pdf Graphic file (type pdf)
-<use documentosDigitalizados/CartaLiberacion.pdf, page 1>
-Package pdftex.def Info: documentosDigitalizados/CartaLiberacion.pdf , page1 used on input line 391.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: documentosDigitalizados/CartaLiberacion.pdf Graphic file (type pdf)
-<use documentosDigitalizados/CartaLiberacion.pdf, page 1>
-Package pdftex.def Info: documentosDigitalizados/CartaLiberacion.pdf , page1 used on input line 391.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: documentosDigitalizados/CartaLiberacion.pdf Graphic file (type pdf)
-<use documentosDigitalizados/CartaLiberacion.pdf, page 1>
-Package pdftex.def Info: documentosDigitalizados/CartaLiberacion.pdf , page1 used on input line 391.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: documentosDigitalizados/CartaLiberacion.pdf Graphic file (type pdf)
-<use documentosDigitalizados/CartaLiberacion.pdf, page 1>
-Package pdftex.def Info: documentosDigitalizados/CartaLiberacion.pdf , page1 used on input line 391.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [22
 
  <./documentosDigitalizados/CartaLiberacion.pdf>]
 Overfull \hbox (13.17943pt too wide) in paragraph at lines 412--412
@@ -1961,7 +2029,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-35.02916pt}.
 
-[23
+[22
 
 ]
 File: UTYP.png Graphic file (type png)
@@ -1984,7 +2052,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-35.02916pt}.
 
-[24]
+[23]
 Underfull \hbox (badness 1189) in paragraph at lines 442--443
 \T1/cmr/m/n/10 tienen fon-do claro, le-
  []
@@ -2044,7 +2112,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-35.02916pt}.
 
-[25
+[24
 
 ] (./main.aux
 LaTeX Info: Redefining \sptext on input line 23.
@@ -2052,24 +2120,24 @@ LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E6963FE36AC3AB301ADF7B85D900700F;3374.
+(rerunfilecheck)             Checksum: 9EB97AF9C015F8EB7B31A335FBDC5745;3582.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 45322 strings out of 480247
- 949966 string characters out of 5896151
- 1657139 words of memory out of 5000000
- 62515 multiletter control sequences out of 15000+600000
+ 45287 strings out of 480247
+ 948614 string characters out of 5896151
+ 1654947 words of memory out of 5000000
+ 62489 multiletter control sequences out of 15000+600000
  485202 words of font info for 68 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  98i,22n,103p,1686b,1933s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on main.pdf (31 pages, 1890338 bytes).
+Output written on main.pdf (30 pages, 1886868 bytes).
 PDF statistics:
- 503 PDF objects out of 1000 (max. 8388607)
- 393 compressed objects within 4 object streams
- 87 named destinations out of 1000 (max. 500000)
- 312 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 471 PDF objects out of 1000 (max. 8388607)
+ 363 compressed objects within 4 object streams
+ 78 named destinations out of 1000 (max. 500000)
+ 320 words of extra memory for PDF output out of 10000 (max. 10000000)
 

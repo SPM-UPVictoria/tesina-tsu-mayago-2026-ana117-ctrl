@@ -5,9 +5,9 @@ En los últimos años ha surgido la necesidad de digitalizar la mayoría de los 
 
 El principal propósito de este proyecto es documentar el desarrollo e implementación de una aplicación web capaz de manejar la carga, conversión, almacenamiento y gestión de documentos, a través del uso de tecnologías modernas para crear una interfaz completa, además de almacenamiento en la nube. El proyecto busca crear una aplicación utilizando la arquitectura MVC  (Modelo-Vista-Controlador) para lograr una aplicación segura, escalable y eficiente.
 
-Para lograr el objetivo, se busca realizar una aplicación que permita a las diferentes áreas del PJETAM cargar, convertir, almacenar y gestionar documentos e imágenes, generando códigos QR vinculados a cada archivo para facilitar su referenciación, e integrándose con los sistemas de escritorio existentes mediante autenticación por parámetro cifrado en la URL. Para realizar este proyecto se tienen objetivos específicos, que abarcan desde el análisis de requerimientos funcionales y el diseño de la arquitectura tecnológica, hasta la implementación de módulos de conversión automática de archivos ODT, DOC, DOCX a PDF, implementación de mecanismos de seguridad y la documentación del proyecto.
+Para lograr el objetivo, se busca realizar una aplicación que permita cargar, convertir, almacenar y gestionar documentos e imágenes, generando códigos QR vinculados a cada archivo para facilitar su referenciación, e integrarse con los sistemas de escritorio existentes mediante autenticación por parámetro cifrado en la URL. Para realizar este proyecto se tienen objetivos específicos, que abarcan desde el análisis de requerimientos funcionales y el diseño de la arquitectura tecnológica, hasta la implementación de módulos de conversión automática de archivos ODT, DOC, DOCX a PDF, implementación de mecanismos de seguridad y la documentación del proyecto.
 
-El propósito de este trabajo es optimizar la eficacia en la gestión de documentos. Ya que actualmente no existe un sistema que haga todo lo mencionado anteriormente, por lo que es fundamental hacer un sistema que cumpla estos requerimientos. La adopción de un sistema con conversión automática a PDF e integración utilizando códigos QR ayuda enormemente a reducir la cantidad de tiempo dedicada a la búsqueda de información, y facilita la navegación entre documentos. Además, simplifica la transición de formatos de documento de papel al digital.
+El propósito de este trabajo es optimizar la eficacia en la gestión de documentos. Ya que actualmente no existe un sistema que haga todo lo mencionado anteriormente, por lo que es fundamental hacer un sistema que cumpla estos requerimientos. La adopción de un sistema con conversión automática a PDF e integración utilizando códigos QR ayuda a reducir la cantidad de tiempo dedicada a la búsqueda de información, y facilita la navegación entre documentos. Además, simplifica la transición de formatos de documento de papel al digital.
 
 El alcance de este proyecto se centra en el desarrollo, implementación y pruebas de una aplicación web para la gestión de documentos orientada únicamente al personal del Poder Judicial del Estado de Tamaulipas (PJETAM). Las limitaciones del proyecto se centran en el acceso al público externo, ya que estará estrictamente limitado a la visualización de aquellos archivos que sean marcados como públicos o puestos a disposición del público. En la parte del desarrollo una limitación es la creación de módulos de seguridad complejos adicionales a la URL cifrada.
 
@@ -73,7 +73,7 @@ El almacenamiento en la nube es una solución viable y ampliamente utilizada par
 El procedimiento que se lleva a cabo en el Departamento de Informática del PJETAM, refleja el caso que la literatura considera que debe de ser optimizado: el de un flujo fragmentado y con pasos manuales. El proyecto que aquí se presenta quiere responder a este vacío de la institución. 
 
 \subsubsection{Tabla comparativa: Justificación del Desarrollo }
-Con el propósito de justificar el desarrollo del sistema desde cero, se realizó un análisis comparativo entre el proceso manual actual llevado a cabo en el Departamento de Informática  del PJETAM, herramientas de gestión documental existentes en el mercado y la solución  propuesta en el presente proyecto. dicho análisis permite identificar las carencias de las alternativas disponibles frente a los requerimientos específicos de la institución, evidenciando la necesidad de contar con un sistema desarrollado a medida que integre el almacenamiento en la nube, la generación automatizada de códigos QR y el control de acceso para el personal interno, dentro de una sola plataforma. 
+Se realizó un análisis comparativo entre el proceso manual actual llevado a cabo en el Departamento de Informática  del PJETAM, herramientas de gestión documental existentes en el mercado y la solución  propuesta en el presente proyecto. dicho análisis permite identificar las carencias de las alternativas disponibles frente a los requerimientos específicos de la institución. 
 
 \begin{table}[h]
 \centering
@@ -158,6 +158,18 @@ La aplicación ofrecerá la conversión automatizada de  distintos tipos de arch
 \label{subsec:limitaciones}
 Las limitaciones de este proyecto son la falta de implementación de un sistema de roles individuales, ya que el sistema sólo registrará el área a la que pertenece cada movimiento realizado en la aplicación, ya que así será organizado el almacenamiento de archivos. Otra limitación es que el sistema no contará con un módulo de edición de texto en documentos. 
 En el ámbito de desarrollo, una limitación es la creación de módulos de seguridad complejos adicionales a la URL cifrada; de igual forma, el acceso al público externo estará limitado a la visualización de aquellos archivos que sean puestos a disposición de la ciudadanía.
+
+\subsection{Temas para el marco teórico}
+\label{sec:marco_teorico}
+\begin{itemize}
+    \item Organización y gestión de documentos electrónicos.
+    \item Arquitectura MVC.
+    \item Funcionamiento y características de los códigos QR.
+    \item Protocolo HTTPS y seguridad en las aplicaciones web.
+    \item Bases de datos relacionales.
+    \item Almacenamiento en la nube.
+    \item Usabilidad y experiencia de usuario (ux).
+\end{itemize}
 
 \subsection{Ejemplos de Tablas e Inclusión de Imágenes}
 \label{sec:ejemplos_elementos}
