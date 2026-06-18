@@ -23,9 +23,16 @@
 \contentsline {subsection}{\numberline {1.5}Alcances y Limitaciones}{9}{subsection.1.5}%
 \contentsline {subsubsection}{\numberline {1.5.1}Alcances}{9}{subsubsection.1.5.1}%
 \contentsline {subsubsection}{\numberline {1.5.2}Limitaciones}{9}{subsubsection.1.5.2}%
-\contentsline {subsection}{\numberline {1.6}Temas para el marco teórico}{9}{subsection.1.6}%
-\contentsline {section}{\numberline {2}Metodología}{11}{section.2}%
-\contentsline {section}{\numberline {3}Resultados}{12}{section.3}%
-\contentsline {section}{\numberline {4}Conclusiones}{13}{section.4}%
-\contentsline {section}{Bibliografía}{14}{section.4}%
-\contentsline {section}{Anexos}{15}{section.4}%
+\contentsline {section}{\numberline {2}Marco Teórico}{10}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Organización y gestión de documentos electrónicos}{10}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Arquitectura Modelo Vista Controlador}{10}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Funcionamiento y características de los códigos QR}{10}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Protocolo HTTPS y seguridad en las aplicaciones web}{10}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Bases de datos relacionales}{10}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Almacenamiento en la nube}{10}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Usabilidad y experiencia de usuario (UX)}{10}{subsection.2.7}%
+\contentsline {section}{\numberline {3}Metodología}{11}{section.3}%
+\contentsline {section}{\numberline {4}Resultados}{12}{section.4}%
+\contentsline {section}{\numberline {5}Conclusiones}{13}{section.5}%
+\contentsline {section}{Bibliografía}{14}{section.5}%
+\contentsline {section}{Anexos}{15}{section.5}%
