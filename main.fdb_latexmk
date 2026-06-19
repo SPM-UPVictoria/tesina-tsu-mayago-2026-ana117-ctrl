@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber main"] 1781299646 "main.bcf" "main.bbl" "main" 1781755502
-  "Referencias.bib" 1780096746 3760 8b8f091d048d484178bf778e729747d1 ""
-  "main.bcf" 1781755502 107305 68da4b5a0f2639f8e80938374b9b18c7 "pdflatex"
+["biber main"] 1781850602 "main.bcf" "main.bbl" "main" 1781850609
+  "Referencias.bib" 1781850578 5090 dd8429c307f9af6fae3bea3fb69d8352 ""
+  "main.bcf" 1781850609 107665 73bc22d657ca1bc9df9efdea5c33edc4 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1781755500 "/home/anaaz/estadias/tesina-tsu-mayago-2026-ana117-ctrl/main.tex" "main.pdf" "main" 1781755502
+["pdflatex"] 1781850607 "/home/anaaz/estadias/tesina-tsu-mayago-2026-ana117-ctrl/main.tex" "main.pdf" "main" 1781850609
   "/etc/texmf/web2c/texmf.cnf" 1779218431 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/anaaz/.texlive2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1779317618 1405656 74e209f3f5e4d4053889bfff596a9b66 ""
   "/home/anaaz/estadias/tesina-tsu-mayago-2026-ana117-ctrl/main.tex" 1781739432 20630 bef730a5c3c4a7985b66dfde384ccdb6 ""
@@ -267,13 +267,13 @@
   "documentosDigitalizados/CartaPresentacion.pdf" 1778560195 316599 2938c530ef0b836c46b27b5ff0f3bc3c ""
   "documentosDigitalizados/SeguroFacultativo.pdf" 1779410850 133497 cf624955ab5c8a17eecbc039ffbb611e ""
   "introduccion.tex" 1781739316 22468 62c7971c7b048581315c802940a6e04e ""
-  "main.aux" 1781755502 10425 96f3648432bef12609ff4d2b839623c1 "pdflatex"
-  "main.bbl" 1781299647 14283 f69f9feeba9d091dd36a5448ff991fd8 "biber main"
-  "main.out" 1781755502 4758 241ed30f6a06a12823e004ba8409fa94 "pdflatex"
-  "main.run.xml" 1781755502 2306 628e0087c61ee8036d936d14edcd02fc "pdflatex"
+  "main.aux" 1781850609 10881 faeff6bc105d01015739bdea0a9596b5 "pdflatex"
+  "main.bbl" 1781850603 18828 e66fa0b044203fdb33548bfad53b1849 "biber main"
+  "main.out" 1781850609 4758 241ed30f6a06a12823e004ba8409fa94 "pdflatex"
+  "main.run.xml" 1781850609 2306 628e0087c61ee8036d936d14edcd02fc "pdflatex"
   "main.tex" 1781739432 20630 bef730a5c3c4a7985b66dfde384ccdb6 ""
-  "main.toc" 1781755502 3182 d77c4e57344a22158c1057a7da9da3fc "pdflatex"
-  "marcoTeorico.tex" 1781755498 2095 489cde2ffeed68690830717e36560078 ""
+  "main.toc" 1781850609 3182 e76f49ac28ff1d5a0bb43e1686caf9ce "pdflatex"
+  "marcoTeorico.tex" 1781850599 5518 1de8af87c9302a414a64a321ffebafb9 ""
   "metodologia.tex" 1781300157 22 1622d591461a218cc9ee8ee2f4d88a45 ""
   "resultados.tex" 1781299670 21 dddd9f66d6a3d5569ce453920af0eb64 ""
   (generated)

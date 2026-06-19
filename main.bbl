@@ -328,6 +328,94 @@
       \verb https://ijsrem.com/download/a-study-on-cloud-storage-amazon-s3/
       \endverb
     \endentry
+    \entry{gestionDoc}{article}{}
+      \name{author}{1}{}{%
+        {{hash=435641ae4c65f998956b27954ff58f97}{%
+           family={Yamilé\bibnamedelimb Hidalgo\bibnamedelima Urrea},
+           familyi={Y\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim U\bibinitperiod},
+           given={Wcdaly\bibnamedelimb Cortés\bibnamedelima Algeciras},
+           giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{435641ae4c65f998956b27954ff58f97}
+      \strng{fullhash}{435641ae4c65f998956b27954ff58f97}
+      \strng{bibnamehash}{435641ae4c65f998956b27954ff58f97}
+      \strng{authorbibnamehash}{435641ae4c65f998956b27954ff58f97}
+      \strng{authornamehash}{435641ae4c65f998956b27954ff58f97}
+      \strng{authorfullhash}{435641ae4c65f998956b27954ff58f97}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Documentos de Trabajo ECBTI}
+      \field{number}{1}
+      \field{title}{Modelo de Gestión Documental Electrónica de Archivos basado en metodología BPM para el mejoramiento de los procesos administrativos}
+      \field{volume}{1}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://doi.org/10.22490/ECBTI.3864
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.22490/ECBTI.3864
+      \endverb
+    \endentry
+    \entry{gestionDocGloriaAguirre}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b6529908826fc50680922708bf104561}{%
+           family={Gloria\bibnamedelimb Aguirre\bibnamedelima Caspi},
+           familyi={G\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Diego\bibnamedelimb Jácome\bibnamedelima Segovia},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim S\bibinitperiod},
+           suffix={Jeferson\bibnamedelimb Gómez\bibnamedelima Herrera},
+           suffixi={J\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6529908826fc50680922708bf104561}
+      \strng{fullhash}{b6529908826fc50680922708bf104561}
+      \strng{bibnamehash}{b6529908826fc50680922708bf104561}
+      \strng{authorbibnamehash}{b6529908826fc50680922708bf104561}
+      \strng{authornamehash}{b6529908826fc50680922708bf104561}
+      \strng{authorfullhash}{b6529908826fc50680922708bf104561}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{UTC Prospectivas: Journal of Administrative and Economic Sciences}
+      \field{number}{1}
+      \field{title}{Administración de la documentación electrónica orientada a la optimización de recursos en las instituciones públicas y empresas privadas de la provincia de Cotopaxi}
+      \field{volume}{6}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://investigacion.utc.edu.ec/index.php/prospectivasutc/en/article/view/486/567
+      \endverb
+      \verb{url}
+      \verb https://investigacion.utc.edu.ec/index.php/prospectivasutc/en/article/view/486/567
+      \endverb
+    \endentry
+    \entry{modeloGestionMGDEA}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=ddbd17b35b5612755db8928e2a17f711}{%
+           family={{Universidad Nacional de Colombia}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{ddbd17b35b5612755db8928e2a17f711}
+      \strng{fullhash}{ddbd17b35b5612755db8928e2a17f711}
+      \strng{bibnamehash}{ddbd17b35b5612755db8928e2a17f711}
+      \strng{authorbibnamehash}{ddbd17b35b5612755db8928e2a17f711}
+      \strng{authornamehash}{ddbd17b35b5612755db8928e2a17f711}
+      \strng{authorfullhash}{ddbd17b35b5612755db8928e2a17f711}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Consultado en mayo de 2026}
+      \field{title}{Modelo de Gestión de Documentos Electrónicos de Archivo (MGDEA)}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://gestiondocumental.unal.edu.co/wp-content/uploads/2023/10/Modelo-de-Gestion-de-Documentos-Electronicos-de-Documentos-de-Archivo-MGDEA.pdf
+      \endverb
+      \verb{url}
+      \verb https://gestiondocumental.unal.edu.co/wp-content/uploads/2023/10/Modelo-de-Gestion-de-Documentos-Electronicos-de-Documentos-de-Archivo-MGDEA.pdf
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
