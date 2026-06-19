@@ -25,14 +25,14 @@
 \contentsline {subsubsection}{\numberline {1.5.2}Limitaciones}{9}{subsubsection.1.5.2}%
 \contentsline {section}{\numberline {2}Marco Teórico}{10}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Organización y gestión de documentos electrónicos}{10}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Arquitectura Modelo Vista Controlador}{11}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Funcionamiento y características de los códigos QR}{11}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Protocolo HTTPS y seguridad en las aplicaciones web}{11}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Bases de datos relacionales}{11}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Almacenamiento en la nube}{11}{subsection.2.6}%
-\contentsline {subsection}{\numberline {2.7}Usabilidad y experiencia de usuario (UX)}{11}{subsection.2.7}%
-\contentsline {section}{\numberline {3}Metodología}{12}{section.3}%
-\contentsline {section}{\numberline {4}Resultados}{13}{section.4}%
-\contentsline {section}{\numberline {5}Conclusiones}{14}{section.5}%
-\contentsline {section}{Bibliografía}{15}{section.5}%
-\contentsline {section}{Anexos}{17}{section.5}%
+\contentsline {subsection}{\numberline {2.2}Patrón de arquitectura Modelo-Vista-Controlador (MVC)}{11}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Funcionamiento y características de los códigos QR}{13}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Protocolo HTTPS y seguridad en las aplicaciones web}{13}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Bases de datos relacionales}{13}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Almacenamiento en la nube}{13}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Usabilidad y experiencia de usuario (UX)}{13}{subsection.2.7}%
+\contentsline {section}{\numberline {3}Metodología}{14}{section.3}%
+\contentsline {section}{\numberline {4}Resultados}{15}{section.4}%
+\contentsline {section}{\numberline {5}Conclusiones}{16}{section.5}%
+\contentsline {section}{Bibliografía}{17}{section.5}%
+\contentsline {section}{Anexos}{19}{section.5}%

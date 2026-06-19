@@ -416,6 +416,100 @@
       \verb https://gestiondocumental.unal.edu.co/wp-content/uploads/2023/10/Modelo-de-Gestion-de-Documentos-Electronicos-de-Documentos-de-Archivo-MGDEA.pdf
       \endverb
     \endentry
+    \entry{MVCFranklin}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=51d7103c81b57ee751a8fe63023359ab}{%
+           family={Franklin\bibnamedelima Enríquez},
+           familyi={F\bibinitperiod\bibinitdelim E\bibinitperiod},
+           given={Santiago\bibnamedelima Fierro},
+           giveni={S\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{dd90941bfa27082448274762e1f16b1a}
+      \strng{fullhash}{dd90941bfa27082448274762e1f16b1a}
+      \strng{bibnamehash}{dd90941bfa27082448274762e1f16b1a}
+      \strng{authorbibnamehash}{dd90941bfa27082448274762e1f16b1a}
+      \strng{authornamehash}{dd90941bfa27082448274762e1f16b1a}
+      \strng{authorfullhash}{dd90941bfa27082448274762e1f16b1a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{EASI: Engineering and Applied Sciences in Industry}
+      \field{number}{1}
+      \field{title}{Impacto del patrón modelo vista controlador (MVC) en la seguridad, interoperabilidad y usabilidad de un sistema informático durante su ciclo de vida.}
+      \field{volume}{2}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.53591/easi.v2i1.2043
+      \endverb
+      \verb{urlraw}
+      \verb https://revistas.ug.edu.ec/index.php/easi/en/article/view/821/2034
+      \endverb
+      \verb{url}
+      \verb https://revistas.ug.edu.ec/index.php/easi/en/article/view/821/2034
+      \endverb
+    \endentry
+    \entry{MVCpreprints}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=68665ecfb5ccb8c5ee836ad68610700a}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Fang},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{dbfe82a05a018fe2c57697724c59d196}
+      \strng{fullhash}{dbfe82a05a018fe2c57697724c59d196}
+      \strng{bibnamehash}{dbfe82a05a018fe2c57697724c59d196}
+      \strng{authorbibnamehash}{dbfe82a05a018fe2c57697724c59d196}
+      \strng{authornamehash}{dbfe82a05a018fe2c57697724c59d196}
+      \strng{authorfullhash}{dbfe82a05a018fe2c57697724c59d196}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Preprints.org}
+      \field{title}{Exploring The Model-View-Controller (MVC) Architecture: A Broad Analysis of Market and Technological Applications}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.20944/preprints202404.1860.v1
+      \endverb
+      \verb{urlraw}
+      \verb https://www.preprints.org/manuscript/202404.1860/v1
+      \endverb
+      \verb{url}
+      \verb https://www.preprints.org/manuscript/202404.1860/v1
+      \endverb
+    \endentry
+    \entry{MVCfreecodecamp}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=9009ce234fbf9769e70cb48e5816a582}{%
+           family={{freeCodeCamp}},
+           familyi={f\bibinitperiod}}}%
+      }
+      \strng{namehash}{9009ce234fbf9769e70cb48e5816a582}
+      \strng{fullhash}{9009ce234fbf9769e70cb48e5816a582}
+      \strng{bibnamehash}{9009ce234fbf9769e70cb48e5816a582}
+      \strng{authorbibnamehash}{9009ce234fbf9769e70cb48e5816a582}
+      \strng{authornamehash}{9009ce234fbf9769e70cb48e5816a582}
+      \strng{authorfullhash}{9009ce234fbf9769e70cb48e5816a582}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Consultado en mayo de 2026}
+      \field{title}{El patrón modelo-vista-controlador: Arquitectura y frameworks explicados}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.freecodecamp.org/espanol/news/el-modelo-de-arquitectura-view-controller-pattern/
+      \endverb
+      \verb{url}
+      \verb https://www.freecodecamp.org/espanol/news/el-modelo-de-arquitectura-view-controller-pattern/
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
