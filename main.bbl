@@ -328,6 +328,32 @@
       \verb https://ijsrem.com/download/a-study-on-cloud-storage-amazon-s3/
       \endverb
     \endentry
+    \entry{modeloGestionMGDEA}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=ddbd17b35b5612755db8928e2a17f711}{%
+           family={{Universidad Nacional de Colombia}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{ddbd17b35b5612755db8928e2a17f711}
+      \strng{fullhash}{ddbd17b35b5612755db8928e2a17f711}
+      \strng{bibnamehash}{ddbd17b35b5612755db8928e2a17f711}
+      \strng{authorbibnamehash}{ddbd17b35b5612755db8928e2a17f711}
+      \strng{authornamehash}{ddbd17b35b5612755db8928e2a17f711}
+      \strng{authorfullhash}{ddbd17b35b5612755db8928e2a17f711}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Consultado en mayo de 2026}
+      \field{title}{Modelo de Gestión de Documentos Electrónicos de Archivo (MGDEA)}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://gestiondocumental.unal.edu.co/wp-content/uploads/2023/10/Modelo-de-Gestion-de-Documentos-Electronicos-de-Documentos-de-Archivo-MGDEA.pdf
+      \endverb
+      \verb{url}
+      \verb https://gestiondocumental.unal.edu.co/wp-content/uploads/2023/10/Modelo-de-Gestion-de-Documentos-Electronicos-de-Documentos-de-Archivo-MGDEA.pdf
+      \endverb
+    \endentry
     \entry{gestionDoc}{article}{}
       \name{author}{1}{}{%
         {{hash=435641ae4c65f998956b27954ff58f97}{%
@@ -388,32 +414,6 @@
       \endverb
       \verb{url}
       \verb https://investigacion.utc.edu.ec/index.php/prospectivasutc/en/article/view/486/567
-      \endverb
-    \endentry
-    \entry{modeloGestionMGDEA}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=ddbd17b35b5612755db8928e2a17f711}{%
-           family={{Universidad Nacional de Colombia}},
-           familyi={U\bibinitperiod}}}%
-      }
-      \strng{namehash}{ddbd17b35b5612755db8928e2a17f711}
-      \strng{fullhash}{ddbd17b35b5612755db8928e2a17f711}
-      \strng{bibnamehash}{ddbd17b35b5612755db8928e2a17f711}
-      \strng{authorbibnamehash}{ddbd17b35b5612755db8928e2a17f711}
-      \strng{authornamehash}{ddbd17b35b5612755db8928e2a17f711}
-      \strng{authorfullhash}{ddbd17b35b5612755db8928e2a17f711}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Consultado en mayo de 2026}
-      \field{title}{Modelo de Gestión de Documentos Electrónicos de Archivo (MGDEA)}
-      \field{year}{2023}
-      \verb{urlraw}
-      \verb https://gestiondocumental.unal.edu.co/wp-content/uploads/2023/10/Modelo-de-Gestion-de-Documentos-Electronicos-de-Documentos-de-Archivo-MGDEA.pdf
-      \endverb
-      \verb{url}
-      \verb https://gestiondocumental.unal.edu.co/wp-content/uploads/2023/10/Modelo-de-Gestion-de-Documentos-Electronicos-de-Documentos-de-Archivo-MGDEA.pdf
       \endverb
     \endentry
     \entry{MVCFranklin}{article}{}

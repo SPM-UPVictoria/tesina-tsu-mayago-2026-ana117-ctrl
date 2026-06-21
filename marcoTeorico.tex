@@ -1,6 +1,5 @@
 \section{Marco Teórico}
 \label{ch:marcoTeorico}
-
 % \subsection{Temas para el marco teórico}
 % \label{sec:marco_teorico}
 % \begin{itemize}
@@ -15,40 +14,46 @@
 
 \subsection{Organización y gestión de documentos electrónicos}
 \label{sec:marco_teorico_tema1}
-%Todas las empresas u organizaciones generan una cantidad importante de documentos, que anteriormente no eran tratados o conservados correctamente, con la llegada de nuevas tecnologías surgieron los documentos electronicos como una alternativa que facilitan el almacenamiento, disminuyen el uso de papel y aceleran la colaboración empresarial y gubernamental. Para asegurar su durabilidad y legalidad, se gestionan mediante sistemas informáticos y distintos tipos de seguridad.
-%Conforme aparecieron los documentos digitales, surgieron las normas ISO para la gestión de documentos surgieron para estandarizar buenas prácticas globales. Nacieron ante el crecimiento exponencial de archivos digitales, buscando garantizar su autenticidad, integridad, fiabilidad y disponibilidad a largo plazo frente a los riesgos de obsolescencia tecnológica, alteración y pérdida de información empresarial.
-La gestión documental electrónica se define como el tratamiento integral de la información generada por una organización a lo largo de su ciclo de vida, abarcando desde su creación hasta su disposición final, con el objetivo de garantizar la integridad, autenticidad, fiabilidad, disponibilidad y preservación de los documentos a largo plazo. Con la implementación de tecnologias de la informacion en cada uno de los procesos de las organizaciones es fundamental garantizar el acceso a la información pública a través de medios electrónicos y lograr la preservación digital a largo plazo, que es uno de los beneficios de la gestión documental electrónica.
 
-Un modelo de gestión de documental electrónica de archivos basado en la metodología BPM, permitió articular las politicas del gobierno y procesos de la entidad, garantizando un mejoramiento en los procesos administrativos, ahorro de tiempo y calidad en el servicio al ciudadano. Y destaca que la gestión documental electrónica garantiza el ahorro de tiempo en las consultas y ahorro de espacio físico para el almacenamiento de los documentos \cite{gestionDoc}.
+\subsubsection{Conceptos fundamentales y ciclo de vida}
+La gestión documental electrónica se define como el tratamiento integral de la información generada por una organización a lo largo de su ciclo de vida, abarcando desde su creación hasta su disposición final. Su objetivo principal es garantizar la integridad, autenticidad, fiabilidad, disponibilidad y preservación de los documentos a largo plazo. 
 
-Diversos estudios empíricos recientes han demostrado la relación directa entre una gestión documental adecuada y el desempeño institucional. \cite{gestionDocGloriaAguirre} Analizaron la gestión documental como un mecanismo de eficiencia organizacional en instituciones públicas de la provincia de Cotopaxi, empleando una encuesta aplicada a una muestra de 210 funcionarios para evaluar dimensiones como la generación, preservación, sistematización y acceso a los documentos. Los resultados revelaron que las herramientas digitales para la gestión documental mejoran la accesibilidad y reducen la duplicación de la información, y que una gestión documental incorrecta provoca demoras, duplicación de tareas y dificultad en el acceso a la información, afectando directamente la eficiencia de la institución. 
-Los hallazgos del estudio destacan la necesidad de mejorar los sistemas de gestión documental para optimizar los procesos internos y promover una mayor transparencia institucional, favoreciendo de forma directa tanto a los funcionarios como a los ciudadanos. 
+La organización es una etapa esencial para garantizar que la información sea fácilmente accesible, e implica clasificar y archivar los documentos de forma lógica y normativa, apoyándose en sistemas digitales. La moderna teoría archivística tiende a adoptar la denominación \textit{records continuum} para enfatizar la continuidad de la gestión de documentos a lo largo del ciclo de vida, sin atribuirlos a fases rígidas, apostando por convertir al documento mismo en el objeto prioritario de tratamiento desde el momento en que se genera \cite{modeloGestionMGDEA}.
 
-La organización es una etapa esencial para garantizar que la información sea fácilmente accesible, e implica clasificar y archivar los documentos de forma lógica y normativa, apoyándose frecuentemente en sistemas de gestión documental para optimizar la eficiencia y la seguridad en esta etapa. La fase de consulta permite que los colaboradores con los permisos necesarios accedan a los documentos, garantizando su disponibilidad e integridad.
-La moderna teoría archivística tiende a adoptar la denominación records continuum para enfatizar la continuidad de la gestión de documentos y expedientes a lo largo del ciclo de vida, sin atribuirlos a fases rígidas, apostando por convertir al documento mismo en el objeto prioritario de tratamiento desde el momento en que se genera, con un diseño claro de su composición, uso y destino final \cite{modeloGestionMGDEA}.
+\subsubsection{Impacto en la eficiencia institucional}
+Con la implementación de tecnologías de la información en los procesos organizacionales, es fundamental garantizar el acceso a la información y lograr la preservación digital. Un modelo de gestión documental electrónica basado en metodologías como BPM (Business Process Management) permite articular las políticas y procesos de la entidad, garantizando un mejoramiento administrativo, ahorro de espacio físico y calidad en el servicio \cite{gestionDoc}.
+
+Diversos estudios empíricos recientes han demostrado la relación directa entre una gestión documental adecuada y el desempeño institucional. Al analizar la gestión documental como un mecanismo de eficiencia organizacional \cite{gestionDocGloriaAguirre}, los resultados revelan que las herramientas digitales mejoran la accesibilidad y reducen la duplicación de la información. Por el contrario, una gestión documental incorrecta provoca demoras y dificultad en el acceso a la información, afectando directamente la eficiencia de la institución. Estos hallazgos destacan la necesidad de mejorar los sistemas para optimizar los procesos internos y promover una mayor transparencia.
 
 \subsection{Patrón de arquitectura Modelo-Vista-Controlador (MVC)}
 \label{sec:marco_teorico_tema2}
-El propósito de los patrones de diseño es elevar la calidad del desarrollo de software, minimizando la redundancia y haciendo que los sistemas sean más fáciles de mantener. Debido a la amplia cantidad de patrones existentes, estos se clasifican en categorías de acuerdo con sus características. Entre ellas destacan los patrones arquitectónicos, cuya función es establecer la estructura fundamental de un sistema, actuando como la plantilla base para el desarrollo de cualquier aplicación \cite{MVCFranklin}.
 
-La arquitectura MVC es un patrón de diseño fundamental que ha influido profundamente en el panorama del desarrollo de software desde sus inicios. A pesar de que originalmente fue creado para interfaces gráficas de escritorio, la arquitectura MVC ha evolucionado hasta convertirse en un marco de referencia para el desarrollo de aplicaciones web y móviles, ya que permite la separación clara de las diferentes responsabilidades en el desarrollo de una aplicación, lo que facilita la gestión del código, la escalabilidad y la reutilización de componentes \cite{MVCpreprints}. 
+\subsubsection{Definición y principios del patrón}
+El propósito de los patrones de diseño es elevar la calidad del desarrollo de software, minimizando la redundancia y haciendo que los sistemas sean más fáciles de mantener. Entre ellos destacan los patrones arquitectónicos, cuya función es establecer la estructura fundamental de un sistema \cite{MVCFranklin}. 
 
-MVC propone dividir la aplicación en tres módulos llamados modelo, vista y controlador. Cada uno de estos, se encuentra claramente diferenciado y tiene una funcionalidad definida. El modelo almacena representaciones abstractas de la información que el sistema va a procesar, la vista se encarga de mostrar la información a los usuarios y el controlador se encarga de dirigir el flujo de la aplicación \cite{MVCFranklin}.
-En el patrón MVC, el flujo del sistema inicia cuando el usuario interactúa con la vista para ingresar datos o realizar solicitudes. Estas peticiones son recibidas y procesadas por el controlador, el cual se comunica con el modelo para manipular la información requerida y ejecutar la operación de manera exitosa. Una vez concluido este procedimiento, el controlador notifica a la vista para que esta se actualice y presente los resultados finales al usuario.
+La arquitectura MVC es un patrón de diseño que ha evolucionado hasta convertirse en un marco de referencia para el desarrollo de aplicaciones web y móviles. El concepto central que sustenta esta arquitectura es la ``separación de preocupaciones'' (Separation of Concerns). Administrar el \textit{frontend} y el \textit{backend} en componentes separados permite la escalabilidad del sistema, facilita la gestión del código, la reutilización de componentes y que varios desarrolladores trabajen simultáneamente en la aplicación \cite{MVCpreprints}.
 
-En la figura \ref{fig:my_label}, se representa gráficamente el patrón de arquitectura MVC y el flujo de interacción entre sus componentes.
+\subsubsection{Componentes y flujo de interacción}
+MVC propone dividir la aplicación en tres módulos claramente diferenciados:
+\begin{itemize}
+    \item \textbf{Modelo:} Almacena representaciones abstractas de la información que el sistema va a procesar.
+    \item \textbf{Vista:} Se encarga de mostrar la información a los usuarios mediante la interfaz.
+    \item \textbf{Controlador:} Es el responsable de dirigir el flujo de la aplicación \cite{MVCFranklin}.
+\end{itemize}
+
+El flujo del sistema inicia cuando el usuario interactúa con la vista para ingresar datos o realizar solicitudes. Estas peticiones son recibidas y procesadas por el controlador, el cual se comunica con el modelo para manipular la información requerida y ejecutar la operación. Una vez concluido este procedimiento, el controlador notifica a la vista para que esta se actualice y presente los resultados finales al usuario.
+
+En la figura \ref{fig:mvc_arquitectura}, se representa gráficamente el patrón de arquitectura MVC y el flujo de interacción entre sus componentes.
+
 \begin{figure}[!tbh]
     \centering
-    \includegraphics[width=0.7\linewidth]{img/arquitecturaMVC.png}
+    \includegraphics[width=0.6\linewidth]{img/arquitecturaMVC.png}
     \caption{Representación de la arquitectura MVC \cite{MVCfreecodecamp}}
-    \label{fig:my_label}
+    \label{fig:mvc_arquitectura}
 \end{figure}
 
-El concepto central que sustenta esta arquitectura es la separación de preocupaciones. Las aplicaciones web modernas son complejas, y administrar el frontend y el backend en componentes separados más pequeños permite que la aplicación sea escalable y que varios desarrolladores trabajen simultáneamente en ella. 
-
-Esto resulta adecuado para este proyecto, donde la lógica de negocio relacionada con la gestión documental, la generación de códigos QR y la presentación de interfaces deben mantenerse independientes para facilitar su mantenimiento y evolución
-
-El análisis de la adopción de MVC en sectores como el empresarial, educativo, financiero y de comercio electrónico subraya su amplia aceptación, particularmente en tecnologías como .NET y JavaScript, donde se aprovecha para la gestión superior de datos y la mejora de la experiencia del usuario \cite{MVCfreecodecamp}.
+\subsubsection{Justificación de uso en el proyecto}
+Este patrón arquitectónico resulta adecuado para el presente proyecto, ya que la lógica de negocio relacionada con la gestión documental, la generación de códigos QR y la presentación de interfaces deben mantenerse independientes para facilitar su mantenimiento y evolución. El análisis de la adopción de MVC en sectores como el empresarial y financiero subraya su amplia aceptación, aprovechándose para lograr una gestión superior de datos y una mejora en la experiencia del usuario \cite{MVCfreecodecamp}.
 
 \subsection{Funcionamiento y características de los códigos QR}
 \label{sec:marco_teorico_tema3}

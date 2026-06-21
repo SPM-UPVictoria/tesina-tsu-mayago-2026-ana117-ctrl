@@ -1589,6 +1589,7 @@ INPUT marcoTeorico.tex
 INPUT ./marcoTeorico.tex
 INPUT ./marcoTeorico.tex
 INPUT marcoTeorico.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecti1200.tfm
 INPUT ./UTYP.png
 INPUT ./UTYP.png
 INPUT UTYP.png
@@ -1679,7 +1680,6 @@ INPUT ./LogoUPV_2023.png
 INPUT ./LogoUPV_2023.png
 INPUT LogoUPV_2023.png
 INPUT ./LogoUPV_2023.png
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecti1200.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
