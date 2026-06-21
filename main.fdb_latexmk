@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber main"] 1781902864 "main.bcf" "main.bbl" "main" 1781902954
-  "Referencias.bib" 1781901742 6259 c7cd7306f570a8175c983863808ce779 ""
-  "main.bcf" 1781902954 108169 ba766b318edb8aef9e6c5a6f070ff9c1 "pdflatex"
+["biber main"] 1782014496 "main.bcf" "main.bbl" "main" 1782014842
+  "Referencias.bib" 1782012779 7543 52f30ad4e81ca3b15ec3d2964bf325ce ""
+  "main.bcf" 1782014842 108829 07fb90bd21944a0a061fb20a61df4362 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1781902952 "/home/anaaz/estadias/tesina-tsu-mayago-2026-ana117-ctrl/main.tex" "main.pdf" "main" 1781902954
+["pdflatex"] 1782014839 "/home/anaaz/estadias/tesina-tsu-mayago-2026-ana117-ctrl/main.tex" "main.pdf" "main" 1782014842
   "/etc/texmf/web2c/texmf.cnf" 1779218431 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/anaaz/.texlive2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1779317618 1405656 74e209f3f5e4d4053889bfff596a9b66 ""
   "/home/anaaz/estadias/tesina-tsu-mayago-2026-ana117-ctrl/main.tex" 1781739432 20630 bef730a5c3c4a7985b66dfde384ccdb6 ""
@@ -268,13 +268,13 @@
   "documentosDigitalizados/SeguroFacultativo.pdf" 1779410850 133497 cf624955ab5c8a17eecbc039ffbb611e ""
   "img/arquitecturaMVC.png" 1781902825 249532 e52207ff5cc22fa3cef8867bfef9b3c3 ""
   "introduccion.tex" 1781850933 22468 62c7971c7b048581315c802940a6e04e ""
-  "main.aux" 1781902954 11875 c47ca6f00ee93d557270b673b483834c "pdflatex"
-  "main.bbl" 1781902865 22901 95d8f772c51181efb386c06c0048ea50 "biber main"
-  "main.out" 1781902954 4850 c2867e2a428930bf6a7b14d7e92e85ae "pdflatex"
-  "main.run.xml" 1781902954 2306 628e0087c61ee8036d936d14edcd02fc "pdflatex"
+  "main.aux" 1782014842 13260 20e48a0fe2868728505cca4c703d63ac "pdflatex"
+  "main.bbl" 1782014497 28153 5222f2ff5e71da62d13fd4d9a275cbda "biber main"
+  "main.out" 1782014842 5490 e35de51b774306f730b8b191814d954f "pdflatex"
+  "main.run.xml" 1782014842 2306 628e0087c61ee8036d936d14edcd02fc "pdflatex"
   "main.tex" 1781739432 20630 bef730a5c3c4a7985b66dfde384ccdb6 ""
-  "main.toc" 1781902954 3199 6f9e9b5e5b3eac1bfb0c259d5456adf5 "pdflatex"
-  "marcoTeorico.tex" 1781902949 8398 ab618535bb3141464258b34b2e44da15 ""
+  "main.toc" 1782014842 3449 e7bebb7a419defe913c6fbd264273ba1 "pdflatex"
+  "marcoTeorico.tex" 1782014839 12396 30d5fa6353d60c4135e3b722aa4b451e ""
   "metodologia.tex" 1781300157 22 1622d591461a218cc9ee8ee2f4d88a45 ""
   "resultados.tex" 1781299670 21 dddd9f66d6a3d5569ce453920af0eb64 ""
   (generated)

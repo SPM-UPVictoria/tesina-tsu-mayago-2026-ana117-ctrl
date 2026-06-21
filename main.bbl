@@ -510,6 +510,126 @@
       \verb https://www.freecodecamp.org/espanol/news/el-modelo-de-arquitectura-view-controller-pattern/
       \endverb
     \endentry
+    \entry{QRISO18004}{article}{}
+      \name{author}{1}{}{%
+        {{hash=0828a8408614177181026ea908d5594a}{%
+           family={{ISO/IEC}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{0828a8408614177181026ea908d5594a}
+      \strng{fullhash}{0828a8408614177181026ea908d5594a}
+      \strng{bibnamehash}{0828a8408614177181026ea908d5594a}
+      \strng{authorbibnamehash}{0828a8408614177181026ea908d5594a}
+      \strng{authornamehash}{0828a8408614177181026ea908d5594a}
+      \strng{authorfullhash}{0828a8408614177181026ea908d5594a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Organización Internacional de Normalización (Estándar)}
+      \field{number}{18004}
+      \field{title}{Information technology – Automatic identification and data capture techniques – QR code bar code symbology specification}
+      \field{year}{2024}
+    \endentry
+    \entry{QRJeannot2024}{article}{}
+      \name{author}{1}{}{%
+        {{hash=7598cf73150ea7a06d09a473e025a33e}{%
+           family={Jeannot},
+           familyi={J\bibinitperiod},
+           given={Franck},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{7598cf73150ea7a06d09a473e025a33e}
+      \strng{fullhash}{7598cf73150ea7a06d09a473e025a33e}
+      \strng{bibnamehash}{7598cf73150ea7a06d09a473e025a33e}
+      \strng{authorbibnamehash}{7598cf73150ea7a06d09a473e025a33e}
+      \strng{authornamehash}{7598cf73150ea7a06d09a473e025a33e}
+      \strng{authorfullhash}{7598cf73150ea7a06d09a473e025a33e}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Technical Document / Preprint}
+      \field{title}{QR Code Model 2 Structure and Algorithms}
+      \field{year}{2024}
+    \endentry
+    \entry{QRWahsheh2021}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=3c3869e5980a952063e364181bccc8a7}{%
+           family={Wahsheh},
+           familyi={W\bibinitperiod},
+           given={Heba},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{edaeab0ed3f34d75ea57a269f2d04a88}
+      \strng{fullhash}{edaeab0ed3f34d75ea57a269f2d04a88}
+      \strng{bibnamehash}{edaeab0ed3f34d75ea57a269f2d04a88}
+      \strng{authorbibnamehash}{edaeab0ed3f34d75ea57a269f2d04a88}
+      \strng{authornamehash}{edaeab0ed3f34d75ea57a269f2d04a88}
+      \strng{authorfullhash}{edaeab0ed3f34d75ea57a269f2d04a88}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Computers Communications \& Control}
+      \field{number}{1}
+      \field{title}{Secure Real-Time Computational Intelligence System Against Malicious QR Code Links}
+      \field{volume}{16}
+      \field{year}{2021}
+    \endentry
+    \entry{QRCamos2020}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=60f599f1121cb3287029bfc8ef0fecde}{%
+           family={Camós},
+           familyi={C\bibinitperiod},
+           given={Arturo},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{dc3d53d9a8755334e74ccf6778645c95}
+      \strng{fullhash}{dc3d53d9a8755334e74ccf6778645c95}
+      \strng{bibnamehash}{dc3d53d9a8755334e74ccf6778645c95}
+      \strng{authorbibnamehash}{dc3d53d9a8755334e74ccf6778645c95}
+      \strng{authornamehash}{dc3d53d9a8755334e74ccf6778645c95}
+      \strng{authorfullhash}{dc3d53d9a8755334e74ccf6778645c95}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Banco Interamericano de Desarrollo (BID)}
+      \field{title}{Lineamientos para la implementación de sistemas de recaudo interoperables para transporte público}
+      \field{year}{2020}
+    \endentry
+    \entry{QRNoever2025}{article}{}
+      \name{author}{2}{}{%
+        {{hash=41add38406f00b5351e8e48f4bccb5f1}{%
+           family={Noever},
+           familyi={N\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=51bd60a0421058cc215e2f8518c2d7ff}{%
+           family={McKee},
+           familyi={M\bibinitperiod},
+           given={Samantha},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{7f7948c6d8e383def48c636030312163}
+      \strng{fullhash}{7f7948c6d8e383def48c636030312163}
+      \strng{bibnamehash}{7f7948c6d8e383def48c636030312163}
+      \strng{authorbibnamehash}{7f7948c6d8e383def48c636030312163}
+      \strng{authornamehash}{7f7948c6d8e383def48c636030312163}
+      \strng{authorfullhash}{7f7948c6d8e383def48c636030312163}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint}
+      \field{title}{Dueling QR Codes: The Hyding of Dr. Jeckyl}
+      \field{year}{2025}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

@@ -52,7 +52,31 @@ El análisis de la adopción de MVC en sectores como el empresarial, educativo, 
 
 \subsection{Funcionamiento y características de los códigos QR}
 \label{sec:marco_teorico_tema3}
+Los códigos QR (Quick Response, Código de Respuesta Rápida) son códigos de barras bidimensionales estructurados de forma matricial que permiten almacenar y recuperar información a alta velocidad. En el contexto de un sistema de gestión y almacenamiento de documentos en la nube, esta tecnología actúa como un puente físico-digital que vincula de manera unívoca un documento físico o una etiqueta de archivo con su correspondiente registro digital. Toda la especificación técnica, características de simbología y algoritmos de decodificación se encuentran estandarizados internacionalmente bajo la norma ISO/IEC 18004 \cite{QRISO18004,QRJeannot2024}.
 
+\subsubsection{Arquitectura física y estructura matricial}
+\label{subsec:arquitectura_qr}
+A diferencia de los códigos de barras unidimensionales tradicionales, un código QR distribuye la información tanto de forma horizontal como vertical dentro de una matriz cuadrada compuesta por módulos (puntos negros y blancos). La norma ISO/IEC 18004 define un total de 40 versiones de códigos QR estándar, que van desde la Versión 1 (una matriz de 21x21 módulos) hasta la Versión 40 (177x177 módulos), incrementando la capacidad de almacenamiento de datos de forma proporcional al tamaño de la matriz.
+
+Para que las cámaras de los dispositivos móviles o escáneres comerciales puedan interpretar la información en tiempo real, la arquitectura del código QR cuenta con componentes estructurales específicos y obligatorios \cite{QRWahsheh2021}:
+\begin{itemize}
+    \item Patrones de posición (Finder Patterns): Son los tres cuadrados concéntricos ubicados en las esquinas superiores e inferior izquierda. Su función es permitirle al software lector detectar la presencia del código, calcular su orientación exacta y determinar su tamaño, sin importar si el código se escanea de forma invertida o inclinada.
+    \item Patrones de alineación y sincronización: Actúan como guías de referencia que ayudan al lector a corregir las distorsiones ópticas que ocurren cuando el código se captura desde ángulos desfavorables o sobre superficies con texturas.
+    \item Zona silenciosa (Quiet Zone): Consiste en un margen blanco limpio que debe rodear obligatoriamente a toda la matriz para prevenir que elementos gráficos del entorno (como el texto de la hoja del documento) interfieran con el proceso de lectura \cite{QRJeannot2024}.
+\end{itemize}
+
+\subsubsection{Mecanismo de decodificación y corrección de errores}
+\label{subsec:mecanismo_qr}
+Una de las propiedades más críticas de los códigos QR para la referenciación e indexación en entornos corporativos es su alta tolerancia al daño físico. Esto se logra mediante la integración nativa del algoritmo de corrección de errores Reed-Solomon, el cual introduce redundancia matemática en los datos binarios durante la generación del código \cite{QRJeannot2024}. La norma ISO establece cuatro niveles de protección seleccionables de acuerdo con el entorno de uso:
+
+\begin{itemize}
+    \item Nivel L (Low): Permite recuperar los datos si el código sufre hasta un 7\% de daño.
+    \item Nivel M (Medium): Permite la recuperación con hasta un 15\% de daño.
+    \item Nivel Q (Quarter): Soporta hasta un 25\% de daño o pérdida de superficie.
+    \item Nivel H (High): Ofrece el máximo nivel, tolerando hasta un 30\% de destrucción.
+\end{itemize}
+
+Esta característica garantiza que, aunque la impresión del código QR sufra daños o manchas debido a la manipulación diaria del documento, el código seguirá siendo legible. Finalmente, el cumplimiento riguroso de la norma ISO/IEC 18004 asegura un principio de decodificación determinista y universal; esto significa que la lectura arrojará siempre una correspondencia exacta de  ``uno a uno'' hacia la URL del documento en la nube, garantizando la interoperabilidad total del sistema sin importar el tipo de lector o sistema operativo que utilicen los empleados \cite{QRCamos2020,QRNoever2025}.
 \subsection{Protocolo HTTPS y seguridad en las aplicaciones web}
 \label{sec:marco_teorico_tema4}
 
