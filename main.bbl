@@ -630,6 +630,73 @@
       \field{title}{Dueling QR Codes: The Hyding of Dr. Jeckyl}
       \field{year}{2025}
     \endentry
+    \entry{diLuca2024hacking}{article}{}
+      \name{author}{2}{}{%
+        {{hash=fbd21a148ed904ec65c040f87b4aee4c}{%
+           family={Di\bibnamedelima Luca},
+           familyi={D\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b4a4cbd96749311f7bfb1c3b6b6252f0}{%
+           family={Bonilla},
+           familyi={B\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{ababf6bef7609037201404d35adfc5d5}
+      \strng{fullhash}{ababf6bef7609037201404d35adfc5d5}
+      \strng{bibnamehash}{ababf6bef7609037201404d35adfc5d5}
+      \strng{authorbibnamehash}{ababf6bef7609037201404d35adfc5d5}
+      \strng{authornamehash}{ababf6bef7609037201404d35adfc5d5}
+      \strng{authorfullhash}{ababf6bef7609037201404d35adfc5d5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biblioteca Ciencia Latina (Publicaciones Académicas)}
+      \field{number}{1}
+      \field{title}{Hacking Ético: Teoría y Prácticas para la seguridad en aplicaciones web e infraestructuras de red}
+      \field{volume}{1}
+      \field{year}{2024}
+      \field{pages}{1\bibrangedash 152}
+      \range{pages}{152}
+      \verb{urlraw}
+      \verb https://biblioteca.ciencialatina.org/wp-content/uploads/2024/12/Libro-Hacking-Etico-Teoria-Practicas.pdf
+      \endverb
+      \verb{url}
+      \verb https://biblioteca.ciencialatina.org/wp-content/uploads/2024/12/Libro-Hacking-Etico-Teoria-Practicas.pdf
+      \endverb
+    \endentry
+    \entry{dof2021seguridad}{article}{}
+      \name{author}{1}{}{%
+        {{hash=7dee8e53110bdd49b4b1ff9cc630e363}{%
+           family={{Diario Oficial de la Federación (DOF)}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{7dee8e53110bdd49b4b1ff9cc630e363}
+      \strng{fullhash}{7dee8e53110bdd49b4b1ff9cc630e363}
+      \strng{bibnamehash}{7dee8e53110bdd49b4b1ff9cc630e363}
+      \strng{authorbibnamehash}{7dee8e53110bdd49b4b1ff9cc630e363}
+      \strng{authornamehash}{7dee8e53110bdd49b4b1ff9cc630e363}
+      \strng{authorfullhash}{7dee8e53110bdd49b4b1ff9cc630e363}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Secretaría de Gobernación - Gobierno de México}
+      \field{number}{1}
+      \field{title}{Acuerdo por el que se emiten las políticas para impulsar el uso de las tecnologías de la información y la seguridad de la información en la Administración Pública}
+      \field{volume}{1}
+      \field{year}{2021}
+      \field{pages}{1\bibrangedash 35}
+      \range{pages}{35}
+      \verb{urlraw}
+      \verb https://normatecainterna.inba.gob.mx/pdf/2024/11TICSGobiernodigital2021.pdf
+      \endverb
+      \verb{url}
+      \verb https://normatecainterna.inba.gob.mx/pdf/2024/11TICSGobiernodigital2021.pdf
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

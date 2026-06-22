@@ -82,8 +82,21 @@ Una de las propiedades más críticas de los códigos QR para la referenciación
 \end{itemize}
 
 Esta característica garantiza que, aunque la impresión del código QR sufra daños o manchas debido a la manipulación diaria del documento, el código seguirá siendo legible. Finalmente, el cumplimiento riguroso de la norma ISO/IEC 18004 asegura un principio de decodificación determinista y universal; esto significa que la lectura arrojará siempre una correspondencia exacta de  ``uno a uno'' hacia la URL del documento en la nube, garantizando la interoperabilidad total del sistema sin importar el tipo de lector o sistema operativo que utilicen los empleados \cite{QRCamos2020,QRNoever2025}.
+
 \subsection{Protocolo HTTPS y seguridad en las aplicaciones web}
 \label{sec:marco_teorico_tema4}
+\subsubsection{Fundamentos del protocolo HTTPS y cifrado en tránsito}
+El Protocolo Seguro de Transferencia de Hipertexto (HTTPS, por sus siglas en inglés) es la versión segura del protocolo HTTP, diseñado para proteger la integridad y confidencialidad de los datos que se intercambian entre el navegador del usuario y el servidor web. HTTPS utiliza el protocolo criptográfico TLS (\textit{Transport Layer Security}) o su predecesor SSL (\textit{Secure Sockets Layer}) para cifrar la comunicación bidireccional en la capa de transporte \cite{diLuca2024hacking}.
+
+El funcionamiento de este protocolo se basa en un sistema de criptografía asimétrica, donde el servidor cuenta con una llave pública (distribuida mediante un certificado digital) y una llave privada. Cuando un cliente intenta conectarse, se establece un proceso de negociación (\textit{handshake}) que verifica la identidad del servidor y genera una clave simétrica temporal, la cual será utilizada para cifrar los datos durante esa sesión específica, garantizando que el canal sea ilegible para agentes externos.
+
+\subsubsection{Prevención de vulnerabilidades y ataques web}
+En el contexto del desarrollo de software moderno, la seguridad web es un pilar fundamental. Iniciativas globales como el Proyecto Abierto de Seguridad en Aplicaciones Web (OWASP) advierten que la falta de cifrado y una configuración deficiente de la capa de red exponen a los sistemas a ataques de intermediario (\textit{Man-in-the-Middle}) y a la intercepción de credenciales de acceso \cite{diLuca2024hacking}. La implementación estricta de HTTPS asegura que, incluso si el tráfico de red es interceptado por un tercero malintencionado, la información extraída no pueda ser descifrada, garantizando así los tres principios fundamentales de la ciberseguridad corporativa: confidencialidad, integridad y disponibilidad.
+
+\subsubsection{Importancia en la gestión documental en la nube con Códigos QR}
+La integración de HTTPS es un requisito técnico y normativo obligatorio para los sistemas de gestión documental y almacenamiento en la nube. Las políticas actuales sobre tecnologías de la información establecen que los sistemas digitales institucionales deben emplear controles de seguridad, como el cifrado de extremo a extremo, para salvaguardar los activos de información contra amenazas y prevenir la divulgación no autorizada de datos sensibles \cite{dof2021seguridad}.
+
+Para el presente proyecto, la seguridad de la capa de transporte es crítica debido a su arquitectura y flujo de uso: cada documento físico o digital cuenta con un código QR que, al ser escaneado, redirige al usuario hacia la nube para consultar el documento digital. Si esta petición se realizara por un canal sin cifrar (HTTP), un atacante conectado a la misma red de la empresa podría alterar el destino del código, redirigir al empleado a una plataforma fraudulenta (\textit{Phishing}) o interceptar el documento descargado. Al aplicar HTTPS, se blinda el sistema, asegurando una correspondencia unívoca, auténtica y protegida entre el escaneo en el mundo físico y la recuperación del archivo en la nube.
 
 \subsection{Bases de datos relacionales}
 \label{sec:marco_teorico_tema5}

@@ -35,11 +35,14 @@
 \contentsline {subsubsection}{\numberline {2.3.1}Arquitectura física y estructura matricial}{13}{subsubsection.2.3.1}%
 \contentsline {subsubsection}{\numberline {2.3.2}Mecanismo de decodificación y corrección de errores}{13}{subsubsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.4}Protocolo HTTPS y seguridad en las aplicaciones web}{14}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Bases de datos relacionales}{14}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Almacenamiento en la nube}{14}{subsection.2.6}%
-\contentsline {subsection}{\numberline {2.7}Usabilidad y experiencia de usuario (UX)}{14}{subsection.2.7}%
-\contentsline {section}{\numberline {3}Metodología}{15}{section.3}%
-\contentsline {section}{\numberline {4}Resultados}{16}{section.4}%
-\contentsline {section}{\numberline {5}Conclusiones}{17}{section.5}%
-\contentsline {section}{Bibliografía}{18}{section.5}%
-\contentsline {section}{Anexos}{21}{section.5}%
+\contentsline {subsubsection}{\numberline {2.4.1}Fundamentos del protocolo HTTPS y cifrado en tránsito}{14}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Prevención de vulnerabilidades y ataques web}{14}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.3}Importancia en la gestión documental en la nube con Códigos QR}{15}{subsubsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.5}Bases de datos relacionales}{15}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Almacenamiento en la nube}{15}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Usabilidad y experiencia de usuario (UX)}{15}{subsection.2.7}%
+\contentsline {section}{\numberline {3}Metodología}{16}{section.3}%
+\contentsline {section}{\numberline {4}Resultados}{17}{section.4}%
+\contentsline {section}{\numberline {5}Conclusiones}{18}{section.5}%
+\contentsline {section}{Bibliografía}{19}{section.5}%
+\contentsline {section}{Anexos}{22}{section.5}%
