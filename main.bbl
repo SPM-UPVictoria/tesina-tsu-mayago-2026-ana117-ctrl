@@ -697,6 +697,143 @@
       \verb https://normatecainterna.inba.gob.mx/pdf/2024/11TICSGobiernodigital2021.pdf
       \endverb
     \endentry
+    \entry{camavilca2025inteligencia}{article}{}
+      \name{author}{1}{}{%
+        {{hash=28768de3bea261f3fd077915b6d33bad}{%
+           family={Camavilca-Vega},
+           familyi={C\bibinithyphendelim V\bibinitperiod},
+           given={Damaris},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{28768de3bea261f3fd077915b6d33bad}
+      \strng{fullhash}{28768de3bea261f3fd077915b6d33bad}
+      \strng{bibnamehash}{28768de3bea261f3fd077915b6d33bad}
+      \strng{authorbibnamehash}{28768de3bea261f3fd077915b6d33bad}
+      \strng{authornamehash}{28768de3bea261f3fd077915b6d33bad}
+      \strng{authorfullhash}{28768de3bea261f3fd077915b6d33bad}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Científica de Sistemas e Informática}
+      \field{note}{Aborda la estructuración de datos en DB relacionales (SQL/PostgreSQL) y su enlace con datos no estructurados como documentos PDF.}
+      \field{number}{1}
+      \field{title}{Inteligencia de negocios en la educación. Una revisión sistemática de literatura}
+      \field{volume}{5}
+      \field{year}{2025}
+      \field{pages}{335\bibrangedash 348}
+      \range{pages}{14}
+      \verb{urlraw}
+      \verb https://dialnet.unirioja.es/descarga/articulo/10080900.pdf
+      \endverb
+      \verb{url}
+      \verb https://dialnet.unirioja.es/descarga/articulo/10080900.pdf
+      \endverb
+    \endentry
+    \entry{valdivia2023modernizacion}{article}{}
+      \name{author}{3}{}{%
+        {{hash=1b91b6e81966f7bfc64553e4b66bbbbb}{%
+           family={Valdivia},
+           familyi={V\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod}}}%
+        {{hash=f3454669c75207a45792cbc6c974d5d3}{%
+           family={Gómez},
+           familyi={G\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod}}}%
+        {{hash=758632de20f8819be2d06cd9fb54ce3f}{%
+           family={Pérez},
+           familyi={P\bibinitperiod},
+           given={Luis},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{a05c4c06315412192d89c408d85ebf83}
+      \strng{fullhash}{a05c4c06315412192d89c408d85ebf83}
+      \strng{bibnamehash}{a05c4c06315412192d89c408d85ebf83}
+      \strng{authorbibnamehash}{a05c4c06315412192d89c408d85ebf83}
+      \strng{authornamehash}{a05c4c06315412192d89c408d85ebf83}
+      \strng{authorfullhash}{a05c4c06315412192d89c408d85ebf83}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista de Investigación Científica (RIC)}
+      \field{note}{Discute la arquitectura de infraestructura, interoperabilidad y bases de datos para evitar el aislamiento de datos en la gestión.}
+      \field{number}{2}
+      \field{title}{Herramientas para la modernización de la gestión pública: una revisión sistemática}
+      \field{volume}{6}
+      \field{year}{2025}
+      \field{pages}{1\bibrangedash 25}
+      \range{pages}{25}
+      \verb{urlraw}
+      \verb https://ve.scielo.org/pdf/ric/v6n2/2739-0063-ric-6-02-e602067.pdf
+      \endverb
+      \verb{url}
+      \verb https://ve.scielo.org/pdf/ric/v6n2/2739-0063-ric-6-02-e602067.pdf
+      \endverb
+    \endentry
+    \entry{almaceamientoNube2024}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d4868977451110c97d8b2e96c679005b}{%
+           family={Elvis\bibnamedelima Ortiz},
+           familyi={E\bibinitperiod\bibinitdelim O\bibinitperiod},
+           given={Alberto\bibnamedelima Mendoza},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           suffix={Cristhian\bibnamedelima Villacorta},
+           suffixi={C\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{d4868977451110c97d8b2e96c679005b}
+      \strng{fullhash}{d4868977451110c97d8b2e96c679005b}
+      \strng{bibnamehash}{d4868977451110c97d8b2e96c679005b}
+      \strng{authorbibnamehash}{d4868977451110c97d8b2e96c679005b}
+      \strng{authornamehash}{d4868977451110c97d8b2e96c679005b}
+      \strng{authorfullhash}{d4868977451110c97d8b2e96c679005b}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Científica Ciencias Ingenieriles}
+      \field{number}{1}
+      \field{title}{Seguridad de la Información en la Nube: Una revisión sistemática.}
+      \field{volume}{4}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://doi.org/10.54943/ricci.v4i1.383
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.54943/ricci.v4i1.383
+      \endverb
+    \endentry
+    \entry{NubeAmbitoLegal2025}{article}{}
+      \name{author}{1}{}{%
+        {{hash=0d6d6dd619d2141ab7aca2543e95b121}{%
+           family={Villamil\bibnamedelima Moya},
+           familyi={V\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Tienshin},
+           giveni={T\bibinitperiod},
+           suffix={Nicolle\bibnamedelimb Dayana\bibnamedelimb Mu\bibnamedelima Fu},
+           suffixi={N\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{0d6d6dd619d2141ab7aca2543e95b121}
+      \strng{fullhash}{0d6d6dd619d2141ab7aca2543e95b121}
+      \strng{bibnamehash}{0d6d6dd619d2141ab7aca2543e95b121}
+      \strng{authorbibnamehash}{0d6d6dd619d2141ab7aca2543e95b121}
+      \strng{authornamehash}{0d6d6dd619d2141ab7aca2543e95b121}
+      \strng{authorfullhash}{0d6d6dd619d2141ab7aca2543e95b121}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Almacenamiento en la nube para aplicaciones legales: Regulación, seguridad y alternativas.}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://hdl.handle.net/10901/31415
+      \endverb
+      \verb{url}
+      \verb https://hdl.handle.net/10901/31415
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

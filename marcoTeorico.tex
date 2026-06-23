@@ -101,8 +101,29 @@ Para el presente proyecto, la seguridad de la capa de transporte es crítica deb
 \subsection{Bases de datos relacionales}
 \label{sec:marco_teorico_tema5}
 
+\subsubsection{Modelo relacional y estructura de datos}
+El modelo relacional es el estándar predominante para el diseño y manejo de bases de datos en aplicaciones de software a gran escala. Esta arquitectura organiza la información en tablas (o relaciones) bidimensionales compuestas por filas (registros) y columnas (atributos). Su principal ventaja es que permite representar vínculos y dependencias entre diferentes entidades del sistema de forma intuitiva, utilizando un sistema de claves primarias (\textit{Primary Keys}) y claves foráneas (\textit{Foreign Keys}) para establecer asociaciones directas sin necesidad de crear jerarquías rígidas en el código de la aplicación. 
+
+Las bases de datos relacionales (RDBMS) modernas estructuran los datos garantizando su consistencia, lo cual es fundamental para sistemas donde se manejan datos estructurados (tablas) que deben enlazarse de forma precisa con datos no estructurados, como es el caso de los documentos digitales en formato PDF \cite{camavilca2025inteligencia}.
+
+\subsubsection{Integridad referencial y normalización}
+Una característica vital de las bases de datos relacionales es el cumplimiento de la integridad referencial y el soporte transaccional. Mediante el proceso de normalización, se minimiza la redundancia de los datos y se evita la inconsistencia en el almacenamiento. Esto significa que toda clave foránea en una tabla debe corresponder siempre a una clave primaria válida en otra, evitando registros desvinculados \cite{valdivia2023modernizacion}. 
+
+En el ámbito del desarrollo arquitectónico de sistemas, esta integridad permite el acoplamiento eficiente de los datos, lo que evita el aislamiento de la información y mejora la velocidad de consulta e interoperabilidad del sistema frente a los usuarios y administradores.
+
+\subsubsection{Aplicación en el almacenamiento documental y códigos QR}
+En el contexto del presente proyecto, la adopción de una base de datos relacional resulta ser el enfoque idóneo para gestionar el sistema de control. En un esquema relacional, un documento físico se asocia de forma determinista con su equivalente digital y el usuario que lo generó. 
+
+La base de datos no requiere almacenar directamente el archivo pesado dentro de las tablas; en su lugar, gestiona sus metadatos estructurales: identificadores únicos, fechas de registro, estado y, de manera crítica, la URL o ruta absoluta que apunta al objeto almacenado en la nube, recuperandolo con eficiencia y alta disponibilidad. \cite{camavilca2025inteligencia}.
+
 \subsection{Almacenamiento en la nube}
 \label{sec:marco_teorico_tema6}
+La nube hace referencia a diversos recursos informáticos que se comparten en internet, como los servicios de almacenamiento de datos, esta tecnologia nos permite almacenar datos, documentos, aplicaciones y más, con la ventaja de acceder desde cualquier lugar del mundo \cite{almaceamientoNube2024}.
+
+\subsubsection{Uso de almacenamiento en la nube en entornos legales}
+El almacenamiento en la nube se ha vuelto esencial para la gestión de información en el sector legal, al ofrecer mayor accesibilidad, eficiencia y reducción de costos. No obstante, su adopción enfrenta desafíos importantes, como la seguridad de los datos, el cumplimiento normativo y la dependencia de proveedores.
+
+\cite{NubeAmbitoLegal2025} Resalta una problemática persistente en el ámbito jurídico, que es el uso excesivo de documentos físicos, lo cual retrasa la digitalización de procesos y limita el aprovechamiento de herramientas tecnológicas, como el almacenamiento en la nube. Esta resistencia impide una gestión documental más ágil y segura, dificultando la transición hacia entornos digitales modernos.
 
 \subsection{Usabilidad y experiencia de usuario (UX)}
 \label{sec:marco_teorico_tema7}
