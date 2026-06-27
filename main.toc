@@ -27,7 +27,7 @@
 \contentsline {subsection}{\numberline {2.1}Organización y gestión de documentos electrónicos}{10}{subsection.2.1}%
 \contentsline {subsubsection}{\numberline {2.1.1}Conceptos fundamentales y ciclo de vida}{10}{subsubsection.2.1.1}%
 \contentsline {subsubsection}{\numberline {2.1.2}Impacto en la eficiencia institucional}{10}{subsubsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.2}Patrón de arquitectura Modelo-Vista-Controlador (MVC)}{11}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.2}Arquitectura Modelo-Vista-Controlador (MVC)}{11}{subsection.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.1}Definición y principios del patrón}{11}{subsubsection.2.2.1}%
 \contentsline {subsubsection}{\numberline {2.2.2}Componentes y flujo de interacción}{11}{subsubsection.2.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.3}Justificación de uso en el proyecto}{12}{subsubsection.2.2.3}%
@@ -43,10 +43,15 @@
 \contentsline {subsubsection}{\numberline {2.5.2}Integridad referencial y normalización}{16}{subsubsection.2.5.2}%
 \contentsline {subsubsection}{\numberline {2.5.3}Aplicación en el almacenamiento documental y códigos QR}{16}{subsubsection.2.5.3}%
 \contentsline {subsection}{\numberline {2.6}Almacenamiento en la nube}{16}{subsection.2.6}%
-\contentsline {subsubsection}{\numberline {2.6.1}Uso de almacenamiento en la nube en entornos legales}{16}{subsubsection.2.6.1}%
+\contentsline {subsubsection}{\numberline {2.6.1}Definición y características de la nube}{16}{subsubsection.2.6.1}%
+\contentsline {subsubsection}{\numberline {2.6.2}Seguridad y gestión de la información}{16}{subsubsection.2.6.2}%
+\contentsline {subsubsection}{\numberline {2.6.3}Adopción en entornos corporativos y legales}{17}{subsubsection.2.6.3}%
 \contentsline {subsection}{\numberline {2.7}Usabilidad y experiencia de usuario (UX)}{17}{subsection.2.7}%
-\contentsline {section}{\numberline {3}Metodología}{18}{section.3}%
-\contentsline {section}{\numberline {4}Resultados}{19}{section.4}%
-\contentsline {section}{\numberline {5}Conclusiones}{20}{section.5}%
-\contentsline {section}{Bibliografía}{21}{section.5}%
-\contentsline {section}{Anexos}{24}{section.5}%
+\contentsline {subsubsection}{\numberline {2.7.1}Conceptos de Usabilidad y Experiencia de Usuario}{17}{subsubsection.2.7.1}%
+\contentsline {subsubsection}{\numberline {2.7.2}Principios de evaluación e interacción}{17}{subsubsection.2.7.2}%
+\contentsline {subsubsection}{\numberline {2.7.3}Impacto en la adopción de sistemas de gestión documental}{18}{subsubsection.2.7.3}%
+\contentsline {section}{\numberline {3}Metodología}{19}{section.3}%
+\contentsline {section}{\numberline {4}Resultados}{20}{section.4}%
+\contentsline {section}{\numberline {5}Conclusiones}{21}{section.5}%
+\contentsline {section}{Bibliografía}{22}{section.5}%
+\contentsline {section}{Anexos}{26}{section.5}%

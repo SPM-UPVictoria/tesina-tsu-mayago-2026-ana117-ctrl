@@ -25,7 +25,7 @@ Con la implementación de tecnologías de la información en los procesos organi
 
 Diversos estudios empíricos recientes han demostrado la relación directa entre una gestión documental adecuada y el desempeño institucional. Al analizar la gestión documental como un mecanismo de eficiencia organizacional \cite{gestionDocGloriaAguirre}, los resultados revelan que las herramientas digitales mejoran la accesibilidad y reducen la duplicación de la información. Por el contrario, una gestión documental incorrecta provoca demoras y dificultad en el acceso a la información, afectando directamente la eficiencia de la institución. Estos hallazgos destacan la necesidad de mejorar los sistemas para optimizar los procesos internos y promover una mayor transparencia.
 
-\subsection{Patrón de arquitectura Modelo-Vista-Controlador (MVC)}
+\subsection{Arquitectura Modelo-Vista-Controlador (MVC)}
 \label{sec:marco_teorico_tema2}
 
 \subsubsection{Definición y principios del patrón}
@@ -53,11 +53,11 @@ En la figura \ref{fig:mvc_arquitectura}, se representa gráficamente el patrón 
 \end{figure}
 
 \subsubsection{Justificación de uso en el proyecto}
-Este patrón arquitectónico resulta adecuado para el presente proyecto, ya que la lógica de negocio relacionada con la gestión documental, la generación de códigos QR y la presentación de interfaces deben mantenerse independientes para facilitar su mantenimiento y evolución. El análisis de la adopción de MVC en sectores como el empresarial y financiero subraya su amplia aceptación, aprovechándose para lograr una gestión superior de datos y una mejora en la experiencia del usuario \cite{MVCfreecodecamp}.
+Este patrón arquitectónico resulta adecuado para este proyecto, ya que la lógica de negocio relacionada con la gestión documental, la generación de códigos QR y la presentación de interfaces deben mantenerse independientes para facilitar su mantenimiento y evolución. El análisis de la adopción de MVC en sectores como el empresarial y financiero subraya su amplia aceptación, aprovechándose para lograr una gestión superior de datos y una mejora en la experiencia del usuario \cite{MVCfreecodecamp}.
 
 \subsection{Funcionamiento y características de los códigos QR}
 \label{sec:marco_teorico_tema3}
-Los códigos QR (Quick Response, Código de Respuesta Rápida) son códigos de barras bidimensionales estructurados de forma matricial que permiten almacenar y recuperar información a alta velocidad. En el contexto de un sistema de gestión y almacenamiento de documentos en la nube, esta tecnología actúa como un puente físico-digital que vincula de manera unívoca un documento físico o una etiqueta de archivo con su correspondiente registro digital. Toda la especificación técnica, características de simbología y algoritmos de decodificación se encuentran estandarizados internacionalmente bajo la norma ISO/IEC 18004 \cite{QRISO18004,QRJeannot2024}.
+Los códigos QR (Quick Response, Código de Respuesta Rápida) son códigos de barras bidimensionales estructurados de forma matricial que permiten almacenar y recuperar información a alta velocidad. En el contexto de un sistema de gestión y almacenamiento de documentos, esta tecnología actúa como un puente entre lo físico y digital que vincula de manera precisa un documento físico o una etiqueta de archivo con su correspondiente registro digital. Toda la especificación técnica, características de simbología y algoritmos de decodificación se encuentran estandarizados internacionalmente bajo la norma ISO/IEC 18004 \cite{QRISO18004,QRJeannot2024}.
 
 \subsubsection{Arquitectura física y estructura matricial}
 \label{subsec:arquitectura_qr}
@@ -67,7 +67,7 @@ Para que las cámaras de los dispositivos móviles o escáneres comerciales pued
 \begin{itemize}
     \item Patrones de posición (Finder Patterns): Son los tres cuadrados concéntricos ubicados en las esquinas superiores e inferior izquierda. Su función es permitirle al software lector detectar la presencia del código, calcular su orientación exacta y determinar su tamaño, sin importar si el código se escanea de forma invertida o inclinada.
     \item Patrones de alineación y sincronización: Actúan como guías de referencia que ayudan al lector a corregir las distorsiones ópticas que ocurren cuando el código se captura desde ángulos desfavorables o sobre superficies con texturas.
-    \item Zona silenciosa (Quiet Zone): Consiste en un margen blanco limpio que debe rodear obligatoriamente a toda la matriz para prevenir que elementos gráficos del entorno (como el texto de la hoja del documento) interfieran con el proceso de lectura \cite{QRJeannot2024}.
+    \item Zona silenciosa (Quiet Zone): Consiste en un margen blanco limpio que debe rodear obligatoriamente a toda la matriz para prevenir que elementos gráficos del entorno, como el texto de la hoja del documento, interfieran con el proceso de lectura \cite{QRJeannot2024}.
 \end{itemize}
 
 \subsubsection{Mecanismo de decodificación y corrección de errores}
@@ -81,14 +81,14 @@ Una de las propiedades más críticas de los códigos QR para la referenciación
     \item Nivel H (High): Ofrece el máximo nivel, tolerando hasta un 30\% de destrucción.
 \end{itemize}
 
-Esta característica garantiza que, aunque la impresión del código QR sufra daños o manchas debido a la manipulación diaria del documento, el código seguirá siendo legible. Finalmente, el cumplimiento riguroso de la norma ISO/IEC 18004 asegura un principio de decodificación determinista y universal; esto significa que la lectura arrojará siempre una correspondencia exacta de  ``uno a uno'' hacia la URL del documento en la nube, garantizando la interoperabilidad total del sistema sin importar el tipo de lector o sistema operativo que utilicen los empleados \cite{QRCamos2020,QRNoever2025}.
+Esta característica garantiza que, aunque la impresión del código QR sufra daños o manchas debido a la manipulación diaria del documento, el código seguirá siendo legible. Finalmente, el cumplimiento riguroso de la norma ISO/IEC 18004 asegura un principio de decodificación determinista y universal; esto significa que la lectura arrojará siempre una correspondencia exacta de  ``uno a uno'' hacia la URL del documento en la nube, garantizando la interoperabilidad total del sistema sin importar el tipo de lector o sistema operativo que utilicen los empleados \cite{QRNoever2025}.
 
 \subsection{Protocolo HTTPS y seguridad en las aplicaciones web}
 \label{sec:marco_teorico_tema4}
 \subsubsection{Fundamentos del protocolo HTTPS y cifrado en tránsito}
 El Protocolo Seguro de Transferencia de Hipertexto (HTTPS, por sus siglas en inglés) es la versión segura del protocolo HTTP, diseñado para proteger la integridad y confidencialidad de los datos que se intercambian entre el navegador del usuario y el servidor web. HTTPS utiliza el protocolo criptográfico TLS (\textit{Transport Layer Security}) o su predecesor SSL (\textit{Secure Sockets Layer}) para cifrar la comunicación bidireccional en la capa de transporte \cite{diLuca2024hacking}.
 
-El funcionamiento de este protocolo se basa en un sistema de criptografía asimétrica, donde el servidor cuenta con una llave pública (distribuida mediante un certificado digital) y una llave privada. Cuando un cliente intenta conectarse, se establece un proceso de negociación (\textit{handshake}) que verifica la identidad del servidor y genera una clave simétrica temporal, la cual será utilizada para cifrar los datos durante esa sesión específica, garantizando que el canal sea ilegible para agentes externos.
+El funcionamiento de este protocolo se basa en un sistema de criptografía asimétrica, donde el servidor cuenta con una llave pública distribuida mediante un certificado digital, y una llave privada. Cuando un cliente intenta conectarse, se establece un proceso que verifica la identidad del servidor y genera una clave simétrica temporal, la cual será utilizada para cifrar los datos durante esa sesión específica, garantizando que el canal sea ilegible para agentes externos.
 
 \subsubsection{Prevención de vulnerabilidades y ataques web}
 En el contexto del desarrollo de software moderno, la seguridad web es un pilar fundamental. Iniciativas globales como el Proyecto Abierto de Seguridad en Aplicaciones Web (OWASP) advierten que la falta de cifrado y una configuración deficiente de la capa de red exponen a los sistemas a ataques de intermediario (\textit{Man-in-the-Middle}) y a la intercepción de credenciales de acceso \cite{diLuca2024hacking}. La implementación estricta de HTTPS asegura que, incluso si el tráfico de red es interceptado por un tercero malintencionado, la información extraída no pueda ser descifrada, garantizando así los tres principios fundamentales de la ciberseguridad corporativa: confidencialidad, integridad y disponibilidad.
@@ -96,7 +96,7 @@ En el contexto del desarrollo de software moderno, la seguridad web es un pilar 
 \subsubsection{Importancia en la gestión documental en la nube con Códigos QR}
 La integración de HTTPS es un requisito técnico y normativo obligatorio para los sistemas de gestión documental y almacenamiento en la nube. Las políticas actuales sobre tecnologías de la información establecen que los sistemas digitales institucionales deben emplear controles de seguridad, como el cifrado de extremo a extremo, para salvaguardar los activos de información contra amenazas y prevenir la divulgación no autorizada de datos sensibles \cite{dof2021seguridad}.
 
-Para el presente proyecto, la seguridad de la capa de transporte es crítica debido a su arquitectura y flujo de uso: cada documento físico o digital cuenta con un código QR que, al ser escaneado, redirige al usuario hacia la nube para consultar el documento digital. Si esta petición se realizara por un canal sin cifrar (HTTP), un atacante conectado a la misma red de la empresa podría alterar el destino del código, redirigir al empleado a una plataforma fraudulenta (\textit{Phishing}) o interceptar el documento descargado. Al aplicar HTTPS, se blinda el sistema, asegurando una correspondencia unívoca, auténtica y protegida entre el escaneo en el mundo físico y la recuperación del archivo en la nube.
+Para el presente proyecto, la seguridad de la capa de transporte es crítica debido a su arquitectura y flujo de uso: cada documento físico o digital cuenta con un código QR que, al ser escaneado, redirige al usuario para consultar el documento digital. Si esta petición se realizara por un canal sin cifrar, un atacante conectado a la misma red de la empresa podría alterar el destino del código, redirigir al empleado a otro link o interceptar el documento descargado. Al aplicar HTTPS, se blinda el sistema, asegurando una correspondencia precisa, auténtica y protegida entre el escaneo en el mundo físico y la recuperación del archivo en la nube.
 
 \subsection{Bases de datos relacionales}
 \label{sec:marco_teorico_tema5}
@@ -109,21 +109,38 @@ Las bases de datos relacionales (RDBMS) modernas estructuran los datos garantiza
 \subsubsection{Integridad referencial y normalización}
 Una característica vital de las bases de datos relacionales es el cumplimiento de la integridad referencial y el soporte transaccional. Mediante el proceso de normalización, se minimiza la redundancia de los datos y se evita la inconsistencia en el almacenamiento. Esto significa que toda clave foránea en una tabla debe corresponder siempre a una clave primaria válida en otra, evitando registros desvinculados \cite{valdivia2023modernizacion}. 
 
-En el ámbito del desarrollo arquitectónico de sistemas, esta integridad permite el acoplamiento eficiente de los datos, lo que evita el aislamiento de la información y mejora la velocidad de consulta e interoperabilidad del sistema frente a los usuarios y administradores.
+En el ámbito del desarrollo arquitectónico de sistemas, esta integridad permite el acoplamiento eficiente de los datos, lo que evita el aislamiento de la información y mejora la velocidad de consulta e interoperabilidad del sistema frente a los usuarios.
 
 \subsubsection{Aplicación en el almacenamiento documental y códigos QR}
-En el contexto del presente proyecto, la adopción de una base de datos relacional resulta ser el enfoque idóneo para gestionar el sistema de control. En un esquema relacional, un documento físico se asocia de forma determinista con su equivalente digital y el usuario que lo generó. 
+Para este proyecto la adopción de una base de datos relacional resulta ser la opción adecuada para gestionar el sistema de control. En un esquema relacional, un documento físico se asocia de forma determinista con su equivalente digital y el usuario que lo generó. 
 
 La base de datos no requiere almacenar directamente el archivo pesado dentro de las tablas; en su lugar, gestiona sus metadatos estructurales: identificadores únicos, fechas de registro, estado y, de manera crítica, la URL o ruta absoluta que apunta al objeto almacenado en la nube, recuperandolo con eficiencia y alta disponibilidad. \cite{camavilca2025inteligencia}.
 
 \subsection{Almacenamiento en la nube}
 \label{sec:marco_teorico_tema6}
-La nube hace referencia a diversos recursos informáticos que se comparten en internet, como los servicios de almacenamiento de datos, esta tecnologia nos permite almacenar datos, documentos, aplicaciones y más, con la ventaja de acceder desde cualquier lugar del mundo \cite{almaceamientoNube2024}.
 
-\subsubsection{Uso de almacenamiento en la nube en entornos legales}
-El almacenamiento en la nube se ha vuelto esencial para la gestión de información en el sector legal, al ofrecer mayor accesibilidad, eficiencia y reducción de costos. No obstante, su adopción enfrenta desafíos importantes, como la seguridad de los datos, el cumplimiento normativo y la dependencia de proveedores.
+\subsubsection{Definición y características de la nube}
+El cómputo en la nube hace referencia a un modelo que brinda acceso ubicuo y bajo demanda a un conjunto compartido de recursos informáticos configurables a través de internet. En particular, los servicios de almacenamiento permiten gestionar y respaldar grandes volúmenes de datos, documentos y aplicaciones. Este enfoque ofrece ventajas significativas para los sistemas informáticos, como el acceso remoto, la alta disponibilidad y la elasticidad de la infraestructura, sin la necesidad de que las organizaciones mantengan servidores físicos locales \cite{almaceamientoNube2024, aguilar2023caracteristicas}.
 
-\cite{NubeAmbitoLegal2025} Resalta una problemática persistente en el ámbito jurídico, que es el uso excesivo de documentos físicos, lo cual retrasa la digitalización de procesos y limita el aprovechamiento de herramientas tecnológicas, como el almacenamiento en la nube. Esta resistencia impide una gestión documental más ágil y segura, dificultando la transición hacia entornos digitales modernos.
+\subsubsection{Seguridad y gestión de la información}
+La transición de esquemas de persistencia locales hacia la nube exige mecanismos innovadores para el manejo seguro de la información. Estudios recientes sobre arquitecturas de almacenamiento en la nube destacan que uno de los principales retos radica en preservar la confidencialidad e integridad de los datos alojados \cite{almaceamientoNube2024}. Para mitigar estos riesgos, las infraestructuras modernas aplican técnicas avanzadas, como el cifrado de bases de datos y el balanceo de cargas, garantizando que los archivos se procesen y resguarden de manera eficiente contra accesos no autorizados \cite{aguilar2023caracteristicas}.
+
+\subsubsection{Adopción en entornos corporativos y legales}
+En ámbitos estrictos como el sector legal y corporativo, persiste el uso excesivo de documentos físicos, lo cual retrasa la digitalización de los procesos y limita el aprovechamiento de herramientas tecnológicas eficientes \cite{NubeAmbitoLegal2025}. Esta resistencia estructural impide una gestión documental ágil, dificultando la transición hacia entornos digitales modernos.
+
+No obstante, el almacenamiento en la nube se ha vuelto una solución esencial para la gestión de información documental, al ofrecer una reducción notable de costos operativos y optimización del espacio de archivo. Para lograr una adopción exitosa que reemplace las ineficiencias del papel impreso, los sistemas en la nube deben asegurar el cumplimiento normativo estricto, mitigar la dependencia directa de proveedores externos y garantizar la inviolabilidad de los expedientes digitalizados \cite{NubeAmbitoLegal2025}.
 
 \subsection{Usabilidad y experiencia de usuario (UX)}
 \label{sec:marco_teorico_tema7}
+\subsubsection{Conceptos de Usabilidad y Experiencia de Usuario}
+Aunque en el ámbito del desarrollo de software suelen utilizarse como sinónimos, la usabilidad y la experiencia de usuario (UX, por sus siglas en inglés) refieren a dimensiones distintas pero complementarias. La usabilidad se enfoca en la calidad pragmática del sistema; es decir, evalúa qué tan fácil, eficiente y libre de errores resulta para un usuario completar una tarea específica. Por otro lado, la experiencia de usuario engloba una visión más holística, abarcando las respuestas cognitivas y afectivas, las emociones y el nivel de satisfacción general que experimenta la persona antes, durante y después de interactuar con el producto digital \cite{ferrer2023aplicabilidad}.
+
+\subsubsection{Principios de evaluación e interacción}
+Para garantizar la aceptación tecnológica de un sistema de información, su arquitectura debe basarse en un diseño centrado en el usuario. La evaluación de la UX depende del cumplimiento de criterios medibles del comportamiento del software, tales como la efectividad, la eficiencia y la curva de aprendizaje \cite{chihuahuaUX2024}. 
+
+Una interfaz se considera exitosa cuando permite a los usuarios reconocer de forma intuitiva los patrones de navegación, logrando que el conocimiento adquirido al utilizar una función del sistema pueda aplicarse lógicamente en otras áreas. Asimismo, un diseño óptimo evita la sobrecarga cognitiva al presentar la información de manera concisa y predictiva, asegurando que la herramienta tecnológica resuelva los problemas operativos sin generar nuevas fricciones \cite{chihuahuaUX2024}.
+
+\subsubsection{Impacto en la adopción de sistemas de gestión documental}
+En el marco del presente proyecto, la usabilidad y la experiencia de usuario actúan como el puente fundamental entre el entorno físico y el entorno digital. La interacción principal del sistema debe ser un proceso fluido, rápido y sin ambigüedades. 
+
+Si la interfaz web es confusa o difícil de utilizar, el usuario final percibirá el sistema como una carga en lugar de una solución, lo que derivaría en resistencia al cambio y en el retorno al uso de documentos físicos. Al aplicar buenas prácticas de usabilidad, se garantiza que la transición entre la etiqueta física y la visualización del archivo digital sea percibida como una acción natural, maximizando la eficiencia operativa y asegurando el éxito de la digitalización del archivo \cite{ferrer2023aplicabilidad}.
