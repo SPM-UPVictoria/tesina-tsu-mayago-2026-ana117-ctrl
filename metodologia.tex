@@ -1,1 +1,59 @@
 \section{Metodología}
+\subsection{Propuesta de solución}
+\label{propuesta_solucion}
+
+\subsubsection{Problema a resolver}
+\paragraph{Naturaleza del problema}
+El problema que se ha identificado en el Departamento de Informática PJETAM es un problema tanto operativo y tecnológico: la falta de un sistema único para la gestión, conversión, almacenamiento y seguimiento de los documentos institucionales. Actualmente, este proceso se realiza manualmente y  de forma fragmentada, ya que utiliza múltiples herramientas externas y la intervención directa del personal de informática en cada etapa de este proceso.
+
+\paragraph{Historia del problema}
+Este problema no solo existe en esta institución, sino que es habitual en instituciones públicas mexicanas que han postergado la modernización de sus procesos documentales. Como se evidenció en los antecedentes teóricos, la gestión documental gubernamental en México ha enfrentado una transición lenta hacia la digitalización.
+
+En el caso particular del PJETAM, el flujo actual de subir documentos manualmente a una instancia de Amazon EC2 y generar códigos QR mediante una herramienta externa, surgió como una solución improvisada ante la necesidad de digitalizar documentos, sin que existiera previamente un sistema diseñado específicamente para ese fin.
+
+\paragraph{Características del problema}
+El problema presenta las siguientes características observables:
+\begin{itemize}
+    \item Fragmentación del proceso: la conversión de archivos, el almacenamiento y la generación de los códigos QR tienen lugar en plataformas distintas e interconectadas entre sí.
+    \item  Dependencia de intervención manual: la trayectoria de cada documento requiere que el personal informático lo suba individualmente al servidor sin automatización.
+    \item Falta de trazabilidad: no hay una historia estructurada que reúna el documento, la generación del código QR, el área que lo generó y la fecha de elaboración.
+    \item Riesgo de inconsistencia: sin convención de nombres uniforme ni base de datos, es posible la duplicación y, por tanto, la pérdida de la relación entre el documento físico y su versión digital.
+    \item Escalabilidad baja: el proceso manual no puede hacer frente al crecimiento del número de documentos que se genera en la digitalización institucional.
+\end{itemize}
+
+\paragraph{Soluciones alternas consideradas}
+Se consideraron las siguientes opciones antes de decidirse a desarrollar un sistema propio, las cuales fueron revisadas en el análisis comparativo expuesto en la sección de antecedentes:
+\begin{itemize}
+    \item Adopción de un sistema de gestión documental comercial o de código abierto (OpenKM): esta alternativa fue desechada; tales herramientas no se adaptan de manera nativa al flujo de trabajo del PJETAM, ni tampoco a su infraestructura existente en AWS, y personalizarlas exige una curva de aprendizaje y unas tarifas de adaptación muy elevadas.
+    \item Uso de herramientas genéricas de almacenamiento en la nube (Google Drive, SharePoint): esta alternativa fue igualmente desechada; las mencionadas herramientas no suponen una generación de códigos QR en línea, ni tampoco un control de acceso adaptado a las áreas de jurisdicción del Tribunal.
+    \item Mantener el proceso manual actual: esta alternativa fue igualmente desechada; no implica soluciones a ninguna de las deficiencias revisadas, y por tanto se perpetuaría el riesgo operativo y la ineficacia ya documentada.
+\end{itemize}
+
+\paragraph{Solución elegida}
+Una vez discutidas las limitaciones de las opciones anteriores, se optó por desarrollar un sistema web a medida, elaborado desde cero siguiendo la arquitectura MVC con el framework ASP.NET Core (.NET 10), con persistencia de datos en SQL Server y almacenamiento de ficheros en Amazon S3, integrando la conversión de ficheros, el almacenamiento centralizado y la generación automática de códigos QR en una única plataforma. Esta opción se ajusta de forma directa a las características del problema: al ser un desarrollo propio, el sistema se puede personalizar y adaptar en su totalidad al flujo de trabajo del departamento de informática y a la infraestructura de AWS ya utilizada por la institución.
+
+\subsubsection{Descripción de la propuesta}
+\paragraph{Qué se va a realizar}
+Se desarrollará el Sistema Web de Gestión Documental y Generación de Códigos QR para el PJETAM, una plataforma que permitirá al personal autorizado de las distintas áreas jurisdiccionales:
+\begin{itemize}
+    \item Cargar documentos en sus formatos originales (ODT, DOC, DOCX) y convertirlos automáticamente a formato PDF.
+    \item Almacenar los documentos convertidos de forma centralizada, sustituyendo el proceso manual de carga a la instancia de Amazon EC2.
+    \item Consultar, descargar y eliminar documentos desde una interfaz web unificada.
+    \item Generar códigos QR vinculados a cada documento de manera independiente, bajo demanda, desde la misma pantalla de listado de archivos.
+    \item Acceder al sistema mediante un mecanismo de autenticación que identifica al área y usuario correspondiente, sin necesidad de credenciales adicionales a las ya utilizadas en los sistemas de gestión existentes del Tribunal.
+\end{itemize}
+
+\paragraph{Cómo se va a realizar}
+El desarrollo se llevará a cabo siguiendo una metodología incremental, construyendo el sistema módulo por módulo sobre una base de datos relacional diseñada específicamente para soportar las entidades de Áreas, Usuarios, Archivos, Códigos QR y Registros de Acceso. La estrategia de implementación contempla las siguientes etapas:
+\begin{itemize}
+    \item \textbf{Configuración del entorno y modelo de datos:} definición de las entidades del sistema mediante Entity Framework Core y generación de las migraciones correspondientes sobre SQL Server.
+    \item \textbf{Módulo de conversión de archivos:} implementación de la conversión de documentos ofimáticos a PDF mediante LibreOffice en modo headless, asegurando la integridad del contenido original.
+    \item \textbf{Módulo de almacenamiento y listado:} desarrollo de las vistas y controladores necesarios para subir, listar, descargar y eliminar documentos, inicialmente sobre una carpeta local de pruebas y posteriormente sobre Amazon S3.
+    \item \textbf{Módulo de generación de códigos QR:} integración de la librería QRCoder para producir códigos QR vinculados a la ubicación del documento en el sistema.
+    \item \textbf{Módulo de autenticación:} incorporación del mecanismo de identificación de usuarios mediante parámetros de URL cifrados, en coordinación con el sistema de gestión documental existente.
+    \item \textbf{Integración y pruebas:} validación conjunta de los módulos desarrollados, verificando que la conversión, el almacenamiento, la generación de QR y la autenticación operen de manera correcta y coordinada.
+    \item \textbf{documentación técnica} elaboración de la documentación correspondiente al funcionamiento, configuración y mantenimiento del sistema.
+\end{itemize}
+
+\paragraph{Costo de la propuesta}
+El desarrollo del sistema supone un costo reducido de implementación para la institución, dado que se apoya en herramientas de software libre y en la infraestructura tecnológica de la que ya dispone el PJETAM. El framework ASP.NET Core, el Entity Framework Core, la librería QRCoder y LibreOffice son tecnologías de código abierto y, por tanto, carecen de costo respecto a licencias. De igual forma, el almacenamiento en Amazon S3 y el cómputo en Amazon EC2 corresponden a servicios de nube ya asumidos por la institución para otros usos, por lo que aprovecharlos para el proyecto no signfica un costo adicional importante.

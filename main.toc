@@ -51,7 +51,18 @@
 \contentsline {subsubsection}{\numberline {2.7.2}Principios de evaluación e interacción}{17}{subsubsection.2.7.2}%
 \contentsline {subsubsection}{\numberline {2.7.3}Impacto en la adopción de sistemas de gestión documental}{18}{subsubsection.2.7.3}%
 \contentsline {section}{\numberline {3}Metodología}{19}{section.3}%
-\contentsline {section}{\numberline {4}Resultados}{20}{section.4}%
-\contentsline {section}{\numberline {5}Conclusiones}{21}{section.5}%
-\contentsline {section}{Bibliografía}{22}{section.5}%
-\contentsline {section}{Anexos}{26}{section.5}%
+\contentsline {subsection}{\numberline {3.1}Propuesta de solución}{19}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Problema a resolver}{19}{subsubsection.3.1.1}%
+\contentsline {paragraph}{Naturaleza del problema}{19}{paragraph*.12}%
+\contentsline {paragraph}{Historia del problema}{19}{paragraph*.13}%
+\contentsline {paragraph}{Características del problema}{19}{paragraph*.14}%
+\contentsline {paragraph}{Soluciones alternas consideradas}{20}{paragraph*.15}%
+\contentsline {paragraph}{Solución elegida}{20}{paragraph*.16}%
+\contentsline {subsubsection}{\numberline {3.1.2}Descripción de la propuesta}{20}{subsubsection.3.1.2}%
+\contentsline {paragraph}{Qué se va a realizar}{20}{paragraph*.17}%
+\contentsline {paragraph}{Cómo se va a realizar}{21}{paragraph*.18}%
+\contentsline {paragraph}{Costo de la propuesta}{22}{paragraph*.19}%
+\contentsline {section}{\numberline {4}Resultados}{23}{section.4}%
+\contentsline {section}{\numberline {5}Conclusiones}{24}{section.5}%
+\contentsline {section}{Bibliografía}{25}{section.5}%
+\contentsline {section}{Anexos}{29}{section.5}%

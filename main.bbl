@@ -624,31 +624,28 @@
       \endverb
     \endentry
     \entry{diLuca2024hacking}{article}{}
-      \name{author}{2}{}{%
-        {{hash=fbd21a148ed904ec65c040f87b4aee4c}{%
-           family={Di\bibnamedelima Luca},
-           familyi={D\bibinitperiod\bibinitdelim L\bibinitperiod},
-           given={Alberto},
-           giveni={A\bibinitperiod}}}%
-        {{hash=b4a4cbd96749311f7bfb1c3b6b6252f0}{%
-           family={Bonilla},
-           familyi={B\bibinitperiod},
-           given={Carlos},
-           giveni={C\bibinitperiod}}}%
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=03039230d45b4b4a8ac5de18da6d9c48}{%
+           family={Lopez},
+           familyi={L\bibinitperiod},
+           given={Lidice\bibnamedelimb Victoria\bibnamedelima Haz},
+           giveni={L\bibinitperiod\bibinitdelim V\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
       }
-      \strng{namehash}{ababf6bef7609037201404d35adfc5d5}
-      \strng{fullhash}{ababf6bef7609037201404d35adfc5d5}
-      \strng{bibnamehash}{ababf6bef7609037201404d35adfc5d5}
-      \strng{authorbibnamehash}{ababf6bef7609037201404d35adfc5d5}
-      \strng{authornamehash}{ababf6bef7609037201404d35adfc5d5}
-      \strng{authorfullhash}{ababf6bef7609037201404d35adfc5d5}
+      \strng{namehash}{3694502c4e4de1940a766da3013ae2ff}
+      \strng{fullhash}{3694502c4e4de1940a766da3013ae2ff}
+      \strng{bibnamehash}{3694502c4e4de1940a766da3013ae2ff}
+      \strng{authorbibnamehash}{3694502c4e4de1940a766da3013ae2ff}
+      \strng{authornamehash}{3694502c4e4de1940a766da3013ae2ff}
+      \strng{authorfullhash}{3694502c4e4de1940a766da3013ae2ff}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Biblioteca Ciencia Latina (Publicaciones Académicas)}
+      \field{journaltitle}{Biblioteca Ciencia Latina Internacional}
       \field{number}{1}
-      \field{title}{Hacking Ético: Teoría y Prácticas para la seguridad en aplicaciones web e infraestructuras de red}
+      \field{title}{Hacking Ético: Teoría y Prácticas}
       \field{volume}{1}
       \field{year}{2024}
       \field{pages}{1\bibrangedash 152}
