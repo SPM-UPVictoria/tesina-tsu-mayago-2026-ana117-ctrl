@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber main"] 1782536977 "main.bcf" "main.bbl" "main" 1782677985
+["biber main"] 1782536977 "main.bcf" "main.bbl" "main" 1782679075
   "Referencias.bib" 1782536977 11742 b663a1c8b363c7d8dbe5a2ecbb9634ca ""
-  "main.bcf" 1782677984 110316 18c6056d85fea587141eebc660ee5ba4 "pdflatex"
+  "main.bcf" 1782679074 110316 18c6056d85fea587141eebc660ee5ba4 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1782677982 "/home/anaaz/estadias/tesina-tsu-mayago-2026-ana117-ctrl/main.tex" "main.pdf" "main" 1782677985
+["pdflatex"] 1782679072 "/home/anaaz/estadias/tesina-tsu-mayago-2026-ana117-ctrl/main.tex" "main.pdf" "main" 1782679075
   "/etc/texmf/web2c/texmf.cnf" 1779218431 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/anaaz/.texlive2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1779317618 1405656 74e209f3f5e4d4053889bfff596a9b66 ""
   "/home/anaaz/estadias/tesina-tsu-mayago-2026-ana117-ctrl/main.tex" 1781739432 20630 bef730a5c3c4a7985b66dfde384ccdb6 ""
@@ -268,14 +268,14 @@
   "documentosDigitalizados/SeguroFacultativo.pdf" 1779410850 133497 cf624955ab5c8a17eecbc039ffbb611e ""
   "img/arquitecturaMVC.png" 1781902825 249532 e52207ff5cc22fa3cef8867bfef9b3c3 ""
   "introduccion.tex" 1781850933 22468 62c7971c7b048581315c802940a6e04e ""
-  "main.aux" 1782677984 20101 d0b0531cd8777ba35ed0f66c7378ca77 "pdflatex"
+  "main.aux" 1782679074 20101 d0b0531cd8777ba35ed0f66c7378ca77 "pdflatex"
   "main.bbl" 1782536978 43537 5a30e1a4e735080db5522ddf2b72e82b "biber main"
-  "main.out" 1782677984 11356 83f8561408a52ec2df6419cb50c36dbd "pdflatex"
-  "main.run.xml" 1782677984 2306 628e0087c61ee8036d936d14edcd02fc "pdflatex"
+  "main.out" 1782679074 11356 83f8561408a52ec2df6419cb50c36dbd "pdflatex"
+  "main.run.xml" 1782679074 2306 628e0087c61ee8036d936d14edcd02fc "pdflatex"
   "main.tex" 1781739432 20630 bef730a5c3c4a7985b66dfde384ccdb6 ""
-  "main.toc" 1782677984 6699 a8c604f9588b343636f71226e3ae55aa "pdflatex"
+  "main.toc" 1782679074 6699 a8c604f9588b343636f71226e3ae55aa "pdflatex"
   "marcoTeorico.tex" 1782533077 20550 0865ecb08aa9711f10bdab5f160d767b ""
-  "metodologia.tex" 1782677982 10862 c77f060802cf3f40bb10a5f90ab68b75 ""
+  "metodologia.tex" 1782679072 10743 2e3f51cffb544807d13660de46a0f260 ""
   "resultados.tex" 1781299670 21 dddd9f66d6a3d5569ce453920af0eb64 ""
   (generated)
   "main.aux"
