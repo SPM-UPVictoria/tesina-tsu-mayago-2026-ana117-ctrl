@@ -1,51 +1,97 @@
 \section{Metodología}
+\subsection{Propuesta de solución}
+\label{propuesta_solucion}
 
-Los métodos y herramientas utilizadas son la descripción detallada de las etapas
-(o pasos, procedimiento) de desarrollo en que se dividió el proyecto y están
-íntimamente relacionadas con los objetivos operativos. Se compara con una
-receta de cocina, es decir, describir a detalle las actividades y acciones realizadas
-en cada etapa de desarrollo, empleando un orden cronológico y en función de los
-objetivos operativos. Sus características son:
+\subsubsection{Problema a resolver}
+\paragraph{Naturaleza del problema}
+El problema que se ha identificado en el Departamento de Informática PJETAM es un problema tanto operativo y tecnológico: la falta de un sistema único para la gestión, conversión, almacenamiento y seguimiento de los documentos institucionales. Actualmente, este proceso se realiza manualmente y  de forma fragmentada, ya que utiliza múltiples herramientas externas y la intervención directa del personal de informática en cada etapa de este proceso.
+
+\paragraph{Historia del problema}
+Este problema no solo existe en esta institución, sino que es habitual en instituciones públicas mexicanas que han postergado la modernización de sus procesos documentales. Como se evidenció en los antecedentes teóricos, la gestión documental gubernamental en México ha enfrentado una transición lenta hacia la digitalización.
+
+En el caso particular del PJETAM, el flujo actual de subir documentos manualmente a una instancia de Amazon EC2 y generar códigos QR mediante una herramienta externa, surgió como una solución improvisada ante la necesidad de digitalizar documentos, sin que existiera previamente un sistema diseñado específicamente para ese fin.
+
+\paragraph{Características del problema}
+El problema presenta las siguientes características observables:
 \begin{itemize}
-\item Descripción detallada de las etapas (o pasos) desarrolladas, las cuales están
-relacionadas con cada objetivo operativos. Dependiendo del número de
-objetivos, será el número de etapas de desarrollo reportadas.
-\item En cada etapa de desarrollo, describir las herramientas académicas, técnicas
-y computacionales que se utilizaron, indicando roles y responsabilidades.
-Además, describir las asignaturas o aprendizajes que se obtuvieron durante tu
-formación académica y fueron útiles en el proceso. Así mismo, describir
-herramientas, equipos, tecnologías, etc., que se utilizaron durante el proyecto o
-se aprendieron en la unidad económica.
+    \item Fragmentación del proceso: la conversión de archivos, el almacenamiento y la generación de los códigos QR tienen lugar en plataformas distintas y desconectadas entre sí.
+    \item Dependencia de intervención manual: la trayectoria de cada documento requiere que el personal informático lo suba individualmente al servidor sin automatización.
+    \item Falta de trazabilidad: no hay una historia estructurada que reúna el documento, la generación del código QR, el área que lo generó y la fecha de elaboración.
+    \item Riesgo de inconsistencia: sin convención de nombres uniforme ni base de datos, es posible la duplicación y, por tanto, la pérdida de la relación entre el documento físico y su versión digital.
+    \item Escalabilidad baja: el proceso manual no puede hacer frente al crecimiento del número de documentos que se genera en la digitalización institucional.
 \end{itemize}
 
-\textit{El informe debe estar soportado por referencias, ademas incluir figuras y tablas. En los siguientes parrafos se ejemplifica como usar dichos elementos. }
+\paragraph{Soluciones alternas consideradas}
+Se consideraron las siguientes opciones antes de decidirse a desarrollar un sistema propio, las cuales fueron revisadas en el análisis comparativo expuesto en la sección de antecedentes:
+\begin{itemize}
+    \item Adopción de un sistema de gestión documental comercial o de código abierto (OpenKM): esta alternativa fue desechada, ya que no se adapta de manera nativa al flujo de trabajo del PJETAM, ni tampoco a su infraestructura existente en AWS, y personalizarlas exige una curva de aprendizaje y unas tarifas de adaptación muy elevadas.
+    \item Uso de herramientas genéricas de almacenamiento en la nube (Google Drive, SharePoint): no se escogió esta alternativa porque no suponen una generación de códigos QR en línea, ni tampoco un control de acceso adaptado a las áreas de jurisdicción del Tribunal.
+    \item Mantener el proceso manual actual: esta alternativa fue igualmente desechada porque no implica soluciones a ninguna de las deficiencias revisadas, y por tanto se perpetuaría el riesgo operativo y la ineficacia ya documentada.
+\end{itemize}
 
-De acuerdo con Ivan \cite{Sistema:2018:Ivan}, todos mienten, de la misma forma que Dr. House lo afirma de manera continua a lo largo de las 8 temporadas de la serie. 
+\paragraph{Solución elegida}
+Una vez discutidas las limitaciones de las opciones anteriores, se optó por desarrollar un sistema web a medida, elaborado desde cero siguiendo la arquitectura MVC con el framework ASP.NET Core (.NET 10), con persistencia de datos en SQL Server y almacenamiento en Amazon S3, integrando la conversión de archivos, el almacenamiento centralizado y la generación automática de códigos QR en una única plataforma. Esta opción se ajusta de forma directa a las características del problema: al ser un desarrollo propio, el sistema se puede personalizar y adaptar en su totalidad al flujo de trabajo del departamento de informática y a la infraestructura de AWS ya utilizada por la institución.
 
-Los sistemas de información constituyen un conjunto organizado de recursos —personas, datos, procesos y tecnología— que interactúan para recolectar, procesar, almacenar y distribuir información relevante dentro de una organización. Su propósito principal es apoyar la toma de decisiones, la coordinación y el control, así como facilitar el análisis y la visualización de información estratégica \cite{laudon2020, stair2018}. En el contexto actual, caracterizado por la digitalización y la globalización, los sistemas de información han evolucionado hacia plataformas integradas que permiten la gestión eficiente del conocimiento y la automatización de procesos empresariales \cite{turban2019}. Además, el uso de tecnologías emergentes como la inteligencia artificial y el análisis de datos ha ampliado sus capacidades, permitiendo generar valor a partir de grandes volúmenes de información \cite{davenport2018}.
+\subsubsection{Descripción de la propuesta}
+\paragraph{Qué se va a realizar}
+Se desarrollará el Sistema Web de Gestión Documental y Generación de Códigos QR para el PJETAM, una plataforma que permitirá al personal autorizado de las distintas áreas jurisdiccionales:
+\begin{itemize}
+    \item Cargar archivos en sus formatos originales (ODT, DOC, DOCX) y convertirlos automáticamente a formato PDF.
+    \item Almacenar los documentos convertidos de forma centralizada, sustituyendo el proceso manual de carga a la instancia de Amazon EC2.
+    \item Consultar, descargar y eliminar documentos desde una interfaz web unificada.
+    \item Generar códigos QR vinculados a cada archivo de manera independiente, desde la misma pantalla de listado de archivos.
+    \item Acceder al sistema mediante un mecanismo de autenticación que identifica al área y usuario correspondiente, sin necesidad de credenciales adicionales a las ya utilizadas en los sistemas de gestión existentes del Tribunal.
+\end{itemize}
 
-Por otra parte, la implementación de sistemas de información implica retos importantes relacionados con la alineación estratégica, la seguridad de la información y la gestión del cambio organizacional. Es fundamental que estos sistemas estén alineados con los objetivos del negocio para maximizar su impacto y retorno de inversión \cite{ward2016}. Asimismo, la protección de datos y la ciberseguridad se han convertido en aspectos críticos debido al incremento de amenazas digitales \cite{whitman2018}. Finalmente, el éxito de un sistema de información depende en gran medida de la aceptación por parte de los usuarios y de una adecuada gestión del cambio, lo que requiere capacitación, comunicación efectiva y liderazgo organizacional \cite{heeks2006}.
+\paragraph{Cómo se va a realizar}
+El desarrollo se llevará a cabo siguiendo una metodología incremental, construyendo el sistema módulo por módulo sobre una base de datos relacional diseñada específicamente para soportar las entidades de Áreas, Usuarios, Archivos, Códigos QR y Registros de Acceso. La estrategia de implementación contempla las siguientes etapas:
+\begin{itemize}
+    \item \textbf{Diseñar arquitectura del sistema:} Analizar los requerimientos funcionales de la empresa y diseñar la arquitectura de la aplicación web, definiendo las tecnologías de frontend, backend y almacenamiento.
+    \item \textbf{Módulo de conversión de archivos:} implementación de la conversión de documentos a PDF mediante LibreOffice en modo headless, asegurando la integridad del contenido original.
+    \item \textbf{Módulo de almacenamiento y listado:} desarrollo de las vistas y controladores necesarios para subir, listar, descargar y eliminar documentos.
+    \item \textbf{Módulo de generación de códigos QR:} integración de la librería QRCoder para producir códigos QR vinculados a la ubicación del documento en el sistema.
+    \item \textbf{Módulo de autenticación:} incorporación del mecanismo de identificación de usuarios mediante parámetros de URL cifrados, en coordinación con el sistema de gestión documental existente.
+    \item \textbf{Integración y pruebas:} validación conjunta de los módulos desarrollados, verificando que la conversión, el almacenamiento, la generación de QR y la autenticación operen de manera correcta y coordinada.
+    \item \textbf{Documentación técnica:} elaboración de la documentación correspondiente al funcionamiento, configuración y mantenimiento del sistema.
 
+\end{itemize}
 
-En la figura \ref{fig:my_label}, se muestra una pantalla de una aplicación para contar las calorías de la comida mexicana. (Si la figura se mueve a la siguiente página, es NORMAL, no muevan nada!).
-\begin{figure}[!tbh]
+\paragraph{Costo de la propuesta}
+El desarrollo del sistema supone un costo reducido de implementación para la institución, dado que se apoya en herramientas de software libre y en la infraestructura tecnológica de la que ya dispone el PJETAM. El framework ASP.NET Core, el Entity Framework Core, la librería QRCoder y LibreOffice son tecnologías de código abierto y, por tanto, carecen de costo respecto a licencias. De igual forma, el almacenamiento en Amazon S3 y el cómputo en Amazon EC2 corresponden a servicios de nube ya asumidos por la institución para otros usos, por lo que aprovecharlos para el proyecto no signfica un costo adicional importante.
+
+\subsubsection{Estrategia de implementación}
+\paragraph{En que consiste la estrategia}
+La estrategia consiste en desarrollar el sistema de forma incremental y modular, priorizando primero los componentes que pueden construirse y probarse de manera independiente, antes de abordar los módulos que dependen de otras áreas, como la integración con el sistema de autenticación de las plataformas de escritorio existentes y la disponibilidad de credenciales de producción para SQL Server y Amazon S3. El desarrollo avanza utilizando equivalentes funcionales temporales, como una base de datos local y una carpeta de almacenamiento de pruebas, que serán sustituidos por los recursos de producción una vez que estén disponibles.
+
+\paragraph{¿Por qué va a funcionar esta estrategia?}
+Esta propuesta de solución tiene múltiples ventajas como la reducción del riesgo de bloqueo del desarrollo, ya que en los primeros pasos no depende de credenciales de producción ni de la integración con sistemas externos; de este modo, el avance del proyecto no se detiene mientras dichos elementos son gestionados por las áreas correspondientes. Asimismo, permite validar cada módulo de forma aislada, pues al construir el sistema por componentes independientes, los errores se identifican y corrigen en una etapa temprana, sin afectar al resto del sistema.
+
+De igual manera, esta estrategia aprovecha la arquitectura MVC seleccionada, ya que la separación de responsabilidades entre modelo, vista y controlador facilita sustituir un componente temporal por su equivalente final en producción, sin necesidad de reestructurar el sistema completo.  Finalmente, la estrategia se ajusta al tiempo disponible para realizar el proyecto, 14 semanas aproximadamente, por lo que la estrategia permite distribuir el desarrollo de los módulos de forma realista dentro de este periodo, dejando las últimas semanas para integración, pruebas y documentación.
+
+\paragraph{Cronograma estimado}
+Para llevar a cabo la estrategia de implementación descrita, se plantea el siguiente cronograma de actividades distribuido por semanas:
+
+\begin{table}[htpb]
     \centering
-    \includegraphics[width=0.5\linewidth]{img/calorias1.png}
-    \caption{Aplicacion ``Mexican Food with Chilly'' \cite{Microsoft:Concepto}}
-    \label{fig:my_label}
-\end{figure}
-
-En la tabla \ref{tab:my_label}, se muestra una tabla con el listado de los mejores futbolistas del mundo mundial. 
-
-\begin{table}[!tbh]
-    \centering
-    \begin{tabular}{c|c} \hline
-         Estudiante &  Nacionalidad \\ \hline
-         Lionel Messi & Argentina  \\
-         Cristiano Ronaldo & Portuguesa  \\
-         Hector Hermoso Herrera & Mexicana \\ 
-         \hline \hline
+    \caption{Cronograma estimado de desarrollo del proyecto.}
+    \vspace{0.2cm} 
+    \renewcommand{\arraystretch}{1.5} 
+    \begin{tabular}{| l | p{10cm} |}
+        \hline
+        \textbf{Periodo} & \textbf{Actividad} \\
+        \hline
+        Semanas 1-2 (mayo) & Configuración del entorno, base de datos y modelo de entidades \\
+        \hline
+        Semanas 3-5 (mayo-junio) & Desarrollo del módulo de conversión de archivos \\
+        \hline
+        Semanas 6-8 (junio) & Desarrollo del módulo de almacenamiento y listado de documentos \\
+        \hline
+        Semanas 9-10 (junio-julio) & Desarrollo del módulo de generación de códigos QR \\
+        \hline
+        Semanas 11-13 (julio) & Integración del módulo de autenticación y pruebas conjuntas \\
+        \hline
+        Semana 14 (agosto) & Documentación técnica y cierre del proyecto \\
+        \hline
     \end{tabular}
-    \caption{Otro ejemplo de tabla}
-    \label{tab:my_label}
+    \label{tab:cronograma}
 \end{table}
