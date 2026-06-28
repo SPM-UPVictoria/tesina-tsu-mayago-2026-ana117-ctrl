@@ -14,8 +14,8 @@ En el caso particular del PJETAM, el flujo actual de subir documentos manualment
 \paragraph{Características del problema}
 El problema presenta las siguientes características observables:
 \begin{itemize}
-    \item Fragmentación del proceso: la conversión de archivos, el almacenamiento y la generación de los códigos QR tienen lugar en plataformas distintas e interconectadas entre sí.
-    \item  Dependencia de intervención manual: la trayectoria de cada documento requiere que el personal informático lo suba individualmente al servidor sin automatización.
+    \item Fragmentación del proceso: la conversión de archivos, el almacenamiento y la generación de los códigos QR tienen lugar en plataformas distintas y desconectadas entre sí.
+    \item Dependencia de intervención manual: la trayectoria de cada documento requiere que el personal informático lo suba individualmente al servidor sin automatización.
     \item Falta de trazabilidad: no hay una historia estructurada que reúna el documento, la generación del código QR, el área que lo generó y la fecha de elaboración.
     \item Riesgo de inconsistencia: sin convención de nombres uniforme ni base de datos, es posible la duplicación y, por tanto, la pérdida de la relación entre el documento físico y su versión digital.
     \item Escalabilidad baja: el proceso manual no puede hacer frente al crecimiento del número de documentos que se genera en la digitalización institucional.
@@ -24,22 +24,22 @@ El problema presenta las siguientes características observables:
 \paragraph{Soluciones alternas consideradas}
 Se consideraron las siguientes opciones antes de decidirse a desarrollar un sistema propio, las cuales fueron revisadas en el análisis comparativo expuesto en la sección de antecedentes:
 \begin{itemize}
-    \item Adopción de un sistema de gestión documental comercial o de código abierto (OpenKM): esta alternativa fue desechada; tales herramientas no se adaptan de manera nativa al flujo de trabajo del PJETAM, ni tampoco a su infraestructura existente en AWS, y personalizarlas exige una curva de aprendizaje y unas tarifas de adaptación muy elevadas.
-    \item Uso de herramientas genéricas de almacenamiento en la nube (Google Drive, SharePoint): esta alternativa fue igualmente desechada; las mencionadas herramientas no suponen una generación de códigos QR en línea, ni tampoco un control de acceso adaptado a las áreas de jurisdicción del Tribunal.
-    \item Mantener el proceso manual actual: esta alternativa fue igualmente desechada; no implica soluciones a ninguna de las deficiencias revisadas, y por tanto se perpetuaría el riesgo operativo y la ineficacia ya documentada.
+    \item Adopción de un sistema de gestión documental comercial o de código abierto (OpenKM): esta alternativa fue desechada, ya que no se adapta de manera nativa al flujo de trabajo del PJETAM, ni tampoco a su infraestructura existente en AWS, y personalizarlas exige una curva de aprendizaje y unas tarifas de adaptación muy elevadas.
+    \item Uso de herramientas genéricas de almacenamiento en la nube (Google Drive, SharePoint): no se escogió esta alternativa porque no suponen una generación de códigos QR en línea, ni tampoco un control de acceso adaptado a las áreas de jurisdicción del Tribunal.
+    \item Mantener el proceso manual actual: esta alternativa fue igualmente desechada porque no implica soluciones a ninguna de las deficiencias revisadas, y por tanto se perpetuaría el riesgo operativo y la ineficacia ya documentada.
 \end{itemize}
 
 \paragraph{Solución elegida}
-Una vez discutidas las limitaciones de las opciones anteriores, se optó por desarrollar un sistema web a medida, elaborado desde cero siguiendo la arquitectura MVC con el framework ASP.NET Core (.NET 10), con persistencia de datos en SQL Server y almacenamiento de ficheros en Amazon S3, integrando la conversión de ficheros, el almacenamiento centralizado y la generación automática de códigos QR en una única plataforma. Esta opción se ajusta de forma directa a las características del problema: al ser un desarrollo propio, el sistema se puede personalizar y adaptar en su totalidad al flujo de trabajo del departamento de informática y a la infraestructura de AWS ya utilizada por la institución.
+Una vez discutidas las limitaciones de las opciones anteriores, se optó por desarrollar un sistema web a medida, elaborado desde cero siguiendo la arquitectura MVC con el framework ASP.NET Core (.NET 10), con persistencia de datos en SQL Server y almacenamiento en Amazon S3, integrando la conversión de archivos, el almacenamiento centralizado y la generación automática de códigos QR en una única plataforma. Esta opción se ajusta de forma directa a las características del problema: al ser un desarrollo propio, el sistema se puede personalizar y adaptar en su totalidad al flujo de trabajo del departamento de informática y a la infraestructura de AWS ya utilizada por la institución.
 
 \subsubsection{Descripción de la propuesta}
 \paragraph{Qué se va a realizar}
 Se desarrollará el Sistema Web de Gestión Documental y Generación de Códigos QR para el PJETAM, una plataforma que permitirá al personal autorizado de las distintas áreas jurisdiccionales:
 \begin{itemize}
-    \item Cargar documentos en sus formatos originales (ODT, DOC, DOCX) y convertirlos automáticamente a formato PDF.
+    \item Cargar archivos en sus formatos originales (ODT, DOC, DOCX) y convertirlos automáticamente a formato PDF.
     \item Almacenar los documentos convertidos de forma centralizada, sustituyendo el proceso manual de carga a la instancia de Amazon EC2.
     \item Consultar, descargar y eliminar documentos desde una interfaz web unificada.
-    \item Generar códigos QR vinculados a cada documento de manera independiente, bajo demanda, desde la misma pantalla de listado de archivos.
+    \item Generar códigos QR vinculados a cada archivo de manera independiente, desde la misma pantalla de listado de archivos.
     \item Acceder al sistema mediante un mecanismo de autenticación que identifica al área y usuario correspondiente, sin necesidad de credenciales adicionales a las ya utilizadas en los sistemas de gestión existentes del Tribunal.
 \end{itemize}
 
@@ -52,8 +52,46 @@ El desarrollo se llevará a cabo siguiendo una metodología incremental, constru
     \item \textbf{Módulo de generación de códigos QR:} integración de la librería QRCoder para producir códigos QR vinculados a la ubicación del documento en el sistema.
     \item \textbf{Módulo de autenticación:} incorporación del mecanismo de identificación de usuarios mediante parámetros de URL cifrados, en coordinación con el sistema de gestión documental existente.
     \item \textbf{Integración y pruebas:} validación conjunta de los módulos desarrollados, verificando que la conversión, el almacenamiento, la generación de QR y la autenticación operen de manera correcta y coordinada.
-    \item \textbf{documentación técnica} elaboración de la documentación correspondiente al funcionamiento, configuración y mantenimiento del sistema.
+    \item \textbf{Documentación técnica:} elaboración de la documentación correspondiente al funcionamiento, configuración y mantenimiento del sistema.
+
 \end{itemize}
 
 \paragraph{Costo de la propuesta}
 El desarrollo del sistema supone un costo reducido de implementación para la institución, dado que se apoya en herramientas de software libre y en la infraestructura tecnológica de la que ya dispone el PJETAM. El framework ASP.NET Core, el Entity Framework Core, la librería QRCoder y LibreOffice son tecnologías de código abierto y, por tanto, carecen de costo respecto a licencias. De igual forma, el almacenamiento en Amazon S3 y el cómputo en Amazon EC2 corresponden a servicios de nube ya asumidos por la institución para otros usos, por lo que aprovecharlos para el proyecto no signfica un costo adicional importante.
+
+\subsubsection{Estrategia de implementación}
+\paragraph{En que consiste la estrategia}
+La estrategia consiste en desarrollar el sistema de forma incremental y modular, priorizando primero los componentes que pueden construirse y probarse de manera independiente, antes de abordar los módulos que dependen de factores externos disponibles en el proceso de desarrollo, como la integración con el sistema de autenticación de las plataformas de escritorio existentes y la disponibilidad de credenciales de producción para SQL Server y Amazon S3. El desarrollo avanza utilizando equivalentes funcionales temporales, como una base de datos local y una carpeta de almacenamiento de pruebas, que serán sustituidos por los recursos de producción una vez que estén disponibles.
+
+\paragraph{¿Por qué va a funcionar esta estrategia?}
+Esta propuesta de solución tiene múltiples ventajas como la reducción del riesgo de bloqueo del desarrollo, ya que en los primeros pasos no depende de credenciales de producción ni de la integración con sistemas externos; de este modo, el avance del proyecto no se detiene mientras dichos elementos son gestionados por las áreas correspondientes. Asimismo, permite validar cada módulo de forma aislada, pues al construir el sistema por componentes independientes, los errores se identifican y corrigen en una etapa temprana, sin afectar al resto del sistema.
+
+De igual manera, esta estrategia aprovecha la arquitectura MVC seleccionada, ya que la separación de responsabilidades entre modelo, vista y controlador facilita sustituir un componente temporal por su equivalente final en producción, sin necesidad de reestructurar el sistema completo.  Finalmente, la estrategia se ajusta al tiempo disponible para realizar el proyecto, 14 semanas aproximadamente, por lo que la estrategia permite distribuir el desarrollo de los módulos de forma realista dentro de este periodo, dejando las últimas semanas para integración, pruebas y documentación.
+
+\paragraph{Cronograma estimado}
+Para llevar a cabo la estrategia de implementación descrita, se plantea el siguiente cronograma de actividades distribuido por semanas:
+
+\begin{table}[htpb]
+    \centering
+    \caption{Cronograma estimado de desarrollo del proyecto.}
+    \vspace{0.2cm} 
+    \renewcommand{\arraystretch}{1.5} 
+    \begin{tabular}{| l | p{10cm} |}
+        \hline
+        \textbf{Periodo} & \textbf{Actividad} \\
+        \hline
+        Semanas 1-2 (mayo) & Configuración del entorno, base de datos y modelo de entidades \\
+        \hline
+        Semanas 3-5 (mayo-junio) & Desarrollo del módulo de conversión de archivos \\
+        \hline
+        Semanas 6-8 (junio) & Desarrollo del módulo de almacenamiento y listado de documentos \\
+        \hline
+        Semanas 9-10 (junio-julio) & Desarrollo del módulo de generación de códigos QR \\
+        \hline
+        Semanas 11-13 (julio) & Integración del módulo de autenticación y pruebas conjuntas \\
+        \hline
+        Semana 14 (agosto) & Documentación técnica y cierre del proyecto \\
+        \hline
+    \end{tabular}
+    \label{tab:cronograma}
+\end{table}

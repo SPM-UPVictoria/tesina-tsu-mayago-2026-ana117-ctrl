@@ -62,7 +62,11 @@
 \contentsline {paragraph}{Qué se va a realizar}{20}{paragraph*.17}%
 \contentsline {paragraph}{Cómo se va a realizar}{21}{paragraph*.18}%
 \contentsline {paragraph}{Costo de la propuesta}{22}{paragraph*.19}%
-\contentsline {section}{\numberline {4}Resultados}{23}{section.4}%
-\contentsline {section}{\numberline {5}Conclusiones}{24}{section.5}%
-\contentsline {section}{Bibliografía}{25}{section.5}%
-\contentsline {section}{Anexos}{29}{section.5}%
+\contentsline {subsubsection}{\numberline {3.1.3}Estrategia de implementación}{22}{subsubsection.3.1.3}%
+\contentsline {paragraph}{En que consiste la estrategia}{22}{paragraph*.20}%
+\contentsline {paragraph}{¿Por qué va a funcionar esta estrategia?}{22}{paragraph*.21}%
+\contentsline {paragraph}{Cronograma estimado}{23}{paragraph*.22}%
+\contentsline {section}{\numberline {4}Resultados}{24}{section.4}%
+\contentsline {section}{\numberline {5}Conclusiones}{25}{section.5}%
+\contentsline {section}{Bibliografía}{26}{section.5}%
+\contentsline {section}{Anexos}{30}{section.5}%
