@@ -25,48 +25,42 @@
 \contentsline {subsubsection}{\numberline {1.5.2}Limitaciones}{9}{subsubsection.1.5.2}%
 \contentsline {section}{\numberline {2}Marco Teórico}{10}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Organización y gestión de documentos electrónicos}{10}{subsection.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.1}Conceptos fundamentales y ciclo de vida}{10}{subsubsection.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.1.2}Impacto en la eficiencia institucional}{10}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.1}Conceptos fundamentales}{10}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Impacto en la eficiencia institucional}{11}{subsubsection.2.1.2}%
 \contentsline {subsection}{\numberline {2.2}Arquitectura Modelo-Vista-Controlador (MVC)}{11}{subsection.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.1}Definición y principios del patrón}{11}{subsubsection.2.2.1}%
 \contentsline {subsubsection}{\numberline {2.2.2}Componentes y flujo de interacción}{11}{subsubsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.3}Justificación de uso en el proyecto}{12}{subsubsection.2.2.3}%
 \contentsline {subsection}{\numberline {2.3}Funcionamiento y características de los códigos QR}{12}{subsection.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}Arquitectura física y estructura matricial}{13}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.1}Arquitectura física y estructura matricial}{12}{subsubsection.2.3.1}%
 \contentsline {subsubsection}{\numberline {2.3.2}Mecanismo de decodificación y corrección de errores}{13}{subsubsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.4}Protocolo HTTPS y seguridad en las aplicaciones web}{14}{subsection.2.4}%
-\contentsline {subsubsection}{\numberline {2.4.1}Fundamentos del protocolo HTTPS y cifrado en tránsito}{14}{subsubsection.2.4.1}%
-\contentsline {subsubsection}{\numberline {2.4.2}Prevención de vulnerabilidades y ataques web}{14}{subsubsection.2.4.2}%
-\contentsline {subsubsection}{\numberline {2.4.3}Importancia en la gestión documental en la nube con Códigos QR}{15}{subsubsection.2.4.3}%
+\contentsline {subsubsection}{\numberline {2.4.1}Importancia en la gestión documental}{14}{subsubsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.5}Bases de datos relacionales}{15}{subsection.2.5}%
-\contentsline {subsubsection}{\numberline {2.5.1}Modelo relacional y estructura de datos}{15}{subsubsection.2.5.1}%
-\contentsline {subsubsection}{\numberline {2.5.2}Integridad referencial y normalización}{16}{subsubsection.2.5.2}%
-\contentsline {subsubsection}{\numberline {2.5.3}Aplicación en el almacenamiento documental y códigos QR}{16}{subsubsection.2.5.3}%
-\contentsline {subsection}{\numberline {2.6}Almacenamiento en la nube}{16}{subsection.2.6}%
-\contentsline {subsubsection}{\numberline {2.6.1}Definición y características de la nube}{16}{subsubsection.2.6.1}%
-\contentsline {subsubsection}{\numberline {2.6.2}Seguridad y gestión de la información}{16}{subsubsection.2.6.2}%
-\contentsline {subsubsection}{\numberline {2.6.3}Adopción en entornos corporativos y legales}{17}{subsubsection.2.6.3}%
-\contentsline {subsection}{\numberline {2.7}Usabilidad y experiencia de usuario (UX)}{17}{subsection.2.7}%
-\contentsline {subsubsection}{\numberline {2.7.1}Conceptos de Usabilidad y Experiencia de Usuario}{17}{subsubsection.2.7.1}%
+\contentsline {subsubsection}{\numberline {2.5.1}Integridad referencial y normalización}{15}{subsubsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.6}Almacenamiento en la nube}{15}{subsection.2.6}%
+\contentsline {subsubsection}{\numberline {2.6.1}Uso en ámbitos corporativos y legales}{16}{subsubsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.7}Usabilidad y experiencia de usuario (UX)}{16}{subsection.2.7}%
+\contentsline {subsubsection}{\numberline {2.7.1}Conceptos de Usabilidad y Experiencia de Usuario}{16}{subsubsection.2.7.1}%
 \contentsline {subsubsection}{\numberline {2.7.2}Principios de evaluación e interacción}{17}{subsubsection.2.7.2}%
-\contentsline {subsubsection}{\numberline {2.7.3}Impacto en la adopción de sistemas de gestión documental}{18}{subsubsection.2.7.3}%
-\contentsline {section}{\numberline {3}Metodología}{19}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Propuesta de solución}{19}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Problema a resolver}{19}{subsubsection.3.1.1}%
-\contentsline {paragraph}{Naturaleza del problema}{19}{paragraph*.12}%
-\contentsline {paragraph}{Historia del problema}{19}{paragraph*.13}%
-\contentsline {paragraph}{Características del problema}{19}{paragraph*.14}%
-\contentsline {paragraph}{Soluciones alternas consideradas}{20}{paragraph*.15}%
-\contentsline {paragraph}{Solución elegida}{20}{paragraph*.16}%
-\contentsline {subsubsection}{\numberline {3.1.2}Descripción de la propuesta}{20}{subsubsection.3.1.2}%
-\contentsline {paragraph}{Qué se va a realizar}{20}{paragraph*.17}%
-\contentsline {paragraph}{Cómo se va a realizar}{21}{paragraph*.18}%
-\contentsline {paragraph}{Costo de la propuesta}{22}{paragraph*.19}%
-\contentsline {subsubsection}{\numberline {3.1.3}Estrategia de implementación}{22}{subsubsection.3.1.3}%
-\contentsline {paragraph}{En que consiste la estrategia}{22}{paragraph*.20}%
-\contentsline {paragraph}{¿Por qué va a funcionar esta estrategia?}{22}{paragraph*.21}%
-\contentsline {paragraph}{Cronograma estimado}{23}{paragraph*.22}%
+\contentsline {subsubsection}{\numberline {2.7.3}Impacto en la adopción de sistemas de gestión documental}{17}{subsubsection.2.7.3}%
+\contentsline {section}{\numberline {3}Metodología}{18}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Propuesta de solución}{18}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Beneficios del sistema propuesto}{18}{subsubsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.2}Análisis del sistema}{18}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Diagramas de flujo del sistema}{18}{subsubsection.3.2.1}%
+\contentsline {paragraph}{Flujo del módulo de conversión y carga de archivos}{18}{paragraph*.16}%
+\contentsline {paragraph}{Flujo del módulo de gestión documental}{18}{paragraph*.18}%
+\contentsline {subsubsection}{\numberline {3.2.2}Diagrama de caso de uso}{20}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Diagramas de actividades}{20}{subsubsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.3}Diseño del sistema}{20}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Diagrama de Entidad-Relación de la Base de Datos}{20}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Diagramas de secuencia}{21}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Diseño de interfaz}{21}{subsubsection.3.3.3}%
+\contentsline {paragraph}{Modulo de conversion y carga de archivos}{21}{paragraph*.21}%
+\contentsline {paragraph}{Modulo de conversion y carga de archivos}{21}{paragraph*.23}%
+\contentsline {subsection}{\numberline {3.4}Desarrollo del sistema}{21}{subsection.3.4}%
 \contentsline {section}{\numberline {4}Resultados}{24}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Pantallas del sistema y su funcionamiento}{24}{subsection.4.1}%
 \contentsline {section}{\numberline {5}Conclusiones}{25}{section.5}%
 \contentsline {section}{Bibliografía}{26}{section.5}%
-\contentsline {section}{Anexos}{30}{section.5}%
+\contentsline {section}{Anexos}{29}{section.5}%

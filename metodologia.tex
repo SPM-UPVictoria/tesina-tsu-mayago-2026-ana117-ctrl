@@ -1,97 +1,73 @@
 \section{Metodología}
 \subsection{Propuesta de solución}
 \label{propuesta_solucion}
+La solución propuesta consiste en desarrollar un sistema web desde cero siguiendo la arquitectura MVC con el framework ASP.NET Core (.NET 10), con persistencia de datos en SQL Server y almacenamiento en la nube por medio de AWS S3. El sistema consta de dos módulos, el módulo de conversion y carga de archivos, que permite subir documentos en distintos formatos para su conversión a PDF, asi como imágenes y enlaces. Y el módulo de gestión documental, que permite ver todos los archivos almacenados en el sistema y generar codigos QR para cada uno de ellos, asi como la visualización, la eliminación o la descarga de los archivos, todo desde una misma plataforma.
 
-\subsubsection{Problema a resolver}
-\paragraph{Naturaleza del problema}
-El problema que se ha identificado en el Departamento de Informática PJETAM es un problema tanto operativo y tecnológico: la falta de un sistema único para la gestión, conversión, almacenamiento y seguimiento de los documentos institucionales. Actualmente, este proceso se realiza manualmente y  de forma fragmentada, ya que utiliza múltiples herramientas externas y la intervención directa del personal de informática en cada etapa de este proceso.
+El proceso de autenticación se integra con el mecanismo existente en la institucion, ya que esta plataforma solo sera accedida como una extensión de sistemas que ya tienen su proceso de autenticación.
 
-\paragraph{Historia del problema}
-Este problema no solo existe en esta institución, sino que es habitual en instituciones públicas mexicanas que han postergado la modernización de sus procesos documentales. Como se evidenció en los antecedentes teóricos, la gestión documental gubernamental en México ha enfrentado una transición lenta hacia la digitalización.
+\subsubsection{Beneficios del sistema propuesto}
+Al implementar esta propuesta la gestión documental del PJETAM mejoraria en la accesibilidad de los documentos, ya que sería más fácil el poder acceder a los documentos mediante su código QR ya sea digital o impreso, el sistema también hace mas fácil el proceso de almacenar los documentos en un mismo sitio, y hace los procedimientos más fáciles al hacerlo en la misma plataforma, quitando la necesidad de usar herramientas externas.
+%
+\subsection{Análisis del sistema}
 
-En el caso particular del PJETAM, el flujo actual de subir documentos manualmente a una instancia de Amazon EC2 y generar códigos QR mediante una herramienta externa, surgió como una solución improvisada ante la necesidad de digitalizar documentos, sin que existiera previamente un sistema diseñado específicamente para ese fin.
-
-\paragraph{Características del problema}
-El problema presenta las siguientes características observables:
-\begin{itemize}
-    \item Fragmentación del proceso: la conversión de archivos, el almacenamiento y la generación de los códigos QR tienen lugar en plataformas distintas y desconectadas entre sí.
-    \item Dependencia de intervención manual: la trayectoria de cada documento requiere que el personal informático lo suba individualmente al servidor sin automatización.
-    \item Falta de trazabilidad: no hay una historia estructurada que reúna el documento, la generación del código QR, el área que lo generó y la fecha de elaboración.
-    \item Riesgo de inconsistencia: sin convención de nombres uniforme ni base de datos, es posible la duplicación y, por tanto, la pérdida de la relación entre el documento físico y su versión digital.
-    \item Escalabilidad baja: el proceso manual no puede hacer frente al crecimiento del número de documentos que se genera en la digitalización institucional.
-\end{itemize}
-
-\paragraph{Soluciones alternas consideradas}
-Se consideraron las siguientes opciones antes de decidirse a desarrollar un sistema propio, las cuales fueron revisadas en el análisis comparativo expuesto en la sección de antecedentes:
-\begin{itemize}
-    \item Adopción de un sistema de gestión documental comercial o de código abierto (OpenKM): esta alternativa fue desechada, ya que no se adapta de manera nativa al flujo de trabajo del PJETAM, ni tampoco a su infraestructura existente en AWS, y personalizarlas exige una curva de aprendizaje y unas tarifas de adaptación muy elevadas.
-    \item Uso de herramientas genéricas de almacenamiento en la nube (Google Drive, SharePoint): no se escogió esta alternativa porque no suponen una generación de códigos QR en línea, ni tampoco un control de acceso adaptado a las áreas de jurisdicción del Tribunal.
-    \item Mantener el proceso manual actual: esta alternativa fue igualmente desechada porque no implica soluciones a ninguna de las deficiencias revisadas, y por tanto se perpetuaría el riesgo operativo y la ineficacia ya documentada.
-\end{itemize}
-
-\paragraph{Solución elegida}
-Una vez discutidas las limitaciones de las opciones anteriores, se optó por desarrollar un sistema web a medida, elaborado desde cero siguiendo la arquitectura MVC con el framework ASP.NET Core (.NET 10), con persistencia de datos en SQL Server y almacenamiento en Amazon S3, integrando la conversión de archivos, el almacenamiento centralizado y la generación automática de códigos QR en una única plataforma. Esta opción se ajusta de forma directa a las características del problema: al ser un desarrollo propio, el sistema se puede personalizar y adaptar en su totalidad al flujo de trabajo del departamento de informática y a la infraestructura de AWS ya utilizada por la institución.
-
-\subsubsection{Descripción de la propuesta}
-\paragraph{Qué se va a realizar}
-Se desarrollará el Sistema Web de Gestión Documental y Generación de Códigos QR para el PJETAM, una plataforma que permitirá al personal autorizado de las distintas áreas jurisdiccionales:
-\begin{itemize}
-    \item Cargar archivos en sus formatos originales (ODT, DOC, DOCX) y convertirlos automáticamente a formato PDF.
-    \item Almacenar los documentos convertidos de forma centralizada, sustituyendo el proceso manual de carga a la instancia de Amazon EC2.
-    \item Consultar, descargar y eliminar documentos desde una interfaz web unificada.
-    \item Generar códigos QR vinculados a cada archivo de manera independiente, desde la misma pantalla de listado de archivos.
-    \item Acceder al sistema mediante un mecanismo de autenticación que identifica al área y usuario correspondiente, sin necesidad de credenciales adicionales a las ya utilizadas en los sistemas de gestión existentes del Tribunal.
-\end{itemize}
-
-\paragraph{Cómo se va a realizar}
-El desarrollo se llevará a cabo siguiendo una metodología incremental, construyendo el sistema módulo por módulo sobre una base de datos relacional diseñada específicamente para soportar las entidades de Áreas, Usuarios, Archivos, Códigos QR y Registros de Acceso. La estrategia de implementación contempla las siguientes etapas:
-\begin{itemize}
-    \item \textbf{Diseñar arquitectura del sistema:} Analizar los requerimientos funcionales de la empresa y diseñar la arquitectura de la aplicación web, definiendo las tecnologías de frontend, backend y almacenamiento.
-    \item \textbf{Módulo de conversión de archivos:} implementación de la conversión de documentos a PDF mediante LibreOffice en modo headless, asegurando la integridad del contenido original.
-    \item \textbf{Módulo de almacenamiento y listado:} desarrollo de las vistas y controladores necesarios para subir, listar, descargar y eliminar documentos.
-    \item \textbf{Módulo de generación de códigos QR:} integración de la librería QRCoder para producir códigos QR vinculados a la ubicación del documento en el sistema.
-    \item \textbf{Módulo de autenticación:} incorporación del mecanismo de identificación de usuarios mediante parámetros de URL cifrados, en coordinación con el sistema de gestión documental existente.
-    \item \textbf{Integración y pruebas:} validación conjunta de los módulos desarrollados, verificando que la conversión, el almacenamiento, la generación de QR y la autenticación operen de manera correcta y coordinada.
-    \item \textbf{Documentación técnica:} elaboración de la documentación correspondiente al funcionamiento, configuración y mantenimiento del sistema.
-
-\end{itemize}
-
-\paragraph{Costo de la propuesta}
-El desarrollo del sistema supone un costo reducido de implementación para la institución, dado que se apoya en herramientas de software libre y en la infraestructura tecnológica de la que ya dispone el PJETAM. El framework ASP.NET Core, el Entity Framework Core, la librería QRCoder y LibreOffice son tecnologías de código abierto y, por tanto, carecen de costo respecto a licencias. De igual forma, el almacenamiento en Amazon S3 y el cómputo en Amazon EC2 corresponden a servicios de nube ya asumidos por la institución para otros usos, por lo que aprovecharlos para el proyecto no signfica un costo adicional importante.
-
-\subsubsection{Estrategia de implementación}
-\paragraph{En que consiste la estrategia}
-La estrategia consiste en desarrollar el sistema de forma incremental y modular, priorizando primero los componentes que pueden construirse y probarse de manera independiente, antes de abordar los módulos que dependen de otras áreas, como la integración con el sistema de autenticación de las plataformas de escritorio existentes y la disponibilidad de credenciales de producción para SQL Server y Amazon S3. El desarrollo avanza utilizando equivalentes funcionales temporales, como una base de datos local y una carpeta de almacenamiento de pruebas, que serán sustituidos por los recursos de producción una vez que estén disponibles.
-
-\paragraph{¿Por qué va a funcionar esta estrategia?}
-Esta propuesta de solución tiene múltiples ventajas como la reducción del riesgo de bloqueo del desarrollo, ya que en los primeros pasos no depende de credenciales de producción ni de la integración con sistemas externos; de este modo, el avance del proyecto no se detiene mientras dichos elementos son gestionados por las áreas correspondientes. Asimismo, permite validar cada módulo de forma aislada, pues al construir el sistema por componentes independientes, los errores se identifican y corrigen en una etapa temprana, sin afectar al resto del sistema.
-
-De igual manera, esta estrategia aprovecha la arquitectura MVC seleccionada, ya que la separación de responsabilidades entre modelo, vista y controlador facilita sustituir un componente temporal por su equivalente final en producción, sin necesidad de reestructurar el sistema completo.  Finalmente, la estrategia se ajusta al tiempo disponible para realizar el proyecto, 14 semanas aproximadamente, por lo que la estrategia permite distribuir el desarrollo de los módulos de forma realista dentro de este periodo, dejando las últimas semanas para integración, pruebas y documentación.
-
-\paragraph{Cronograma estimado}
-Para llevar a cabo la estrategia de implementación descrita, se plantea el siguiente cronograma de actividades distribuido por semanas:
-
-\begin{table}[htpb]
+\subsubsection{Diagramas de flujo del sistema}
+\paragraph{Flujo del módulo de conversión y carga de archivos}
+El diagrama de la Figura \ref{fig:diagrama_1} muestra el flujo del sistema al convertir y almacenar un archivo, ya sea un documento o un enlace, ilustra el flujo desde que el usuario ingresa hasta que el archivo queda registrado en la base de datos y ya visible en el módulo de gestión.
+\begin{figure}[!tbh]
     \centering
-    \caption{Cronograma estimado de desarrollo del proyecto.}
-    \vspace{0.2cm} 
-    \renewcommand{\arraystretch}{1.5} 
-    \begin{tabular}{| l | p{10cm} |}
-        \hline
-        \textbf{Periodo} & \textbf{Actividad} \\
-        \hline
-        Semanas 1-2 (mayo) & Configuración del entorno, base de datos y modelo de entidades \\
-        \hline
-        Semanas 3-5 (mayo-junio) & Desarrollo del módulo de conversión de archivos \\
-        \hline
-        Semanas 6-8 (junio) & Desarrollo del módulo de almacenamiento y listado de documentos \\
-        \hline
-        Semanas 9-10 (junio-julio) & Desarrollo del módulo de generación de códigos QR \\
-        \hline
-        Semanas 11-13 (julio) & Integración del módulo de autenticación y pruebas conjuntas \\
-        \hline
-        Semana 14 (agosto) & Documentación técnica y cierre del proyecto \\
-        \hline
-    \end{tabular}
-    \label{tab:cronograma}
-\end{table}
+    \includegraphics[width=0.9\linewidth]{img/diagrama_conversion.png}
+    \caption{Diagrama de flujo: Módulo de conversión y carga de archivos. Fuente: elaboración propia}
+    \label{fig:diagrama_1}
+\end{figure}
+
+\paragraph{Flujo del módulo de gestión documental}
+La Figura \ref{fig:diagrama_2} muestra el flujo de este módulo, en el cual se pueden gestionar todos los archivos almacenados en el sistema, en la lista solo se muestran los archivos que no han sido eliminados y como se ve en la figura, por cada archivo se pueden hacer cuatro acciones, entre ellas la creación de códigos QR para cada archivo, los cuales tambien se guardan en la base de datos con las relaciones de su archivo.
+\begin{figure}[!tbh]
+    \centering
+    \includegraphics[width=0.9\linewidth]{img/diagrama_gestion.png}
+    \caption{Diagrama de flujo: Módulo de gestión documental. Fuente: elaboración propia}
+    \label{fig:diagrama_2}
+\end{figure}
+
+\subsubsection{Diagrama de caso de uso}
+
+\subsubsection{Diagramas de actividades}
+
+
+\subsection{Diseño del sistema}
+\label{diseño_sistema}
+
+\subsubsection{Diagrama de Entidad-Relación de la Base de Datos}
+En la Figura \ref{fig:modelo-er}
+\begin{figure}[!tbh]
+    \centering
+    \includegraphics[width=0.7\linewidth]{img/modelo ER.jpeg}
+    \caption{Modelo Entidad-Relación del sistema. Fuente: elaboración propia}
+    \label{fig:modelo-er}
+\end{figure}
+
+\subsubsection{Diagramas de secuencia}
+
+\subsubsection{Diseño de interfaz}
+Para la propuesta del sistema se realizaron dos vistas principales para dividir los módulos más importantes del sistema
+
+\paragraph{Modulo de conversion y carga de archivos}
+En la Figura \ref{fig:mockup-1}
+\begin{figure}[!tbh]
+    \centering
+    \includegraphics[width=0.7\linewidth]{img/Mockup-Modulo de conversion y carga de archivos.png}
+    \caption{Prototipo de la interfaz del módulo de conversion y carga de archivos. Fuente: elaboración propia}
+    \label{fig:mockup-1}
+\end{figure}
+
+\paragraph{Modulo de conversion y carga de archivos}
+En la Figura \ref{fig:mockup-2}
+\begin{figure}[!tbh]
+    \centering
+    \includegraphics[width=0.7\linewidth]{img/Mockup-Modulo de gestión documental.png}
+    \caption{Prototipo de la interfaz del módulo de gestión documental. Fuente: elaboración propia}
+    \label{fig:mockup-2}
+\end{figure}
+
+\subsection{Desarrollo del sistema}
+herramientas, lenguajes de programación y la arquitectura para construir los módulos

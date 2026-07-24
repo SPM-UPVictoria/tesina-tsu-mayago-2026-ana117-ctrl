@@ -76,10 +76,10 @@
       \field{pages}{15\bibrangedash 23}
       \range{pages}{9}
       \verb{urlraw}
-      \verb https://revistas.ucm.es/index.php/CGAP/article/download/73441/4564456557460
+      \verb https://revistas.ucm.es/index.php/CGAP/en/article/view/73441
       \endverb
       \verb{url}
-      \verb https://revistas.ucm.es/index.php/CGAP/article/download/73441/4564456557460
+      \verb https://revistas.ucm.es/index.php/CGAP/en/article/view/73441
       \endverb
     \endentry
     \entry{sosa2022gestion}{article}{}
@@ -184,32 +184,6 @@
       \endverb
       \verb{url}
       \verb https://www.docusign.com/es-mx/blog/justicia-digital
-      \endverb
-    \endentry
-    \entry{pjcdmx2023expedientes}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=561c6a31ab70c0882977a7bcd9aa2c39}{%
-           family={{Poder Judicial de la Ciudad de México}},
-           familyi={P\bibinitperiod}}}%
-      }
-      \strng{namehash}{561c6a31ab70c0882977a7bcd9aa2c39}
-      \strng{fullhash}{561c6a31ab70c0882977a7bcd9aa2c39}
-      \strng{bibnamehash}{561c6a31ab70c0882977a7bcd9aa2c39}
-      \strng{authorbibnamehash}{561c6a31ab70c0882977a7bcd9aa2c39}
-      \strng{authornamehash}{561c6a31ab70c0882977a7bcd9aa2c39}
-      \strng{authorfullhash}{561c6a31ab70c0882977a7bcd9aa2c39}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Consultado en mayo de 2026}
-      \field{title}{Expedientes digitales con total legalidad}
-      \field{year}{2023}
-      \verb{urlraw}
-      \verb https://www.poderjudicialcdmx.gob.mx/expedientes_digitales_legalidad/
-      \endverb
-      \verb{url}
-      \verb https://www.poderjudicialcdmx.gob.mx/expedientes_digitales_legalidad/
       \endverb
     \endentry
     \entry{rtms2023}{article}{}
@@ -328,60 +302,32 @@
       \verb https://ijsrem.com/download/a-study-on-cloud-storage-amazon-s3/
       \endverb
     \endentry
-    \entry{modeloGestionMGDEA}{misc}{}
+    \entry{imgCicloVida}{misc}{}
       \name{author}{1}{}{%
-        {{hash=ddbd17b35b5612755db8928e2a17f711}{%
-           family={{Universidad Nacional de Colombia}},
-           familyi={U\bibinitperiod}}}%
+        {{hash=ad62d49fe7407093555e30651ae0361c}{%
+           family={Paredes},
+           familyi={P\bibinitperiod},
+           given={Sofía},
+           giveni={S\bibinitperiod}}}%
       }
-      \strng{namehash}{ddbd17b35b5612755db8928e2a17f711}
-      \strng{fullhash}{ddbd17b35b5612755db8928e2a17f711}
-      \strng{bibnamehash}{ddbd17b35b5612755db8928e2a17f711}
-      \strng{authorbibnamehash}{ddbd17b35b5612755db8928e2a17f711}
-      \strng{authornamehash}{ddbd17b35b5612755db8928e2a17f711}
-      \strng{authorfullhash}{ddbd17b35b5612755db8928e2a17f711}
+      \strng{namehash}{ad62d49fe7407093555e30651ae0361c}
+      \strng{fullhash}{ad62d49fe7407093555e30651ae0361c}
+      \strng{bibnamehash}{ad62d49fe7407093555e30651ae0361c}
+      \strng{authorbibnamehash}{ad62d49fe7407093555e30651ae0361c}
+      \strng{authornamehash}{ad62d49fe7407093555e30651ae0361c}
+      \strng{authorfullhash}{ad62d49fe7407093555e30651ae0361c}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Consultado en mayo de 2026}
-      \field{title}{Modelo de Gestión de Documentos Electrónicos de Archivo (MGDEA)}
+      \field{note}{Brait. Consultado en mayo de 2026}
+      \field{title}{Cómo gestionar el ciclo de vida de los documentos con OpenText Extended ECM}
       \field{year}{2023}
       \verb{urlraw}
-      \verb https://gestiondocumental.unal.edu.co/wp-content/uploads/2023/10/Modelo-de-Gestion-de-Documentos-Electronicos-de-Documentos-de-Archivo-MGDEA.pdf
+      \verb https://www.brait.cc/blog/gestionar-ciclo-vida-documentos-opentext-extended-ecm
       \endverb
       \verb{url}
-      \verb https://gestiondocumental.unal.edu.co/wp-content/uploads/2023/10/Modelo-de-Gestion-de-Documentos-Electronicos-de-Documentos-de-Archivo-MGDEA.pdf
-      \endverb
-    \endentry
-    \entry{gestionDoc}{article}{}
-      \name{author}{1}{}{%
-        {{hash=435641ae4c65f998956b27954ff58f97}{%
-           family={Yamilé\bibnamedelimb Hidalgo\bibnamedelima Urrea},
-           familyi={Y\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim U\bibinitperiod},
-           given={Wcdaly\bibnamedelimb Cortés\bibnamedelima Algeciras},
-           giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-      }
-      \strng{namehash}{435641ae4c65f998956b27954ff58f97}
-      \strng{fullhash}{435641ae4c65f998956b27954ff58f97}
-      \strng{bibnamehash}{435641ae4c65f998956b27954ff58f97}
-      \strng{authorbibnamehash}{435641ae4c65f998956b27954ff58f97}
-      \strng{authornamehash}{435641ae4c65f998956b27954ff58f97}
-      \strng{authorfullhash}{435641ae4c65f998956b27954ff58f97}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Sello Editorial UNAD}
-      \field{number}{1}
-      \field{title}{Modelo de Gestión Documental Electrónica de Archivos basado en metodología BPM para el mejoramiento de los procesos administrativos}
-      \field{volume}{1}
-      \field{year}{2020}
-      \verb{urlraw}
-      \verb https://repository.unad.edu.co/handle/10596/71771
-      \endverb
-      \verb{url}
-      \verb https://repository.unad.edu.co/handle/10596/71771
+      \verb https://www.brait.cc/blog/gestionar-ciclo-vida-documentos-opentext-extended-ecm
       \endverb
     \endentry
     \entry{gestionDocGloriaAguirre}{article}{}
@@ -565,62 +511,32 @@
       \verb https://franckybox.com/wp-content/uploads/qrcode.pdf
       \endverb
     \endentry
-    \entry{QRWahsheh2021}{article}{}
+    \entry{img_qr}{misc}{}
       \name{author}{1}{}{%
-        {{hash=5d13210cb0cd7aaeff534dd37583f437}{%
-           family={Heider\bibnamedelimb Ahmad\bibnamedelima Wahsheh},
-           familyi={H\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim W\bibinitperiod},
-           given={Mohammed\bibnamedelimb Saeed\bibnamedelima Zahrani},
-           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+        {{hash=6bda612e720dbd2b991b15ea45f29f38}{%
+           family={Khalpada},
+           familyi={K\bibinitperiod},
+           given={Shri},
+           giveni={S\bibinitperiod}}}%
       }
-      \strng{namehash}{5d13210cb0cd7aaeff534dd37583f437}
-      \strng{fullhash}{5d13210cb0cd7aaeff534dd37583f437}
-      \strng{bibnamehash}{5d13210cb0cd7aaeff534dd37583f437}
-      \strng{authorbibnamehash}{5d13210cb0cd7aaeff534dd37583f437}
-      \strng{authornamehash}{5d13210cb0cd7aaeff534dd37583f437}
-      \strng{authorfullhash}{5d13210cb0cd7aaeff534dd37583f437}
+      \strng{namehash}{6bda612e720dbd2b991b15ea45f29f38}
+      \strng{fullhash}{6bda612e720dbd2b991b15ea45f29f38}
+      \strng{bibnamehash}{6bda612e720dbd2b991b15ea45f29f38}
+      \strng{authorbibnamehash}{6bda612e720dbd2b991b15ea45f29f38}
+      \strng{authornamehash}{6bda612e720dbd2b991b15ea45f29f38}
+      \strng{authorfullhash}{6bda612e720dbd2b991b15ea45f29f38}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{International Journal of Computers Communications \& Control}
-      \field{number}{3}
-      \field{title}{Secure Real-Time Computational Intelligence System Against Malicious QR Code Links}
-      \field{volume}{16}
-      \field{year}{2021}
-      \verb{urlraw}
-      \verb https://www.researchgate.net/publication/355114102_Secure_Real-Time_Computational_Intelligence_System_Against_Malicious_QR_Code_Links
-      \endverb
-      \verb{url}
-      \verb https://www.researchgate.net/publication/355114102_Secure_Real-Time_Computational_Intelligence_System_Against_Malicious_QR_Code_Links
-      \endverb
-    \endentry
-    \entry{QRNoever2025}{article}{}
-      \name{author}{1}{}{%
-        {{hash=41add38406f00b5351e8e48f4bccb5f1}{%
-           family={Noever},
-           familyi={N\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod}}}%
-      }
-      \strng{namehash}{41add38406f00b5351e8e48f4bccb5f1}
-      \strng{fullhash}{41add38406f00b5351e8e48f4bccb5f1}
-      \strng{bibnamehash}{41add38406f00b5351e8e48f4bccb5f1}
-      \strng{authorbibnamehash}{41add38406f00b5351e8e48f4bccb5f1}
-      \strng{authornamehash}{41add38406f00b5351e8e48f4bccb5f1}
-      \strng{authorfullhash}{41add38406f00b5351e8e48f4bccb5f1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint}
-      \field{title}{Dueling QR Codes: The Hyding of Dr. Jeckyl}
+      \field{note}{Consultado en mayo de 2026}
+      \field{title}{How The Heck Do QR Codes Work?}
       \field{year}{2025}
       \verb{urlraw}
-      \verb https://arxiv.org/pdf/2503.13458
+      \verb https://perthirtysix.com/how-the-heck-do-qr-codes-work?trk=public_post_comment-text
       \endverb
       \verb{url}
-      \verb https://arxiv.org/pdf/2503.13458
+      \verb https://perthirtysix.com/how-the-heck-do-qr-codes-work?trk=public_post_comment-text
       \endverb
     \endentry
     \entry{diLuca2024hacking}{article}{}
@@ -657,34 +573,29 @@
       \verb https://biblioteca.ciencialatina.org/wp-content/uploads/2024/12/Libro-Hacking-Etico-Teoria-Practicas.pdf
       \endverb
     \endentry
-    \entry{dof2021seguridad}{article}{}
+    \entry{img_handshakeTLS}{misc}{}
       \name{author}{1}{}{%
-        {{hash=7dee8e53110bdd49b4b1ff9cc630e363}{%
-           family={{Diario Oficial de la Federación (DOF)}},
-           familyi={D\bibinitperiod}}}%
+        {{hash=a4ae9cbe03432147289e689df9abe69e}{%
+           family={Sameer},
+           familyi={S\bibinitperiod}}}%
       }
-      \strng{namehash}{7dee8e53110bdd49b4b1ff9cc630e363}
-      \strng{fullhash}{7dee8e53110bdd49b4b1ff9cc630e363}
-      \strng{bibnamehash}{7dee8e53110bdd49b4b1ff9cc630e363}
-      \strng{authorbibnamehash}{7dee8e53110bdd49b4b1ff9cc630e363}
-      \strng{authornamehash}{7dee8e53110bdd49b4b1ff9cc630e363}
-      \strng{authorfullhash}{7dee8e53110bdd49b4b1ff9cc630e363}
+      \strng{namehash}{a4ae9cbe03432147289e689df9abe69e}
+      \strng{fullhash}{a4ae9cbe03432147289e689df9abe69e}
+      \strng{bibnamehash}{a4ae9cbe03432147289e689df9abe69e}
+      \strng{authorbibnamehash}{a4ae9cbe03432147289e689df9abe69e}
+      \strng{authornamehash}{a4ae9cbe03432147289e689df9abe69e}
+      \strng{authorfullhash}{a4ae9cbe03432147289e689df9abe69e}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Secretaría de Gobernación - Gobierno de México}
-      \field{number}{1}
-      \field{title}{Acuerdo por el que se emiten las políticas para impulsar el uso de las tecnologías de la información y la seguridad de la información en la Administración Pública}
-      \field{volume}{1}
-      \field{year}{2021}
-      \field{pages}{1\bibrangedash 35}
-      \range{pages}{35}
+      \field{title}{SSL/TLS Handshake: Step-by-Step Explanation of How It Works}
+      \field{year}{2025}
       \verb{urlraw}
-      \verb https://normatecainterna.inba.gob.mx/pdf/2024/11TICSGobiernodigital2021.pdf
+      \verb https://www.firewallflow.com/ssl-tls-handshake-step-by-step-explanation/
       \endverb
       \verb{url}
-      \verb https://normatecainterna.inba.gob.mx/pdf/2024/11TICSGobiernodigital2021.pdf
+      \verb https://www.firewallflow.com/ssl-tls-handshake-step-by-step-explanation/
       \endverb
     \endentry
     \entry{camavilca2025inteligencia}{article}{}
@@ -718,49 +629,6 @@
       \endverb
       \verb{url}
       \verb https://dialnet.unirioja.es/descarga/articulo/10080900.pdf
-      \endverb
-    \endentry
-    \entry{valdivia2023modernizacion}{article}{}
-      \name{author}{3}{}{%
-        {{hash=1b91b6e81966f7bfc64553e4b66bbbbb}{%
-           family={Valdivia},
-           familyi={V\bibinitperiod},
-           given={Carlos},
-           giveni={C\bibinitperiod}}}%
-        {{hash=f3454669c75207a45792cbc6c974d5d3}{%
-           family={Gómez},
-           familyi={G\bibinitperiod},
-           given={Andrea},
-           giveni={A\bibinitperiod}}}%
-        {{hash=758632de20f8819be2d06cd9fb54ce3f}{%
-           family={Pérez},
-           familyi={P\bibinitperiod},
-           given={Luis},
-           giveni={L\bibinitperiod}}}%
-      }
-      \strng{namehash}{a05c4c06315412192d89c408d85ebf83}
-      \strng{fullhash}{a05c4c06315412192d89c408d85ebf83}
-      \strng{bibnamehash}{a05c4c06315412192d89c408d85ebf83}
-      \strng{authorbibnamehash}{a05c4c06315412192d89c408d85ebf83}
-      \strng{authornamehash}{a05c4c06315412192d89c408d85ebf83}
-      \strng{authorfullhash}{a05c4c06315412192d89c408d85ebf83}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Revista de Investigación Científica (RIC)}
-      \field{note}{Discute la arquitectura de infraestructura, interoperabilidad y bases de datos para evitar el aislamiento de datos en la gestión.}
-      \field{number}{2}
-      \field{title}{Herramientas para la modernización de la gestión pública: una revisión sistemática}
-      \field{volume}{6}
-      \field{year}{2025}
-      \field{pages}{1\bibrangedash 25}
-      \range{pages}{25}
-      \verb{urlraw}
-      \verb https://ve.scielo.org/pdf/ric/v6n2/2739-0063-ric-6-02-e602067.pdf
-      \endverb
-      \verb{url}
-      \verb https://ve.scielo.org/pdf/ric/v6n2/2739-0063-ric-6-02-e602067.pdf
       \endverb
     \endentry
     \entry{almaceamientoNube2024}{article}{}
@@ -849,6 +717,32 @@
       \endverb
       \verb{url}
       \verb https://scielo.pt/scielo.php?pid=S1646-98952023000100115&script=sci_arttext&tlng=es
+      \endverb
+    \endentry
+    \entry{img_nube}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=6cf0539d36fc4696197fd0b4159534f0}{%
+           family={{Atikasoft}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{6cf0539d36fc4696197fd0b4159534f0}
+      \strng{fullhash}{6cf0539d36fc4696197fd0b4159534f0}
+      \strng{bibnamehash}{6cf0539d36fc4696197fd0b4159534f0}
+      \strng{authorbibnamehash}{6cf0539d36fc4696197fd0b4159534f0}
+      \strng{authornamehash}{6cf0539d36fc4696197fd0b4159534f0}
+      \strng{authorfullhash}{6cf0539d36fc4696197fd0b4159534f0}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Consultado en mayo de 2026}
+      \field{title}{Introducción a la nube de AWS}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://atikasoft.com/tpost/2douiec4m1-introduccin-a-la-nube-de-aws
+      \endverb
+      \verb{url}
+      \verb https://atikasoft.com/tpost/2douiec4m1-introduccin-a-la-nube-de-aws
       \endverb
     \endentry
     \entry{NubeAmbitoLegal2025}{article}{}

@@ -1589,6 +1589,11 @@ INPUT marcoTeorico.tex
 INPUT ./marcoTeorico.tex
 INPUT ./marcoTeorico.tex
 INPUT marcoTeorico.tex
+INPUT ./img/ciclodevida.png
+INPUT ./img/ciclodevida.png
+INPUT img/ciclodevida.png
+INPUT ./img/ciclodevida.png
+INPUT ./img/ciclodevida.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecti1200.tfm
 INPUT ./UTYP.png
 INPUT ./UTYP.png
@@ -1619,6 +1624,24 @@ INPUT ./LogoUPV_2023.png
 INPUT ./LogoUPV_2023.png
 INPUT LogoUPV_2023.png
 INPUT ./LogoUPV_2023.png
+INPUT ./img/QRcode.jpeg
+INPUT ./img/QRcode.jpeg
+INPUT img/QRcode.jpeg
+INPUT ./img/QRcode.jpeg
+INPUT ./img/QRcode.jpeg
+INPUT ./UTYP.png
+INPUT ./UTYP.png
+INPUT UTYP.png
+INPUT ./UTYP.png
+INPUT ./LogoUPV_2023.png
+INPUT ./LogoUPV_2023.png
+INPUT LogoUPV_2023.png
+INPUT ./LogoUPV_2023.png
+INPUT ./img/handshake_tls.png
+INPUT ./img/handshake_tls.png
+INPUT img/handshake_tls.png
+INPUT ./img/handshake_tls.png
+INPUT ./img/handshake_tls.png
 INPUT ./UTYP.png
 INPUT ./UTYP.png
 INPUT UTYP.png
@@ -1635,22 +1658,11 @@ INPUT ./LogoUPV_2023.png
 INPUT ./LogoUPV_2023.png
 INPUT LogoUPV_2023.png
 INPUT ./LogoUPV_2023.png
-INPUT ./UTYP.png
-INPUT ./UTYP.png
-INPUT UTYP.png
-INPUT ./UTYP.png
-INPUT ./LogoUPV_2023.png
-INPUT ./LogoUPV_2023.png
-INPUT LogoUPV_2023.png
-INPUT ./LogoUPV_2023.png
-INPUT ./UTYP.png
-INPUT ./UTYP.png
-INPUT UTYP.png
-INPUT ./UTYP.png
-INPUT ./LogoUPV_2023.png
-INPUT ./LogoUPV_2023.png
-INPUT LogoUPV_2023.png
-INPUT ./LogoUPV_2023.png
+INPUT ./img/nube_concepto.png
+INPUT ./img/nube_concepto.png
+INPUT img/nube_concepto.png
+INPUT ./img/nube_concepto.png
+INPUT ./img/nube_concepto.png
 INPUT ./UTYP.png
 INPUT ./UTYP.png
 INPUT UTYP.png
@@ -1674,6 +1686,29 @@ INPUT metodologia.tex
 INPUT ./metodologia.tex
 INPUT ./metodologia.tex
 INPUT metodologia.tex
+INPUT ./img/diagrama_conversion.png
+INPUT ./img/diagrama_conversion.png
+INPUT img/diagrama_conversion.png
+INPUT ./img/diagrama_conversion.png
+INPUT ./img/diagrama_conversion.png
+INPUT ./img/diagrama_gestion.png
+INPUT ./img/diagrama_gestion.png
+INPUT img/diagrama_gestion.png
+INPUT ./img/diagrama_gestion.png
+INPUT ./img/diagrama_gestion.png
+INPUT ./UTYP.png
+INPUT ./UTYP.png
+INPUT UTYP.png
+INPUT ./UTYP.png
+INPUT ./LogoUPV_2023.png
+INPUT ./LogoUPV_2023.png
+INPUT LogoUPV_2023.png
+INPUT ./LogoUPV_2023.png
+INPUT ./img/modelo ER.jpeg
+INPUT ./img/modelo ER.jpeg
+INPUT img/modelo ER.jpeg
+INPUT ./img/modelo ER.jpeg
+INPUT ./img/modelo ER.jpeg
 INPUT ./UTYP.png
 INPUT ./UTYP.png
 INPUT UTYP.png
@@ -1690,6 +1725,16 @@ INPUT ./LogoUPV_2023.png
 INPUT ./LogoUPV_2023.png
 INPUT LogoUPV_2023.png
 INPUT ./LogoUPV_2023.png
+INPUT ./img/Mockup-Modulo de conversion y carga de archivos.png
+INPUT ./img/Mockup-Modulo de conversion y carga de archivos.png
+INPUT img/Mockup-Modulo de conversion y carga de archivos.png
+INPUT ./img/Mockup-Modulo de conversion y carga de archivos.png
+INPUT ./img/Mockup-Modulo de conversion y carga de archivos.png
+INPUT ./img/Mockup-Modulo de gestión documental.png
+INPUT ./img/Mockup-Modulo de gestión documental.png
+INPUT img/Mockup-Modulo de gestión documental.png
+INPUT ./img/Mockup-Modulo de gestión documental.png
+INPUT ./img/Mockup-Modulo de gestión documental.png
 INPUT ./UTYP.png
 INPUT ./UTYP.png
 INPUT UTYP.png
@@ -1749,14 +1794,6 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt1200.tfm
-INPUT ./UTYP.png
-INPUT ./UTYP.png
-INPUT UTYP.png
-INPUT ./UTYP.png
-INPUT ./LogoUPV_2023.png
-INPUT ./LogoUPV_2023.png
-INPUT LogoUPV_2023.png
-INPUT ./LogoUPV_2023.png
 INPUT ./UTYP.png
 INPUT ./UTYP.png
 INPUT UTYP.png
