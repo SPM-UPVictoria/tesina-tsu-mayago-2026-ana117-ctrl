@@ -47,20 +47,23 @@
 \contentsline {subsection}{\numberline {3.1}Propuesta de solución}{18}{subsection.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}Beneficios del sistema propuesto}{18}{subsubsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.2}Análisis del sistema}{18}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Diagramas de flujo del sistema}{18}{subsubsection.3.2.1}%
-\contentsline {paragraph}{Flujo del módulo de conversión y carga de archivos}{18}{paragraph*.16}%
-\contentsline {paragraph}{Flujo del módulo de gestión documental}{18}{paragraph*.18}%
-\contentsline {subsubsection}{\numberline {3.2.2}Diagrama de caso de uso}{20}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}Diagramas de actividades}{20}{subsubsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.3}Diseño del sistema}{20}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Diagrama de Entidad-Relación de la Base de Datos}{20}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Diagramas de secuencia}{21}{subsubsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.3}Diseño de interfaz}{21}{subsubsection.3.3.3}%
-\contentsline {paragraph}{Modulo de conversion y carga de archivos}{21}{paragraph*.21}%
-\contentsline {paragraph}{Modulo de conversion y carga de archivos}{21}{paragraph*.23}%
-\contentsline {subsection}{\numberline {3.4}Desarrollo del sistema}{21}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Resultados}{24}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Pantallas del sistema y su funcionamiento}{24}{subsection.4.1}%
-\contentsline {section}{\numberline {5}Conclusiones}{25}{section.5}%
-\contentsline {section}{Bibliografía}{26}{section.5}%
-\contentsline {section}{Anexos}{29}{section.5}%
+\contentsline {subsubsection}{\numberline {3.2.1}Diagrama de caso de uso}{18}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Diagramas de flujo del sistema}{19}{subsubsection.3.2.2}%
+\contentsline {paragraph}{Flujo del módulo de conversión y carga de archivos}{19}{paragraph*.17}%
+\contentsline {paragraph}{Flujo del módulo de gestión documental}{19}{paragraph*.19}%
+\contentsline {subsubsection}{\numberline {3.2.3}Diagramas de actividades}{21}{subsubsection.3.2.3}%
+\contentsline {paragraph}{Proceso de conversión de documento y carga de imágen}{21}{paragraph*.21}%
+\contentsline {paragraph}{Proceso de registro de URL}{21}{paragraph*.23}%
+\contentsline {paragraph}{Proceso Gestión de archivos}{23}{paragraph*.25}%
+\contentsline {subsection}{\numberline {3.3}Diseño del sistema}{23}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Diagrama de Entidad-Relación de la Base de Datos}{23}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Diagramas de secuencia}{25}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Diseño de interfaz}{25}{subsubsection.3.3.3}%
+\contentsline {paragraph}{Modulo de conversion y carga de archivos}{25}{paragraph*.28}%
+\contentsline {paragraph}{Modulo de conversion y carga de archivos}{25}{paragraph*.30}%
+\contentsline {subsection}{\numberline {3.4}Desarrollo del sistema}{25}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Resultados}{28}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Pantallas del sistema y su funcionamiento}{28}{subsection.4.1}%
+\contentsline {section}{\numberline {5}Conclusiones}{29}{section.5}%
+\contentsline {section}{Bibliografía}{30}{section.5}%
+\contentsline {section}{Anexos}{33}{section.5}%

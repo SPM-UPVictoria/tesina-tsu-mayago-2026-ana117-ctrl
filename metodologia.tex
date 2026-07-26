@@ -1,16 +1,27 @@
 \section{Metodología}
 \subsection{Propuesta de solución}
 \label{propuesta_solucion}
-La solución propuesta consiste en desarrollar un sistema web desde cero siguiendo la arquitectura MVC con el framework ASP.NET Core (.NET 10), con persistencia de datos en SQL Server y almacenamiento en la nube por medio de AWS S3. El sistema consta de dos módulos, el módulo de conversion y carga de archivos, que permite subir documentos en distintos formatos para su conversión a PDF, asi como imágenes y enlaces. Y el módulo de gestión documental, que permite ver todos los archivos almacenados en el sistema y generar codigos QR para cada uno de ellos, asi como la visualización, la eliminación o la descarga de los archivos, todo desde una misma plataforma.
+La solución propuesta consiste en desarrollar un sistema web desde cero siguiendo la arquitectura MVC con el framework ASP.NET Core (.NET 10), con persistencia de datos y almacenamiento en la nube. El sistema consta de dos módulos, el módulo de conversion y carga de archivos, que permite subir documentos en distintos formatos para su conversión a PDF, asi como imágenes y enlaces. Y el módulo de gestión documental, que permite ver todos los archivos almacenados en el sistema y generar codigos QR para cada uno de ellos, asi como la visualización, la eliminación o la descarga de los archivos, todo desde una misma plataforma.
 
 El proceso de autenticación se integra con el mecanismo existente en la institucion, ya que esta plataforma solo sera accedida como una extensión de sistemas que ya tienen su proceso de autenticación.
 
 \subsubsection{Beneficios del sistema propuesto}
-Al implementar esta propuesta la gestión documental del PJETAM mejoraria en la accesibilidad de los documentos, ya que sería más fácil el poder acceder a los documentos mediante su código QR ya sea digital o impreso, el sistema también hace mas fácil el proceso de almacenar los documentos en un mismo sitio, y hace los procedimientos más fáciles al hacerlo en la misma plataforma, quitando la necesidad de usar herramientas externas.
+Al implementar esta propuesta la gestión documental del PJETAM mejoraría en la accesibilidad de los documentos, sería más fácil el referenciar los documentos mediante su código QR ya sea digital o impreso, el sistema también facilita el proceso de almacenar los documentos en un mismo sitio, y hace los procedimientos más fáciles al hacerlo en la misma plataforma, quitando la necesidad de usar herramientas externas.
 %
 \subsection{Análisis del sistema}
+Antes de iniciar a diseñar el sistema se deben de tener claro los requerimientos del sistema, saber el problema del usuario y como resolverlo, que debe de hacer el sistema para satisfacer las necesidades del sistema. Para planear el flujo del sistema se necesita visualizar las acciones que hará cada usuario, en este sistema solo hay un tipo de usuario y sus acciones se ilustran en la Figura \ref{fig:caso-uso}
+
+\subsubsection{Diagrama de caso de uso}
+Antes de tener el proceso de autenticación claro, definí las acciones que iba a ofrecer el sistema y los usuarios que lo van a utilizar.
+\begin{figure}[!tbh]
+    \centering
+    \includegraphics[width=0.7\linewidth]{img/caso de uso- diagrama.png}
+    \caption{Diagrama caso de uso del sistema. Fuente: elaboración propia}
+    \label{fig:caso-uso}
+\end{figure}
 
 \subsubsection{Diagramas de flujo del sistema}
+Para entender como interactuan las acciones del usuario y los componentes del sistema, es necesario usar diagramas de flujo, como los que se presentan a continuación, que muestra las acciones del usuario y como las va a tratar el sistema, sí se almacenan en base de datos, en la nube o se modifica la interfaz de usuario.
 \paragraph{Flujo del módulo de conversión y carga de archivos}
 El diagrama de la Figura \ref{fig:diagrama_1} muestra el flujo del sistema al convertir y almacenar un archivo, ya sea un documento o un enlace, ilustra el flujo desde que el usuario ingresa hasta que el archivo queda registrado en la base de datos y ya visible en el módulo de gestión.
 \begin{figure}[!tbh]
@@ -29,16 +40,42 @@ La Figura \ref{fig:diagrama_2} muestra el flujo de este módulo, en el cual se p
     \label{fig:diagrama_2}
 \end{figure}
 
-\subsubsection{Diagrama de caso de uso}
-
 \subsubsection{Diagramas de actividades}
+Para ilustrar el comportamiento del sistema ante cada acción del usuario, es necesario mostrar los diagramas de actividades de los principales flujos de los procesos del sistema.
 
+\paragraph{Proceso de conversión de documento y carga de imágen} La Figura \ref{fig:actividad-conversion} muestra el comportamiento del sistema ante distintas acciones del usuario al momento de querer converir un archivo, y se pueden observar las tecnologias que se van a utilizar en cada fase del proceso
+\begin{figure}[!tbh]
+    \centering
+    \includegraphics[width=0.7\linewidth]{img/diagrama-actividad-conversion-.png}
+    \caption{Diagrama de actividades: conversión de documento y carga de imagen. Fuente: elaboración propia}
+    \label{fig:actividad-conversion}
+\end{figure}
+
+\paragraph{Proceso de registro de URL} El sistema actúa de distinta manera cuando se trata de una URL, el formulario es distinto y la forma en que se procesan los datos también lo es. Como se muestra en la Figura \ref{fig:actividad-url} el sistema valida que haya una sesión activa y despues guarda la URL para ser convertida a QR cuando se necesite.
+\begin{figure}[!tbh]
+    \centering
+    \includegraphics[width=0.7\linewidth]{img/diagrama-actividad-url.png}
+    \caption{Diagrama de actividades: registro de URL. Fuente: elaboración propia}
+    \label{fig:actividad-url}
+\end{figure}
+
+\paragraph{Proceso Gestión de archivos} Finalmente, otro proceso fundamental en este sistema es el módulo de gestión documental, representado en la Figura \ref{fig:actividad-gestion} en el cual se reallizan las acciones disponibles de los archivos, como la visualización o descarga de archivos desde AWS S3, la eliminación del archivo, aquí solo se cambia el estado del archivo en la base de datos, para tener un registro total de los archivos, y por último la funcionalidad de generar códigos QR para cada archivo o enlace activo en el sistema, los cuales también se guardan en la base de datos en sus tablas correspondientes.
+\begin{figure}[!tbh]
+    \centering
+    \includegraphics[width=0.9\linewidth]{img/diagrama-actividad-gestion.png}
+    \caption{Diagrama de actividades: gestión de archivos. Fuente: elaboración propia}
+    \label{fig:actividad-gestion}
+\end{figure}
 
 \subsection{Diseño del sistema}
 \label{diseño_sistema}
 
 \subsubsection{Diagrama de Entidad-Relación de la Base de Datos}
-En la Figura \ref{fig:modelo-er}
+El diagrama de entidad-relación de la Figura \ref{fig:modelo-er} corresponde al modelo utilizado para este sistema, la base de datos en SQL Server, consta de cinco entidades y sus relaciones entre sí. Todos los identificadores, que también son las llaves primarias, utilizan el tipo de dato ULID para mayor seguridad y para garantizar que el identificador sea único.
+
+La entidad Area representa las áreas en las que se divide la institución, y a las cuales estan relacionados cada usuario o empleado, y asi organizar los archivos por área para facilitar su gestión posteriormente. Un Area puede tener múltiples usuarios y un usuario puede estar relacionado a múltiples archivos, la entidad Archivo registra todos los metadatos de los archivos subidos al sistema.
+
+La entidad Usuario también se relaciona con la entidad Log\_acceso la cual se encarga de registrar todas las acciones realizadas por un usuario en el sistema.
 \begin{figure}[!tbh]
     \centering
     \includegraphics[width=0.7\linewidth]{img/modelo ER.jpeg}

@@ -1686,6 +1686,19 @@ INPUT metodologia.tex
 INPUT ./metodologia.tex
 INPUT ./metodologia.tex
 INPUT metodologia.tex
+INPUT ./img/caso de uso- diagrama.png
+INPUT ./img/caso de uso- diagrama.png
+INPUT img/caso de uso- diagrama.png
+INPUT ./img/caso de uso- diagrama.png
+INPUT ./img/caso de uso- diagrama.png
+INPUT ./UTYP.png
+INPUT ./UTYP.png
+INPUT UTYP.png
+INPUT ./UTYP.png
+INPUT ./LogoUPV_2023.png
+INPUT ./LogoUPV_2023.png
+INPUT LogoUPV_2023.png
+INPUT ./LogoUPV_2023.png
 INPUT ./img/diagrama_conversion.png
 INPUT ./img/diagrama_conversion.png
 INPUT img/diagrama_conversion.png
@@ -1704,11 +1717,6 @@ INPUT ./LogoUPV_2023.png
 INPUT ./LogoUPV_2023.png
 INPUT LogoUPV_2023.png
 INPUT ./LogoUPV_2023.png
-INPUT ./img/modelo ER.jpeg
-INPUT ./img/modelo ER.jpeg
-INPUT img/modelo ER.jpeg
-INPUT ./img/modelo ER.jpeg
-INPUT ./img/modelo ER.jpeg
 INPUT ./UTYP.png
 INPUT ./UTYP.png
 INPUT UTYP.png
@@ -1717,6 +1725,50 @@ INPUT ./LogoUPV_2023.png
 INPUT ./LogoUPV_2023.png
 INPUT LogoUPV_2023.png
 INPUT ./LogoUPV_2023.png
+INPUT ./img/diagrama-actividad-conversion-.png
+INPUT ./img/diagrama-actividad-conversion-.png
+INPUT img/diagrama-actividad-conversion-.png
+INPUT ./img/diagrama-actividad-conversion-.png
+INPUT ./img/diagrama-actividad-conversion-.png
+INPUT ./img/diagrama-actividad-url.png
+INPUT ./img/diagrama-actividad-url.png
+INPUT img/diagrama-actividad-url.png
+INPUT ./img/diagrama-actividad-url.png
+INPUT ./img/diagrama-actividad-url.png
+INPUT ./UTYP.png
+INPUT ./UTYP.png
+INPUT UTYP.png
+INPUT ./UTYP.png
+INPUT ./LogoUPV_2023.png
+INPUT ./LogoUPV_2023.png
+INPUT LogoUPV_2023.png
+INPUT ./LogoUPV_2023.png
+INPUT ./img/diagrama-actividad-gestion.png
+INPUT ./img/diagrama-actividad-gestion.png
+INPUT img/diagrama-actividad-gestion.png
+INPUT ./img/diagrama-actividad-gestion.png
+INPUT ./img/diagrama-actividad-gestion.png
+INPUT ./UTYP.png
+INPUT ./UTYP.png
+INPUT UTYP.png
+INPUT ./UTYP.png
+INPUT ./LogoUPV_2023.png
+INPUT ./LogoUPV_2023.png
+INPUT LogoUPV_2023.png
+INPUT ./LogoUPV_2023.png
+INPUT ./UTYP.png
+INPUT ./UTYP.png
+INPUT UTYP.png
+INPUT ./UTYP.png
+INPUT ./LogoUPV_2023.png
+INPUT ./LogoUPV_2023.png
+INPUT LogoUPV_2023.png
+INPUT ./LogoUPV_2023.png
+INPUT ./img/modelo ER.jpeg
+INPUT ./img/modelo ER.jpeg
+INPUT img/modelo ER.jpeg
+INPUT ./img/modelo ER.jpeg
+INPUT ./img/modelo ER.jpeg
 INPUT ./UTYP.png
 INPUT ./UTYP.png
 INPUT UTYP.png
