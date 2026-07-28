@@ -58,12 +58,14 @@
 \contentsline {subsection}{\numberline {3.3}Diseño del sistema}{23}{subsection.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.1}Diagrama de Entidad-Relación de la Base de Datos}{23}{subsubsection.3.3.1}%
 \contentsline {subsubsection}{\numberline {3.3.2}Diagramas de secuencia}{25}{subsubsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.3}Diseño de interfaz}{25}{subsubsection.3.3.3}%
-\contentsline {paragraph}{Modulo de conversion y carga de archivos}{25}{paragraph*.28}%
-\contentsline {paragraph}{Modulo de conversion y carga de archivos}{25}{paragraph*.30}%
-\contentsline {subsection}{\numberline {3.4}Desarrollo del sistema}{25}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Resultados}{28}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Pantallas del sistema y su funcionamiento}{28}{subsection.4.1}%
-\contentsline {section}{\numberline {5}Conclusiones}{29}{section.5}%
-\contentsline {section}{Bibliografía}{30}{section.5}%
-\contentsline {section}{Anexos}{33}{section.5}%
+\contentsline {paragraph}{Proceso de Autenticación vía AuthToken}{25}{paragraph*.28}%
+\contentsline {paragraph}{Proceso de Conversion y Generación de Código QR}{26}{paragraph*.30}%
+\contentsline {subsubsection}{\numberline {3.3.3}Diseño de interfaz}{27}{subsubsection.3.3.3}%
+\contentsline {paragraph}{Modulo de conversion y carga de archivos}{28}{paragraph*.32}%
+\contentsline {paragraph}{Modulo de gestión documental}{28}{paragraph*.34}%
+\contentsline {subsection}{\numberline {3.4}Desarrollo del sistema}{29}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Resultados}{30}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Pantallas del sistema y su funcionamiento}{30}{subsection.4.1}%
+\contentsline {section}{\numberline {5}Conclusiones}{31}{section.5}%
+\contentsline {section}{Bibliografía}{32}{section.5}%
+\contentsline {section}{Anexos}{35}{section.5}%

@@ -1764,11 +1764,37 @@ INPUT ./LogoUPV_2023.png
 INPUT ./LogoUPV_2023.png
 INPUT LogoUPV_2023.png
 INPUT ./LogoUPV_2023.png
-INPUT ./img/modelo ER.jpeg
-INPUT ./img/modelo ER.jpeg
-INPUT img/modelo ER.jpeg
-INPUT ./img/modelo ER.jpeg
-INPUT ./img/modelo ER.jpeg
+INPUT ./img/modelo ER.png
+INPUT ./img/modelo ER.png
+INPUT img/modelo ER.png
+INPUT ./img/modelo ER.png
+INPUT ./img/modelo ER.png
+INPUT ./UTYP.png
+INPUT ./UTYP.png
+INPUT UTYP.png
+INPUT ./UTYP.png
+INPUT ./LogoUPV_2023.png
+INPUT ./LogoUPV_2023.png
+INPUT LogoUPV_2023.png
+INPUT ./LogoUPV_2023.png
+INPUT ./img/secuencia-autenticacion.png
+INPUT ./img/secuencia-autenticacion.png
+INPUT img/secuencia-autenticacion.png
+INPUT ./img/secuencia-autenticacion.png
+INPUT ./img/secuencia-autenticacion.png
+INPUT ./UTYP.png
+INPUT ./UTYP.png
+INPUT UTYP.png
+INPUT ./UTYP.png
+INPUT ./LogoUPV_2023.png
+INPUT ./LogoUPV_2023.png
+INPUT LogoUPV_2023.png
+INPUT ./LogoUPV_2023.png
+INPUT ./img/secuencia-convertir.png
+INPUT ./img/secuencia-convertir.png
+INPUT img/secuencia-convertir.png
+INPUT ./img/secuencia-convertir.png
+INPUT ./img/secuencia-convertir.png
 INPUT ./UTYP.png
 INPUT ./UTYP.png
 INPUT UTYP.png
@@ -1782,11 +1808,6 @@ INPUT ./img/Mockup-Modulo de conversion y carga de archivos.png
 INPUT img/Mockup-Modulo de conversion y carga de archivos.png
 INPUT ./img/Mockup-Modulo de conversion y carga de archivos.png
 INPUT ./img/Mockup-Modulo de conversion y carga de archivos.png
-INPUT ./img/Mockup-Modulo de gestión documental.png
-INPUT ./img/Mockup-Modulo de gestión documental.png
-INPUT img/Mockup-Modulo de gestión documental.png
-INPUT ./img/Mockup-Modulo de gestión documental.png
-INPUT ./img/Mockup-Modulo de gestión documental.png
 INPUT ./UTYP.png
 INPUT ./UTYP.png
 INPUT UTYP.png
@@ -1795,6 +1816,11 @@ INPUT ./LogoUPV_2023.png
 INPUT ./LogoUPV_2023.png
 INPUT LogoUPV_2023.png
 INPUT ./LogoUPV_2023.png
+INPUT ./img/Mockup-Modulo de gestión documental.png
+INPUT ./img/Mockup-Modulo de gestión documental.png
+INPUT img/Mockup-Modulo de gestión documental.png
+INPUT ./img/Mockup-Modulo de gestión documental.png
+INPUT ./img/Mockup-Modulo de gestión documental.png
 INPUT ./UTYP.png
 INPUT ./UTYP.png
 INPUT UTYP.png

@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber main"] 1785040872 "main.bcf" "main.bbl" "main" 1785041031
+["biber main"] 1785206287 "main.bcf" "main.bbl" "main" 1785214226
   "Referencias.bib" 1783740562 12776 a3633dab7d723b4cc3dee1c9dec121e2 ""
-  "main.bcf" 1785041031 109820 a0e83f8eb3f7477a32d39f710eccc780 "pdflatex"
+  "main.bcf" 1785214226 109820 a0e83f8eb3f7477a32d39f710eccc780 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1785041027 "/home/anaaz/estadias/tesina-tsu-mayago-2026-ana117-ctrl/main.tex" "main.pdf" "main" 1785041031
+["pdflatex"] 1785214222 "/home/anaaz/estadias/tesina-tsu-mayago-2026-ana117-ctrl/main.tex" "main.pdf" "main" 1785214226
   "/etc/texmf/web2c/texmf.cnf" 1779218431 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/anaaz/.texlive2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1779317618 1405656 74e209f3f5e4d4053889bfff596a9b66 ""
   "/home/anaaz/estadias/tesina-tsu-mayago-2026-ana117-ctrl/main.tex" 1781739432 20630 bef730a5c3c4a7985b66dfde384ccdb6 ""
@@ -278,17 +278,19 @@
   "img/diagrama_conversion.png" 1783726205 136900 433b8ec4ae8469d37e79b9b75d4a26f4 ""
   "img/diagrama_gestion.png" 1783726350 127936 d9791d7b9afbc9d5a09f24c97e3b2cf0 ""
   "img/handshake_tls.png" 1783653025 751372 43398b58573edd6b6194820d44ddf6c8 ""
-  "img/modelo ER.jpeg" 1784854107 86929 65b7c4af23492eb1e2fe3c1f4826b115 ""
+  "img/modelo ER.png" 1785202717 35535 658c0fe946a86b908b7268b3b985551c ""
   "img/nube_concepto.png" 1783659196 111901 a68e906e05cd40019bbcb05441d81eec ""
+  "img/secuencia-autenticacion.png" 1785205880 155134 fff2911f3a63a208a98df5e273873150 ""
+  "img/secuencia-convertir.png" 1785206156 231043 5f3fc97af7f5dbf60cd71f506634d195 ""
   "introduccion.tex" 1784857496 22467 5f93325f750040bee22af490f860a36d ""
-  "main.aux" 1785041031 23588 c91c28d08cdd184d618dcf679d386a59 "pdflatex"
-  "main.bbl" 1785040874 38152 d905bd6e2d37ecd9baab9c5ef6c61ffc "biber main"
-  "main.out" 1785041031 10667 eadaf597c7fc4ac67b65f1f9e1de599e "pdflatex"
-  "main.run.xml" 1785041031 2306 628e0087c61ee8036d936d14edcd02fc "pdflatex"
+  "main.aux" 1785214226 24590 1d744ffdf357bc1340f7edd0dec38382 "pdflatex"
+  "main.bbl" 1785206288 38152 d905bd6e2d37ecd9baab9c5ef6c61ffc "biber main"
+  "main.out" 1785214226 10667 eadaf597c7fc4ac67b65f1f9e1de599e "pdflatex"
+  "main.run.xml" 1785214226 2306 628e0087c61ee8036d936d14edcd02fc "pdflatex"
   "main.tex" 1781739432 20630 bef730a5c3c4a7985b66dfde384ccdb6 ""
-  "main.toc" 1785041031 6414 75562f2fc302323e838ba6e90b5f51d0 "pdflatex"
+  "main.toc" 1785214226 6588 40cf225c695f100be39ae88f223a3e17 "pdflatex"
   "marcoTeorico.tex" 1783741199 16213 e0ee5dbc6c89db092af8ea109bfb67d5 ""
-  "metodologia.tex" 1785041027 8574 44df1bf5b461070f128b4e35d57c6b76 ""
+  "metodologia.tex" 1785214221 12083 8920dc59539c506fe175d8ee44cdc028 ""
   "resultados.tex" 1784856196 93 4039babe55f19b467c0a27347faf452c ""
   (generated)
   "main.aux"

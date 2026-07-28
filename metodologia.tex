@@ -78,33 +78,56 @@ La entidad Area representa las áreas en las que se divide la institución, y a 
 La entidad Usuario también se relaciona con la entidad Log\_acceso la cual se encarga de registrar todas las acciones realizadas por un usuario en el sistema.
 \begin{figure}[!tbh]
     \centering
-    \includegraphics[width=0.7\linewidth]{img/modelo ER.jpeg}
+    \includegraphics[width=0.7\linewidth]{img/modelo ER.png}
     \caption{Modelo Entidad-Relación del sistema. Fuente: elaboración propia}
     \label{fig:modelo-er}
 \end{figure}
 
 \subsubsection{Diagramas de secuencia}
 
+\paragraph{Proceso de Autenticación vía AuthToken}
+La Figura \ref{fig:sec-autenticacion} es el diagrama de secuencia del proceso de autenticación del sistema, este proceso inicia cuando el usuario accede al sistema mediante un enlace ya predeterminado por la institución, que contiene el parámetro AuthToken, el cual contiene el nombre de usuario y la contraseña. Los archivos del sistema que interactuan son el archivo AuthMiddleware el cual detiene la petición y evalúa si existe una sesión activa o no, si no existe un sesión se ejecuta el archivo AuthService el cual se encarga de consultar la base de datos para verificar si ya existe un usuario con ese nombre para actualizar su último acceso, si no existe un usuario crea el área con el nombre de usuario y los vincula.
+Una vez identificado el usuario, el Middleware guarda su identificador, nombre y área en la sesión del navegador, para que el sistema reconozca al usuario en todas las pantallas posteriores sin necesidad de repetir el proceso.
+\begin{figure}[!tbh]
+    \centering
+    \includegraphics[width=0.7\linewidth]{img/secuencia-autenticacion.png}
+    \caption{Diagrama de secuencia: Auntenticación vía AuthToken. Fuente: elaboración propia}
+    \label{fig:sec-autenticacion}
+\end{figure}
+
+\paragraph{Proceso de Conversion y Generación de Código QR}
+En la Figura \ref{fig:sec-convertir} se observa el diagrama de secuencia del módulo de conversión y carga de archivos, en el cual hay tres opciones posibles para convertir y almacenar, el sistema evalúa que tipo de archivo es y depende de eso ocurre un flujo de procesos distintos, tanto en la imagen como en el documento el sistema sube los archivos a AWS S3 pero en la URL solo se registra en la base de datos. Después del proceso de conversion, se observa el proceso de la creación de códigos QR, en el cual el archivo QrService obtiene los datos del archivo, genera el código y posteriormente lo sube a S3 y en la base de datos establece la relación del código con el archivo al que pertence. Al final del diagrama esta el proceso ejecutado por el archivo LogService, el cual registra toda acción de los usuarios en su tabla correspondiente de la BD, esto para mayor seguridad y transparencia con el manejo de información, por último el sistema muestra la vista correspondiente al usuario.
+\begin{figure}[!tbh]
+    \centering
+    \includegraphics[width=0.9\linewidth]{img/secuencia-convertir.png}
+    \caption{Diagrama de secuencia: Conversion y Generación de Códigos QR. Fuente: elaboración propia}
+    \label{fig:sec-convertir}
+\end{figure}
+
+
+
 \subsubsection{Diseño de interfaz}
-Para la propuesta del sistema se realizaron dos vistas principales para dividir los módulos más importantes del sistema
+Para la propuesta del sistema se realizaron dos vistas principales para dividir las funcionalidades de los módulos más del sistema.
 
 \paragraph{Modulo de conversion y carga de archivos}
-En la Figura \ref{fig:mockup-1}
 \begin{figure}[!tbh]
     \centering
     \includegraphics[width=0.7\linewidth]{img/Mockup-Modulo de conversion y carga de archivos.png}
     \caption{Prototipo de la interfaz del módulo de conversion y carga de archivos. Fuente: elaboración propia}
     \label{fig:mockup-1}
 \end{figure}
+El diseño del módulo de conversión y carga de archivos se muestra en la Figura \ref{fig:mockup-1}. La pantalla se divide en dos secciones diferentes con su formulario, uno para carga de documentos o imágenes, en el cual debe de seleccionar el tipo de documento, para facilitar la búsqueda de documentos en el módulo de gestión y el otro para registrar las URLs.
+Ambas secciones comparten la misma página para agrupar en un solo lugar todas las formas para subir archivos al sistema.
 
-\paragraph{Modulo de conversion y carga de archivos}
-En la Figura \ref{fig:mockup-2}
+\paragraph{Modulo de gestión documental}
 \begin{figure}[!tbh]
     \centering
     \includegraphics[width=0.7\linewidth]{img/Mockup-Modulo de gestión documental.png}
     \caption{Prototipo de la interfaz del módulo de gestión documental. Fuente: elaboración propia}
     \label{fig:mockup-2}
 \end{figure}
+El otro módulo del sistema es el de gestión documental, cuyo diseño se ilustra en la Figura \ref{fig:mockup-2} , la pantalla muestra una tabla con todos los archivos registrados en el sistema, incluyendo el nombre, tipo de documento, área que subió el archivo y fecha en el que lo subieron. En la parte superior izquierda se incluye un filtro de búsqueda para encontrar archivos más facilmente por tipo o área y una barra de búsqueda para rastrear un archivo por nombre.
+
 
 \subsection{Desarrollo del sistema}
 herramientas, lenguajes de programación y la arquitectura para construir los módulos
