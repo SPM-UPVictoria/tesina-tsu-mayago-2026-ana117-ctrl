@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber main"] 1785206287 "main.bcf" "main.bbl" "main" 1785214226
+["biber main"] 1785294759 "main.bcf" "main.bbl" "main" 1785294769
   "Referencias.bib" 1783740562 12776 a3633dab7d723b4cc3dee1c9dec121e2 ""
-  "main.bcf" 1785214226 109820 a0e83f8eb3f7477a32d39f710eccc780 "pdflatex"
+  "main.bcf" 1785294769 109820 a0e83f8eb3f7477a32d39f710eccc780 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1785214222 "/home/anaaz/estadias/tesina-tsu-mayago-2026-ana117-ctrl/main.tex" "main.pdf" "main" 1785214226
+["pdflatex"] 1785294765 "/home/anaaz/estadias/tesina-tsu-mayago-2026-ana117-ctrl/main.tex" "main.pdf" "main" 1785294769
   "/etc/texmf/web2c/texmf.cnf" 1779218431 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/anaaz/.texlive2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1779317618 1405656 74e209f3f5e4d4053889bfff596a9b66 ""
   "/home/anaaz/estadias/tesina-tsu-mayago-2026-ana117-ctrl/main.tex" 1781739432 20630 bef730a5c3c4a7985b66dfde384ccdb6 ""
@@ -283,14 +283,14 @@
   "img/secuencia-autenticacion.png" 1785205880 155134 fff2911f3a63a208a98df5e273873150 ""
   "img/secuencia-convertir.png" 1785206156 231043 5f3fc97af7f5dbf60cd71f506634d195 ""
   "introduccion.tex" 1784857496 22467 5f93325f750040bee22af490f860a36d ""
-  "main.aux" 1785214226 24590 1d744ffdf357bc1340f7edd0dec38382 "pdflatex"
-  "main.bbl" 1785206288 38152 d905bd6e2d37ecd9baab9c5ef6c61ffc "biber main"
-  "main.out" 1785214226 10667 eadaf597c7fc4ac67b65f1f9e1de599e "pdflatex"
-  "main.run.xml" 1785214226 2306 628e0087c61ee8036d936d14edcd02fc "pdflatex"
+  "main.aux" 1785294769 25314 62210da94647b61a2d871509dcc5a465 "pdflatex"
+  "main.bbl" 1785294760 38152 d905bd6e2d37ecd9baab9c5ef6c61ffc "biber main"
+  "main.out" 1785294769 11711 44342233b5afec709a3803cb57324938 "pdflatex"
+  "main.run.xml" 1785294769 2306 628e0087c61ee8036d936d14edcd02fc "pdflatex"
   "main.tex" 1781739432 20630 bef730a5c3c4a7985b66dfde384ccdb6 ""
-  "main.toc" 1785214226 6588 40cf225c695f100be39ae88f223a3e17 "pdflatex"
+  "main.toc" 1785294769 7107 9478370b10b44dc83c32dff6100987c2 "pdflatex"
   "marcoTeorico.tex" 1783741199 16213 e0ee5dbc6c89db092af8ea109bfb67d5 ""
-  "metodologia.tex" 1785214221 12083 8920dc59539c506fe175d8ee44cdc028 ""
+  "metodologia.tex" 1785294755 14884 3ad43d67fb541df95001fdaceeaf2fc7 ""
   "resultados.tex" 1784856196 93 4039babe55f19b467c0a27347faf452c ""
   (generated)
   "main.aux"

@@ -130,4 +130,22 @@ El otro módulo del sistema es el de gestión documental, cuyo diseño se ilustr
 
 
 \subsection{Desarrollo del sistema}
-herramientas, lenguajes de programación y la arquitectura para construir los módulos
+\subsubsection{Arquitectura del sistema}
+El sistema fue desarrollado utilizando el patrón de arquitectura Modelo-Vista-Controlador (MVC), implementado sobre el framework ASP.NET Core 10. La arquitectura MVC divide el sistema en tres módulos: el Modelo, que en este ssitema son las entidades de la base de datos, la Vista, que es todo con lo que el usuario interactua y ve, las interfaces de usuario fueron desarrolladas con archivos Razor (.cshtml), y el Controlador que es el intermediario entre las peticiones del usuario y los servicios del sistema.
+Al utilizar la arquitectura MVC es más fácil darle mantenimiento y actualizar el sistema cuando sea necesario.
+
+\subsubsection{Lenguajes de programación}
+El sistema utiliza principalmente el lenguje C\# para el backend, esto para aprovechar las características disponibles en .NET 10, como lo son la programación asíncrona y el uso de System.Ulid para los identificadores utilizdos en el sistema.
+Para las vistas se combina código \#C y HTML (.cshtml) para facilitar el contenido dinámico en el lado del servidor. El frontend utiliza HTML5, CSS3, Javascript, Bootstrap 5 y Bootstrap Icons para hacer la interfaz más atractiva visualmente y más fácil de usar.
+
+\subsubsection{Herramientas de desarrollo}
+El desarrollo del sistema se realizó utilizando Visual Studio Code como editor de código.
+El sistema utiliza SQL Server 2022 como motor de base de datos relacional, para crearla se utilizó Entity Framework Core con el enfoque Code First, ya que para hacer las tablas del esquema se hicieron clases de C\# y para generar las tablas se utilizaron migraciones, para la administración y gestión de la base de datos se utilizó la extensión SQL Server (mssql) de Microsoft incluida en Visual Studio Code.
+
+\subsubsection{Almacenamiento en la nube}
+Para almacenar los archivos el sistema utiliza el servicio AWS S3 (Amazon Simple Storage Service), los archivos se organizan en el bucket dependiendo del tipo que sean. El sistema implementa S3 mediante el SDK oficial de AWS para .NET, y se utilizan los paquetes AWSSdk.Core y AWSSDK S3. El sistema y este servicio cumplen con los requisitos para tratar la información con seguridad.
+
+\subsubsection{Bibliotecas y paquetes utilizados}
+Para la conversión a PDF el sistema utiliza el servicio LibreOffice 7 en modo headless, llamado desde el código C\# como un proceso del sistema operativo. Mientras que para que la generación de códigos QR se utiliza la librería QRCoder, ajustada con el nivel Q de corrección de errores para lograr que sean útiles para documentos físicos que puedan sufrir daños.
+
+Para los mensajes de confimarción o avisos del sistema se utiliza la biblioteca SweetAlert2 para hacer más fácil la interacción del usuario, ya que permite agregar iconos dependiendo del mensaje, haciendo que el usuario perciba el mensaje más facilmente. 

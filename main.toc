@@ -64,8 +64,13 @@
 \contentsline {paragraph}{Modulo de conversion y carga de archivos}{28}{paragraph*.32}%
 \contentsline {paragraph}{Modulo de gestión documental}{28}{paragraph*.34}%
 \contentsline {subsection}{\numberline {3.4}Desarrollo del sistema}{29}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Resultados}{30}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Pantallas del sistema y su funcionamiento}{30}{subsection.4.1}%
-\contentsline {section}{\numberline {5}Conclusiones}{31}{section.5}%
-\contentsline {section}{Bibliografía}{32}{section.5}%
-\contentsline {section}{Anexos}{35}{section.5}%
+\contentsline {subsubsection}{\numberline {3.4.1}Arquitectura del sistema}{29}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Lenguajes de programación}{30}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.3}Herramientas de desarrollo}{30}{subsubsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.4}Almacenamiento en la nube}{30}{subsubsection.3.4.4}%
+\contentsline {subsubsection}{\numberline {3.4.5}Bibliotecas y paquetes utilizados}{30}{subsubsection.3.4.5}%
+\contentsline {section}{\numberline {4}Resultados}{31}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Pantallas del sistema y su funcionamiento}{31}{subsection.4.1}%
+\contentsline {section}{\numberline {5}Conclusiones}{32}{section.5}%
+\contentsline {section}{Bibliografía}{33}{section.5}%
+\contentsline {section}{Anexos}{36}{section.5}%
