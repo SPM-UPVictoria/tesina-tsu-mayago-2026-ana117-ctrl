@@ -1,10 +1,10 @@
 # Fdb version 3
-["biber main"] 1785294759 "main.bcf" "main.bbl" "main" 1785393280
-  "main.bcf" 1785393280 109820 a0e83f8eb3f7477a32d39f710eccc780 "pdflatex"
+["biber main"] 1785294759 "main.bcf" "main.bbl" "main" 1785467756
+  "main.bcf" 1785467755 109820 a0e83f8eb3f7477a32d39f710eccc780 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1785393274 "/home/anaaz/estadias/tesina-tsu-mayago-2026-ana117-ctrl/main.tex" "main.pdf" "main" 1785393280
+["pdflatex"] 1785467748 "/home/anaaz/estadias/tesina-tsu-mayago-2026-ana117-ctrl/main.tex" "main.pdf" "main" 1785467756
   "/etc/texmf/web2c/texmf.cnf" 1779218431 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/anaaz/.texlive2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1779317618 1405656 74e209f3f5e4d4053889bfff596a9b66 ""
   "/home/anaaz/estadias/tesina-tsu-mayago-2026-ana117-ctrl/main.tex" 1781739432 20630 bef730a5c3c4a7985b66dfde384ccdb6 ""
@@ -295,15 +295,15 @@
   "img/vista-ver-imagen.png" 1785388610 197400 c35ea7150cc4b5f090c0fe5e339633ad ""
   "img/vista-ver-qr-doc.png" 1785388622 118293 bf846773d2d9a90c642bf0ea7ea58c0a ""
   "introduccion.tex" 1784857496 22467 5f93325f750040bee22af490f860a36d ""
-  "main.aux" 1785393280 31338 97d6aafbf2009193283606130fe31789 "pdflatex"
+  "main.aux" 1785467755 31347 2d241416ab9c07b48ffa2d037aee106b "pdflatex"
   "main.bbl" 1785294760 38152 d905bd6e2d37ecd9baab9c5ef6c61ffc "biber main"
-  "main.out" 1785393280 12362 0c3555e9687c59cd863eac77882f798a "pdflatex"
-  "main.run.xml" 1785393280 2306 628e0087c61ee8036d936d14edcd02fc "pdflatex"
+  "main.out" 1785467755 12368 bf9f5276e1e60c2a2ad00fced8d6ad1a "pdflatex"
+  "main.run.xml" 1785467755 2306 628e0087c61ee8036d936d14edcd02fc "pdflatex"
   "main.tex" 1781739432 20630 bef730a5c3c4a7985b66dfde384ccdb6 ""
-  "main.toc" 1785393280 7982 7d0798e6b6d271273a0d551a1986f220 "pdflatex"
+  "main.toc" 1785467755 7987 4d04ce3f635e66c2997e3d782105793a "pdflatex"
   "marcoTeorico.tex" 1783741199 16213 e0ee5dbc6c89db092af8ea109bfb67d5 ""
-  "metodologia.tex" 1785294755 14884 3ad43d67fb541df95001fdaceeaf2fc7 ""
-  "resultados.tex" 1785393274 6992 276e1d66b5c3d8a07ae26e3fbfba6295 ""
+  "metodologia.tex" 1785467699 15249 9c82e7a7061ccb43f581dd7fa59c96a2 ""
+  "resultados.tex" 1785467748 9324 def96c9fe1fe5213fa191e1ca77dba88 ""
   (generated)
   "main.aux"
   "main.bcf"

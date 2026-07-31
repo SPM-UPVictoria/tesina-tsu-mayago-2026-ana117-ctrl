@@ -1743,6 +1743,14 @@ INPUT ./LogoUPV_2023.png
 INPUT ./LogoUPV_2023.png
 INPUT LogoUPV_2023.png
 INPUT ./LogoUPV_2023.png
+INPUT ./UTYP.png
+INPUT ./UTYP.png
+INPUT UTYP.png
+INPUT ./UTYP.png
+INPUT ./LogoUPV_2023.png
+INPUT ./LogoUPV_2023.png
+INPUT LogoUPV_2023.png
+INPUT ./LogoUPV_2023.png
 INPUT ./img/diagrama-actividad-gestion.png
 INPUT ./img/diagrama-actividad-gestion.png
 INPUT img/diagrama-actividad-gestion.png
@@ -1769,14 +1777,6 @@ INPUT ./img/modelo ER.png
 INPUT img/modelo ER.png
 INPUT ./img/modelo ER.png
 INPUT ./img/modelo ER.png
-INPUT ./UTYP.png
-INPUT ./UTYP.png
-INPUT UTYP.png
-INPUT ./UTYP.png
-INPUT ./LogoUPV_2023.png
-INPUT ./LogoUPV_2023.png
-INPUT LogoUPV_2023.png
-INPUT ./LogoUPV_2023.png
 INPUT ./img/secuencia-autenticacion.png
 INPUT ./img/secuencia-autenticacion.png
 INPUT img/secuencia-autenticacion.png
@@ -1803,11 +1803,6 @@ INPUT ./LogoUPV_2023.png
 INPUT ./LogoUPV_2023.png
 INPUT LogoUPV_2023.png
 INPUT ./LogoUPV_2023.png
-INPUT ./img/Mockup-Modulo de conversion y carga de archivos.png
-INPUT ./img/Mockup-Modulo de conversion y carga de archivos.png
-INPUT img/Mockup-Modulo de conversion y carga de archivos.png
-INPUT ./img/Mockup-Modulo de conversion y carga de archivos.png
-INPUT ./img/Mockup-Modulo de conversion y carga de archivos.png
 INPUT ./UTYP.png
 INPUT ./UTYP.png
 INPUT UTYP.png
@@ -1816,11 +1811,24 @@ INPUT ./LogoUPV_2023.png
 INPUT ./LogoUPV_2023.png
 INPUT LogoUPV_2023.png
 INPUT ./LogoUPV_2023.png
+INPUT ./img/Mockup-Modulo de conversion y carga de archivos.png
+INPUT ./img/Mockup-Modulo de conversion y carga de archivos.png
+INPUT img/Mockup-Modulo de conversion y carga de archivos.png
+INPUT ./img/Mockup-Modulo de conversion y carga de archivos.png
+INPUT ./img/Mockup-Modulo de conversion y carga de archivos.png
 INPUT ./img/Mockup-Modulo de gestión documental.png
 INPUT ./img/Mockup-Modulo de gestión documental.png
 INPUT img/Mockup-Modulo de gestión documental.png
 INPUT ./img/Mockup-Modulo de gestión documental.png
 INPUT ./img/Mockup-Modulo de gestión documental.png
+INPUT ./UTYP.png
+INPUT ./UTYP.png
+INPUT UTYP.png
+INPUT ./UTYP.png
+INPUT ./LogoUPV_2023.png
+INPUT ./LogoUPV_2023.png
+INPUT LogoUPV_2023.png
+INPUT ./LogoUPV_2023.png
 INPUT ./UTYP.png
 INPUT ./UTYP.png
 INPUT UTYP.png
@@ -1911,11 +1919,6 @@ INPUT ./LogoUPV_2023.png
 INPUT ./LogoUPV_2023.png
 INPUT LogoUPV_2023.png
 INPUT ./LogoUPV_2023.png
-INPUT ./img/gestion-cursor.doc.png
-INPUT ./img/gestion-cursor.doc.png
-INPUT img/gestion-cursor.doc.png
-INPUT ./img/gestion-cursor.doc.png
-INPUT ./img/gestion-cursor.doc.png
 INPUT ./UTYP.png
 INPUT ./UTYP.png
 INPUT UTYP.png
@@ -1924,6 +1927,11 @@ INPUT ./LogoUPV_2023.png
 INPUT ./LogoUPV_2023.png
 INPUT LogoUPV_2023.png
 INPUT ./LogoUPV_2023.png
+INPUT ./img/gestion-cursor.doc.png
+INPUT ./img/gestion-cursor.doc.png
+INPUT img/gestion-cursor.doc.png
+INPUT ./img/gestion-cursor.doc.png
+INPUT ./img/gestion-cursor.doc.png
 INPUT ./img/vista-despuesde-busqueda-gd.png
 INPUT ./img/vista-despuesde-busqueda-gd.png
 INPUT img/vista-despuesde-busqueda-gd.png
@@ -1934,6 +1942,14 @@ INPUT ./img/vista-ver-doc.png
 INPUT img/vista-ver-doc.png
 INPUT ./img/vista-ver-doc.png
 INPUT ./img/vista-ver-doc.png
+INPUT ./UTYP.png
+INPUT ./UTYP.png
+INPUT UTYP.png
+INPUT ./UTYP.png
+INPUT ./LogoUPV_2023.png
+INPUT ./LogoUPV_2023.png
+INPUT LogoUPV_2023.png
+INPUT ./LogoUPV_2023.png
 INPUT ./img/vista-ver-imagen.png
 INPUT ./img/vista-ver-imagen.png
 INPUT img/vista-ver-imagen.png
@@ -1944,11 +1960,6 @@ INPUT ./img/vista-ver-qr-doc.png
 INPUT img/vista-ver-qr-doc.png
 INPUT ./img/vista-ver-qr-doc.png
 INPUT ./img/vista-ver-qr-doc.png
-INPUT ./img/vista-eliminar-doc.png
-INPUT ./img/vista-eliminar-doc.png
-INPUT img/vista-eliminar-doc.png
-INPUT ./img/vista-eliminar-doc.png
-INPUT ./img/vista-eliminar-doc.png
 INPUT ./UTYP.png
 INPUT ./UTYP.png
 INPUT UTYP.png
@@ -1957,6 +1968,11 @@ INPUT ./LogoUPV_2023.png
 INPUT ./LogoUPV_2023.png
 INPUT LogoUPV_2023.png
 INPUT ./LogoUPV_2023.png
+INPUT ./img/vista-eliminar-doc.png
+INPUT ./img/vista-eliminar-doc.png
+INPUT img/vista-eliminar-doc.png
+INPUT ./img/vista-eliminar-doc.png
+INPUT ./img/vista-eliminar-doc.png
 INPUT ./UTYP.png
 INPUT ./UTYP.png
 INPUT UTYP.png

@@ -47,39 +47,39 @@
 \contentsline {subsection}{\numberline {3.1}Propuesta de solución}{18}{subsection.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}Beneficios del sistema propuesto}{18}{subsubsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.2}Análisis del sistema}{18}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Diagrama de caso de uso}{18}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.1}Diagrama de caso de uso}{19}{subsubsection.3.2.1}%
 \contentsline {subsubsection}{\numberline {3.2.2}Diagramas de flujo del sistema}{19}{subsubsection.3.2.2}%
 \contentsline {paragraph}{Flujo del módulo de conversión y carga de archivos}{19}{paragraph*.17}%
-\contentsline {paragraph}{Flujo del módulo de gestión documental}{19}{paragraph*.19}%
+\contentsline {paragraph}{Flujo del módulo de Gestión Documental}{20}{paragraph*.19}%
 \contentsline {subsubsection}{\numberline {3.2.3}Diagramas de actividades}{21}{subsubsection.3.2.3}%
-\contentsline {paragraph}{Proceso de conversión de documento y carga de imágen}{21}{paragraph*.21}%
-\contentsline {paragraph}{Proceso de registro de URL}{21}{paragraph*.23}%
+\contentsline {paragraph}{Proceso de conversión de documento y carga de imagen}{21}{paragraph*.21}%
+\contentsline {paragraph}{Proceso de registro de URL}{22}{paragraph*.23}%
 \contentsline {paragraph}{Proceso Gestión de archivos}{23}{paragraph*.25}%
 \contentsline {subsection}{\numberline {3.3}Diseño del sistema}{23}{subsection.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.1}Diagrama de Entidad-Relación de la Base de Datos}{23}{subsubsection.3.3.1}%
 \contentsline {subsubsection}{\numberline {3.3.2}Diagramas de secuencia}{25}{subsubsection.3.3.2}%
 \contentsline {paragraph}{Proceso de Autenticación vía AuthToken}{25}{paragraph*.28}%
-\contentsline {paragraph}{Proceso de Conversion y Generación de Código QR}{26}{paragraph*.30}%
-\contentsline {subsubsection}{\numberline {3.3.3}Diseño de interfaz}{27}{subsubsection.3.3.3}%
-\contentsline {paragraph}{Modulo de conversion y carga de archivos}{28}{paragraph*.32}%
-\contentsline {paragraph}{Modulo de gestión documental}{28}{paragraph*.34}%
+\contentsline {paragraph}{Proceso de Conversión y Generación de Código QR}{27}{paragraph*.30}%
+\contentsline {subsubsection}{\numberline {3.3.3}Diseño de interfaz}{28}{subsubsection.3.3.3}%
+\contentsline {paragraph}{Módulo de conversión y carga de archivos}{28}{paragraph*.32}%
+\contentsline {paragraph}{Módulo de Gestión Documental}{28}{paragraph*.34}%
 \contentsline {subsection}{\numberline {3.4}Desarrollo del sistema}{29}{subsection.3.4}%
 \contentsline {subsubsection}{\numberline {3.4.1}Arquitectura del sistema}{29}{subsubsection.3.4.1}%
 \contentsline {subsubsection}{\numberline {3.4.2}Lenguajes de programación}{30}{subsubsection.3.4.2}%
 \contentsline {subsubsection}{\numberline {3.4.3}Herramientas de desarrollo}{30}{subsubsection.3.4.3}%
 \contentsline {subsubsection}{\numberline {3.4.4}Almacenamiento en la nube}{30}{subsubsection.3.4.4}%
 \contentsline {subsubsection}{\numberline {3.4.5}Bibliotecas y paquetes utilizados}{30}{subsubsection.3.4.5}%
-\contentsline {section}{\numberline {4}Resultados}{31}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Pantallas del sistema y su funcionamiento}{31}{subsection.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.1}Pantalla del módulo de Conversion y Carga de Archivos}{31}{subsubsection.4.1.1}%
-\contentsline {paragraph}{Formulario de documentos e imágenes}{31}{paragraph*.36}%
-\contentsline {paragraph}{Formulario de URL}{32}{paragraph*.41}%
-\contentsline {subsubsection}{\numberline {4.1.2}Pantalla del modulo de Gestión Documental}{34}{subsubsection.4.1.2}%
-\contentsline {paragraph}{Vista de la tabla al aplicar un filtro}{35}{paragraph*.46}%
-\contentsline {paragraph}{Vista al seleccionar la opción de visualizar un documento}{35}{paragraph*.48}%
-\contentsline {paragraph}{Vista al seleccionar la opción de visualizar una imagen}{35}{paragraph*.50}%
-\contentsline {paragraph}{Vista al generar un código QR}{35}{paragraph*.52}%
-\contentsline {paragraph}{Vista al seleccionar la opción de eliminar un archivo}{35}{paragraph*.54}%
-\contentsline {section}{\numberline {5}Conclusiones}{38}{section.5}%
-\contentsline {section}{Bibliografía}{39}{section.5}%
-\contentsline {section}{Anexos}{42}{section.5}%
+\contentsline {section}{\numberline {4}Resultados}{32}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Pantallas del sistema y su funcionamiento}{32}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Pantalla del módulo de Conversión y Carga de Archivos}{32}{subsubsection.4.1.1}%
+\contentsline {paragraph}{Formulario de documentos e imágenes}{32}{paragraph*.36}%
+\contentsline {paragraph}{Formulario de URL}{33}{paragraph*.41}%
+\contentsline {subsubsection}{\numberline {4.1.2}Pantalla del módulo de Gestión Documental}{35}{subsubsection.4.1.2}%
+\contentsline {paragraph}{Vista de la tabla al aplicar un filtro}{36}{paragraph*.46}%
+\contentsline {paragraph}{Vista al seleccionar la opción de visualizar un documento}{37}{paragraph*.48}%
+\contentsline {paragraph}{Vista al seleccionar la opción de visualizar una imagen}{37}{paragraph*.50}%
+\contentsline {paragraph}{Vista al generar un código QR}{37}{paragraph*.52}%
+\contentsline {paragraph}{Vista al seleccionar la opción de eliminar un archivo}{38}{paragraph*.54}%
+\contentsline {section}{\numberline {5}Conclusiones}{40}{section.5}%
+\contentsline {section}{Bibliografía}{41}{section.5}%
+\contentsline {section}{Anexos}{44}{section.5}%
