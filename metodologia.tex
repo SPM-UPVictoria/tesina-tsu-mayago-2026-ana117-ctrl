@@ -8,20 +8,6 @@ El proceso de autenticación se integra con los sistemas de escritorio existente
 \subsubsection{Beneficios del sistema propuesto}
 Al implementar esta propuesta la gestión documental del PJETAM mejorará en la accesibilidad de información, al facilitar el referenciar los documentos mediante su código QR de forma digital o impresa. El sistema elimina la necesidad de usar herramientas externas, y favorece al proceso de almacenamiento y conversión de archivos. Además de mejorar la organización de los documentos por el registro de las acciones de cada usuario.
 
-\subsection{Análisis del sistema}
-Antes de iniciar a diseñar el sistema se deben de tener claro los requerimientos del sistema, entender el problema del usuario implica identificar que funciones debe tener para satisfacer sus necesidades. 
-
-Para definir el alcance del sistema se identificaron las acciones disponibles para el usuario mediante un diagrama de caso de uso, como se muestra en la Figura \ref{fig:caso-uso}
-
-\subsubsection{Diagrama de caso de uso}
-Antes de tener el proceso de autenticación claro, se definieron las acciones que iba a ofrecer el sistema y los usuarios que lo van a utilizar.
-\begin{figure}[!tbh]
-    \centering
-    \includegraphics[width=0.7\linewidth]{img/caso de uso- diagrama.png}
-    \caption{Diagrama caso de uso del sistema. Fuente: elaboración propia}
-    \label{fig:caso-uso}
-\end{figure}
-
 \subsubsection{Diagramas de flujo del sistema}
 Para entender como interactúan las acciones del usuario y los componentes del sistema, se realizaron diagramas de flujo que se presentan a continuación, estos muestran las acciones del usuario y como las va a tratar el sistema, si se almacenan en base de datos, en la nube o se modifica la interfaz de usuario.
 
@@ -30,7 +16,7 @@ El diagrama de la Figura \ref{fig:diagrama_1} muestra el flujo del sistema al co
 \begin{figure}[!tbh]
     \centering
     \includegraphics[width=0.9\linewidth]{img/diagrama_conversion.png}
-    \caption{Diagrama de flujo: Módulo de conversión y carga de archivos. Fuente: elaboración propia}
+    \caption{Diagrama de flujo: Módulo de Conversión y Carga de archivos. Fuente: elaboración propia}
     \label{fig:diagrama_1}
 \end{figure}
 
@@ -39,82 +25,20 @@ La Figura \ref{fig:diagrama_2} muestra el flujo de este módulo, en el cual se p
 \begin{figure}[!tbh]
     \centering
     \includegraphics[width=0.9\linewidth]{img/diagrama_gestion.png}
-    \caption{Diagrama de flujo: Módulo de gestión documental. Fuente: elaboración propia}
+    \caption{Diagrama de flujo: Módulo de Gestión Documental. Fuente: elaboración propia}
     \label{fig:diagrama_2}
-\end{figure}
-
-\subsubsection{Diagramas de actividades}
-Para ilustrar el comportamiento del sistema ante cada acción del usuario, es necesario mostrar los diagramas de actividades de los principales flujos de los procesos del sistema.
-
-\paragraph{Proceso de conversión de documento y carga de imagen} La Figura \ref{fig:actividad-conversion} muestra el comportamiento del sistema ante distintas acciones del usuario al momento de querer convertir un archivo, y se pueden observar las tecnologías que se van a utilizar en cada fase del proceso
-\begin{figure}[!tbh]
-    \centering
-    \includegraphics[width=0.7\linewidth]{img/diagrama-actividad-conversion-.png}
-    \caption{Diagrama de actividades: conversión de documento y carga de imagen. Fuente: elaboración propia}
-    \label{fig:actividad-conversion}
-\end{figure}
-
-\paragraph{Proceso de registro de URL} El sistema actúa de distinta manera cuando se trata de una URL, el formulario es distinto y la forma en que se procesan los datos también lo es. Como se muestra en la Figura \ref{fig:actividad-url} el sistema valida que haya una sesión activa y después guarda la URL para ser convertida a QR cuando se necesite.
-\begin{figure}[!tbh]
-    \centering
-    \includegraphics[width=0.7\linewidth]{img/diagrama-actividad-url.png}
-    \caption{Diagrama de actividades: registro de URL. Fuente: elaboración propia}
-    \label{fig:actividad-url}
-\end{figure}
-
-\paragraph{Proceso Gestión de archivos} Finalmente, otro proceso fundamental en este sistema es el módulo de Gestión Documental, representado en la Figura \ref{fig:actividad-gestion} en el cual se interactua con lo archivos. Las acciones disponibles son la visualización o descarga de archivos desde AWS S3, la eliminación del archivo en donde no se elimina el registro solo cambia el estado del archivo en la base de datos, esto es necesario para mantener un registro total de los archivos. Y por último la funcionalidad de generar códigos QR para cada archivo o enlace activo en el sistema, los cuales también se guardan en la base de datos en sus tablas correspondientes.
-\begin{figure}[!tbh]
-    \centering
-    \includegraphics[width=0.9\linewidth]{img/diagrama-actividad-gestion.png}
-    \caption{Diagrama de actividades: gestión de archivos. Fuente: elaboración propia}
-    \label{fig:actividad-gestion}
 \end{figure}
 
 \subsection{Diseño del sistema}
 \label{diseño_sistema}
-
-\subsubsection{Diagrama de Entidad-Relación de la Base de Datos}
-El diagrama de entidad-relación de la Figura \ref{fig:modelo-er} corresponde al modelo utilizado para este sistema, la base de datos en SQL Server, consta de cinco entidades y sus relaciones entre sí. Todos los identificadores, que también son las llaves primarias, utilizan el tipo de dato ULID para mayor seguridad y para garantizar que el identificador sea único.
-
-La entidad Area representa las áreas en las que se divide la institución, y a las cuales están relacionados cada usuario o empleado, y así organizar los archivos por área para facilitar su gestión posteriormente. Un Area puede tener múltiples usuarios y un usuario puede estar relacionado a múltiples archivos, la entidad Archivo registra todos los metadatos de los archivos subidos al sistema y se relaciona con la tabla de códigos QR para vincular cada archivo a su código QR.
-
-La entidad Usuario también se relaciona con la entidad Log\_acceso la cual se encarga de registrar todas las acciones realizadas por un usuario en el sistema.
-\begin{figure}[!tbh]
-    \centering
-    \includegraphics[width=0.7\linewidth]{img/modelo ER.png}
-    \caption{Modelo Entidad-Relación del sistema. Fuente: elaboración propia}
-    \label{fig:modelo-er}
-\end{figure}
-
-\subsubsection{Diagramas de secuencia}
-
-\paragraph{Proceso de Autenticación vía AuthToken}
-La Figura \ref{fig:sec-autenticacion} es el diagrama de secuencia del proceso de autenticación del sistema, este proceso inicia cuando el usuario accede al sistema mediante un enlace ya predeterminado por la institución. Este enlace contiene el parámetro AuthToken que esta compuesto por el nombre de usuario y la contraseña. Los componentes del sistema que interactúan son el AuthMiddleware el cual detiene la petición y evalúa si existe una sesión activa o no, y el AuthService que se ejecuta si no existe un sesión y consultará la base de datos para verificar si ya existe un usuario con ese nombre para actualizar su último acceso, si no existe un usuario crea el área con el nombre de usuario y los vincula.
-Una vez identificado el usuario, el Middleware guarda su identificador, nombre y área en la sesión del navegador, para que el sistema reconozca al usuario en todas las pantallas posteriores sin necesidad de repetir el proceso.
-\begin{figure}[!tbh]
-    \centering
-    \includegraphics[width=0.7\linewidth]{img/secuencia-autenticacion.png}
-    \caption{Diagrama de secuencia: Auntenticación vía AuthToken. Fuente: elaboración propia}
-    \label{fig:sec-autenticacion}
-\end{figure}
-
-\paragraph{Proceso de Conversión y Generación de Código QR}
-En la Figura \ref{fig:sec-convertir} se observa el diagrama de secuencia del módulo de conversión y carga de archivos, en el cual hay tres opciones posibles para convertir y almacenar, el sistema evalúa que tipo de archivo es y depende de eso ocurre un flujo de procesos distintos, tanto en la imagen como en el documento el sistema sube los archivos a AWS S3 pero en la URL solo se registra en la base de datos. Después del proceso de conversion, se observa el proceso de la creación de códigos QR, en el cual el archivo QrService obtiene los datos del archivo, genera el código y posteriormente lo sube a S3 y en la base de datos establece la relación del código con el archivo al que pertenece. Al final del diagrama esta el proceso ejecutado por el archivo LogService, el cual registra toda acción de los usuarios en su tabla correspondiente de la BD, esto para mayor seguridad y transparencia con el manejo de información, por último el sistema muestra la vista correspondiente al usuario.
-\begin{figure}[!tbh]
-    \centering
-    \includegraphics[width=0.9\linewidth]{img/secuencia-convertir.png}
-    \caption{Diagrama de secuencia: Conversión y Generación de Códigos QR. Fuente: elaboración propia}
-    \label{fig:sec-convertir}
-\end{figure}
-
-\subsubsection{Diseño de interfaz}
+\subsubsection{Mockups de interfaz}
 Para la propuesta del sistema se realizaron dos vistas principales para dividir las funcionalidades de los módulos del sistema.
 
 \paragraph{Módulo de conversión y carga de archivos}
 \begin{figure}[!tbh]
     \centering
     \includegraphics[width=0.7\linewidth]{img/Mockup-Modulo de conversion y carga de archivos.png}
-    \caption{Prototipo de la interfaz del módulo de conversión y carga de archivos. Fuente: elaboración propia}
+    \caption{Prototipo de alta fidelidad del módulo de Conversión y Carga de archivos. Fuente: elaboración propia}
     \label{fig:mockup-1}
 \end{figure}
 El diseño del módulo de conversión y carga de archivos se muestra en la Figura \ref{fig:mockup-1}. La pantalla se divide en dos secciones diferentes con su formulario, uno para carga de documentos o imágenes, en el cual debe de seleccionar el tipo de documento, para facilitar la búsqueda de documentos en el módulo de gestión y el otro para registrar las URLs.
@@ -124,29 +48,83 @@ Ambas secciones comparten la misma página para agrupar en un solo lugar todas l
 \begin{figure}[!tbh]
     \centering
     \includegraphics[width=0.7\linewidth]{img/Mockup-Modulo de gestión documental.png}
-    \caption{Prototipo de la interfaz del módulo de Gestión Documental. Fuente: elaboración propia}
+    \caption{Prototipo de alta fidelidad del módulo de Gestión Documental. Fuente: elaboración propia}
     \label{fig:mockup-2}
 \end{figure}
 El otro módulo del sistema es el de Gestión Documental, cuyo diseño se ilustra en la Figura \ref{fig:mockup-2} , la pantalla muestra una tabla con todos los archivos registrados en el sistema, incluyendo el nombre, tipo de documento, área que subió el archivo y fecha en el que lo subieron. En la parte superior izquierda se incluye un filtro de búsqueda para encontrar archivos más fácilmente por tipo o área y una barra de búsqueda para rastrear un archivo por nombre.
 
 \subsection{Desarrollo del sistema}
-\subsubsection{Arquitectura del sistema}
-El sistema fue desarrollado utilizando el patrón de arquitectura Modelo-Vista-Controlador (MVC), implementado sobre el framework ASP.NET Core 10. La arquitectura MVC divide el sistema en tres módulos: el Modelo, que en este sistema son las entidades de la base de datos, la Vista, que es todo con lo que el usuario interactua y ve, las interfaces de usuario fueron desarrolladas con archivos Razor (.cshtml), y el Controlador que es el intermediario entre las peticiones del usuario y los servicios del sistema.
-Al utilizar la arquitectura MVC es más fácil darle mantenimiento y actualizar el sistema cuando sea necesario.
+\subsubsection{Diagrama de caso de uso}
+Antes de iniciar a diseñar el sistema se deben de tener claro los requerimientos del sistema, entender el problema del usuario implica identificar que funciones debe tener el sistema para satisfacer sus necesidades. 
 
-\subsubsection{Lenguajes de programación}
-El sistema utiliza principalmente el lenguaje C\# para el backend, esto para aprovechar las características disponibles en .NET 10, como lo son la programación asíncrona y el uso de System.Ulid para los identificadores utilizados en el sistema.
-Para las vistas se combina código C\# y HTML (.cshtml) para facilitar el contenido dinámico en el lado del servidor. El frontend utiliza HTML5, CSS3, Javascript, Bootstrap 5 y Bootstrap Icons para hacer la interfaz más atractiva visualmente y más fácil de usar.
+Para definir el alcance del sistema se identificaron las acciones disponibles para el usuario mediante un diagrama de caso de uso, como se muestra en la Figura \ref{fig:caso-uso}
 
-\subsubsection{Herramientas de desarrollo}
-El desarrollo del sistema se realizó utilizando Visual Studio Code como editor de código.
-El sistema utiliza SQL Server 2022 como motor de base de datos relacional, para crearla se utilizó Entity Framework Core con el enfoque Code First, ya que para hacer las tablas del esquema se hicieron clases de C\# y para generar las tablas se utilizaron migraciones, para la administración y gestión de la base de datos se utilizó la extensión SQL Server (mssql) de Microsoft incluida en Visual Studio Code.
+Antes de tener el proceso de autenticación claro, se definieron las acciones que iba a ofrecer el sistema y los usuarios que lo van a utilizar.
+\begin{figure}[!tbh]
+    \centering
+    \includegraphics[width=0.7\linewidth]{img/caso de uso- diagrama.png}
+    \caption{Diagrama caso de uso del sistema. Fuente: elaboración propia}
+    \label{fig:caso-uso}
+\end{figure}
 
-\subsubsection{Almacenamiento en la nube}
-Para almacenar los archivos el sistema utiliza el servicio AWS S3 (Amazon Simple Storage Service), los archivos se organizan en el bucket dependiendo del tipo que sean. El sistema implementa S3 mediante el SDK oficial de AWS para .NET, y se utilizan los paquetes AWSSdk.Core y AWSSDK S3. 
-La implementacióń en el sistema y S3 garantizan la seguridad de los datos, ya que el bucket que se utiliza es privado y el acceso se realiza a través del servidor protegiendo las credenciales.
+\subsubsection{Diagrama de entidad-relación de la base de datos}
+El diagrama de entidad-relación de la Figura \ref{fig:modelo-er} corresponde al modelo utilizado para este sistema, la base de datos en SQL Server, consta de cinco entidades y sus relaciones entre sí. Todos los identificadores, que también son las llaves primarias, utilizan el tipo de dato ULID para mayor seguridad y para garantizar que el identificador sea único.
 
-\subsubsection{Bibliotecas y paquetes utilizados}
-Para la conversión a PDF el sistema utiliza el servicio LibreOffice 7 en modo headless, llamado desde el código C\# como un proceso del sistema operativo. Mientras que para que la generación de códigos QR se utiliza la librería QRCoder, ajustada con el nivel Q de corrección de errores para lograr que sean útiles para documentos físicos que puedan sufrir daños.
+La entidad Area representa las áreas en las que se divide la institución, y a las cuales están relacionados cada usuario o empleado, y así organizar los archivos por área para facilitar su gestión posteriormente. Un Area puede tener múltiples usuarios y un usuario puede estar relacionado a múltiples archivos, la entidad Archivo registra todos los metadatos de los archivos subidos al sistema y se relaciona con la tabla de códigos QR para vincular cada archivo a su código QR.
 
-Para los mensajes de confirmación o avisos del sistema se utiliza la biblioteca SweetAlert2 para hacer más fácil la interacción del usuario, ya que permite agregar iconos dependiendo del mensaje, haciendo que el usuario perciba el mensaje más fácilmente. 
+La entidad Usuario también se relaciona con la entidad Log\_acceso la cual se encarga de registrar todas las acciones realizadas por un usuario en el sistema.
+\begin{figure}[!tbh]
+    \centering
+    \includegraphics[width=0.7\linewidth]{img/modelo ER.png}
+    \caption{Modelo ER del sistema. Fuente: elaboración propia}
+    \label{fig:modelo-er}
+\end{figure}
+
+\subsubsection{Diagramas de actividades}
+Para ilustrar el comportamiento del sistema ante cada acción del usuario, es necesario mostrar los diagramas de actividades de los principales flujos de los procesos del sistema.
+
+\paragraph{Registro de URL} El sistema actúa de distinta manera cuando se trata de una URL, el formulario es distinto y la forma en que se procesan los datos también lo es. Como se muestra en la Figura \ref{fig:actividad-url} el sistema valida que haya una sesión activa y después guarda la URL para ser convertida a QR cuando se necesite.
+\begin{figure}[!tbh]
+    \centering
+    \includegraphics[width=0.7\linewidth]{img/diagrama-actividad-url.png}
+    \caption{Diagrama de actividades: Registro de URL. Fuente: elaboración propia}
+    \label{fig:actividad-url}
+\end{figure}
+
+\paragraph{Conversión de documento y carga de imagen} El proceso para validar la sesión es el mismo que el mostrado en el diagrama de registro de URL \ref{fig:actividad-url}. Por lo que en la Figura \ref{fig:actividad-conversion} se omite este procedimiento y solo se muestra el comportamiento del sistema ante distintas acciones del usuario al momento de querer convertir un archivo, y se pueden observar las tecnologías que se van a utilizar en cada fase del proceso
+\begin{figure}[!tbh]
+    \centering
+    \includegraphics[width=0.7\linewidth]{img/diagrama-actividad-conversion-.png}
+    \caption{Diagrama de actividades: Conversión y Carga de archivos. Fuente: elaboración propia}
+    \label{fig:actividad-conversion}
+\end{figure}
+
+\paragraph{Gestión de archivos} Finalmente, otro proceso fundamental en este sistema es el módulo de Gestión Documental, representado en la Figura \ref{fig:actividad-gestion} en el cual se interactua con lo archivos. Las acciones disponibles son la visualización o descarga de archivos desde AWS S3, la eliminación del archivo en donde no se elimina el registro solo cambia el estado del archivo en la base de datos, esto es necesario para mantener un registro total de los archivos. Y por último la funcionalidad de generar códigos QR para cada archivo o enlace activo en el sistema, los cuales también se guardan en la base de datos en sus tablas correspondientes.
+\begin{figure}[!tbh]
+    \centering
+    \includegraphics[width=0.7\linewidth]{img/diagrama-actividad-gestion.png}
+    \caption{Diagrama de actividades: Gestión de Archivos. Fuente: elaboración propia}
+    \label{fig:actividad-gestion}
+\end{figure}
+
+\subsubsection{Diagramas de secuencia}
+\paragraph{Proceso de Autenticación vía AuthToken}
+La Figura \ref{fig:sec-autenticacion} es el diagrama de secuencia del proceso de autenticación del sistema, este proceso inicia cuando el usuario accede al sistema mediante un enlace ya predeterminado por la institución. Este enlace contiene el parámetro AuthToken que esta compuesto por el nombre de usuario y la contraseña. Los componentes del sistema que interactúan son el AuthMiddleware el cual detiene la petición y evalúa si existe una sesión activa o no, y el AuthService que se ejecuta si no existe un sesión y consultará la base de datos para verificar si ya existe un usuario con ese nombre para actualizar su último acceso, si no existe un usuario crea el área con el nombre de usuario y los vincula.
+Una vez identificado el usuario, el Middleware guarda su identificador, nombre y área en la sesión del navegador, para que el sistema reconozca al usuario en todas las pantallas posteriores sin necesidad de repetir el proceso.
+\begin{figure}[!tbh]
+    \centering
+    \includegraphics[width=0.7\linewidth]{img/secuencia-autenticacion.png}
+    \caption{Diagrama de secuencia: Proceso de Auntenticación vía AuthToken. Fuente: elaboración propia}
+    \label{fig:sec-autenticacion}
+\end{figure}
+
+\paragraph{Proceso de Conversión y Generación de Código QR}
+En la Figura \ref{fig:sec-convertir} se observa el diagrama de secuencia del módulo de conversión y carga de archivos, en el cual hay se puede convertir un documento a PDF, almacenar una imagen o una URL. El sistema evalúa que tipo de archivo es y depende de eso ocurre un flujo de procesos distintos. En el almacenamiento de imágenes y documentos el sistema sube los archivos a AWS S3,, pero en la URL solo se registra en la base de datos. Después del proceso de conversión, se observa el proceso de la creación de códigos QR, en el cual el archivo QrService obtiene los datos del archivo, genera el código y posteriormente lo sube a S3, finalmente registra la relación del QR con el archivo al que pertenece en la base de datos. 
+
+Al final del diagrama esta el proceso ejecutado por el archivo LogService, el cual registra toda acción de los usuarios en su tabla correspondiente de la BD, esto para mayor seguridad y transparencia con el manejo de información. Y por último, el sistema muestra la vista correspondiente al usuario.
+\begin{figure}[!tbh]
+    \centering
+    \includegraphics[width=0.9\linewidth]{img/secuencia-convertir.png}
+    \caption{Diagrama de secuencia: Procesos de Conversión y Generación de Códigos QR. Fuente: elaboración propia}
+    \label{fig:sec-convertir}
+\end{figure}

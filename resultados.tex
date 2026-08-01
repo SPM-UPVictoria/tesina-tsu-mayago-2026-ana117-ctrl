@@ -68,8 +68,7 @@ Arriba de la tabla de archivos, esta un filtro para buscar con fácilidad por á
     \label{fig:vista-gestion-documental}
 \end{figure}
 
-Para identificar que archivo es con mayor facilidad, este módulo incluye la funcionalidad de tooltip, el cual se muestra en la Figura \ref{fig:gestion-cursor.doc}, al pasar el cursor sobre el nombre de un archivo mostrará un mensaje diciendo si es un documento PDF, imagen o enlace URL, en la tabla no se agrega la extensión del archivo para mantener un estilo más limpio y no confundir al usuario al agregar más iconos o colores, también no se considero necesario agregar la extensión del archivo ya que esta pantalla cuenta con filtros y busquedas las cuales facilitan el encontrar un archivo por nombre, o delimitando el área o tipo de archivo (categoria a la que pertenece el archivo), los filtros se aplican automaticamente cuando el usuario selecciona una categoria, se observa su funcionamiento en la Figura \ref{fig:vista-despuesde-busqueda-gd}.
-
+Para identificar que archivo es con mayor facilidad, este módulo incluye la funcionalidad de tooltip, el cual se muestra en la Figura \ref{fig:gestion-cursor.doc}, al pasar el cursor sobre el nombre de un archivo mostrará un mensaje diciendo si es un documento PDF, imagen o enlace URL, en la tabla no se agrega la extensión del archivo para mantener un estilo más limpio y no confundir al usuario al agregar más iconos o colores.
 \begin{figure}[!tbh]
     \centering
     \includegraphics[width=0.9\linewidth]{img/gestion-cursor.doc.png}
@@ -78,6 +77,7 @@ Para identificar que archivo es con mayor facilidad, este módulo incluye la fun
 \end{figure}
 
 \paragraph{Vista de la tabla al aplicar un filtro}
+Tampoco se considero necesario agregar la extensión del archivo ya que esta vista cuenta con filtros y busquedas las cuales facilitan el encontrar un archivo por nombre, o delimitando el área o tipo de archivo (categoria a la que pertenece el archivo), los filtros se aplican automaticamente cuando el usuario selecciona una categoria, se observa su funcionamiento en la Figura \ref{fig:vista-despuesde-busqueda-gd}.
 \begin{figure}[!tbh]
     \centering
     \includegraphics[width=0.9\linewidth]{img/vista-despuesde-busqueda-gd.png}
@@ -85,15 +85,13 @@ Para identificar que archivo es con mayor facilidad, este módulo incluye la fun
     \label{fig:vista-despuesde-busqueda-gd}
 \end{figure}
 
-Funciones para gestionar los archivos.
 
+\textbf{Funciones para gestionar los archivos}
+
+\paragraph{Vista al seleccionar la opción de visualizar un documento o imagen}
 El primer botón de izquierda a derecha es para que el usuario vea en pantalla los archivos, esta opción esta disponible para los archivos en formato PDF o imágenes.
 
 Cuando el usuario visualiza un documento PDF en el sistema se ve como lo muestra la Figura \ref{fig:vista-ver-doc}. Mientras que en la Figura \ref{fig:vista-ver-imagen} se muestra la vista del sistema al escoger la opción de visualizar una imágen.
-
-La función de visualizar no está disponible para los enlaces URL por el momento, y para hacer saber al usuario esto se deshabilita el botón, mostrando un color más claro y tambien al pasar el cursor por ese botón aparece un tooltip que indica que no es posible esa acción en ese tipo de archivos. ilustrado en la Figura  .
-
-\paragraph{Vista al seleccionar la opción de visualizar un documento}
 \begin{figure}[!tbh]
     \centering
     \includegraphics[width=0.9\linewidth]{img/vista-ver-doc.png}
@@ -101,8 +99,6 @@ La función de visualizar no está disponible para los enlaces URL por el moment
     \label{fig:vista-ver-doc}
 \end{figure}
 
-
-\paragraph{Vista al seleccionar la opción de visualizar una imagen}
 \begin{figure}[!tbh]
     \centering
     \includegraphics[width=0.9\linewidth]{img/vista-ver-imagen.png}
@@ -110,8 +106,16 @@ La función de visualizar no está disponible para los enlaces URL por el moment
     \label{fig:vista-ver-imagen}
 \end{figure}
 
-Al seleccionar la opción para generar y obtener un QR, el botón gris con el icono correspondiente, la vista es igual para cada uno de los tres tipos de archivos, se ven como se muestra en la Figura \ref{fig:vista-ver-qr-doc}
+La función de visualizar no está disponible para los enlaces URL por el momento, y para hacer saber al usuario esto se deshabilita el botón, mostrando un color más claro y tambien al pasar el cursor por ese botón aparece un tooltip que indica que no es posible esa acción en ese tipo de archivos. ilustrado en la Figura \ref{fig:ver-url}.
+\begin{figure}[!tbh]
+    \centering
+    \includegraphics[width=0.9\linewidth]{img/ver-url.png}
+    \caption{Mensaje al intentar ver una URL. Fuente: elaboración propia}
+    \label{fig:ver-url}
+\end{figure}
+
 \paragraph{Vista al generar un código QR}
+Al seleccionar la opción para generar y obtener un QR, el botón gris con el icono correspondiente, la vista es igual para cada uno de los tres tipos de archivos, se ven como se muestra en la Figura \ref{fig:vista-ver-qr-doc}
 \begin{figure}[!tbh]
     \centering
     \includegraphics[width=0.9\linewidth]{img/vista-ver-qr-doc.png}
@@ -119,8 +123,8 @@ Al seleccionar la opción para generar y obtener un QR, el botón gris con el ic
     \label{fig:vista-ver-qr-doc}
 \end{figure}
 
-La última opción del módulo de Gestión Documental es la de eliminar archivo, al seleccionar esta opción se muestra un mensaje de alerta al usuario, Figura \ref{fig:vista-eliminar-doc}, señalando que la acción es irreversible y al aceptar el archivo simplemente desaparece de la lista, el registro del archivo no se borra de la base de datos pero al ser eliminado ya no se muestra en la pantalla.
 \paragraph{Vista al seleccionar la opción de eliminar un archivo}
+La última opción del módulo de Gestión Documental es la de eliminar archivo, al seleccionar esta opción se muestra un mensaje de alerta al usuario, Figura \ref{fig:vista-eliminar-doc}, señalando que la acción es irreversible y al aceptar el archivo simplemente desaparece de la lista, el registro del archivo no se borra de la base de datos pero al ser eliminado ya no se muestra en la pantalla.
 \begin{figure}[!tbh]
     \centering
     \includegraphics[width=0.9\linewidth]{img/vista-eliminar-doc.png}
