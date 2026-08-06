@@ -1,0 +1,13 @@
+\section{Resumen}
+El problema que busca resolver este proyecto es la mejora de la gestión documental del Poder Judicial del Estado de Tamaulipas, busca mejorar la digitalización de documentos y facilitar la referenciación y consulta desde otros documentos institucionales. 
+Para esto se vió en la necesidad de desarrollar una aplicación web que se integre a los sistemas de gestión de escritorio existentes, que utilice el mismo método de autenticación y permita a las diferentes áreas de la institución cargar, convertir, almacenar y gestionar documentos e imágenes, generando códigos QR vinculados a cada archivo.
+
+El sistema se desarrollo utilizando el patrón de arquitectura MVC, implementado sobre el framework ASP.NET Core 10. El sistema utiliza principalmente el lenguaje C\# para el backend, esto para aprovechar las características disponibles en .NET 10.
+
+Como motor de base de datos relacional el sistema utiliza SQL Server 2022, para crear la BD se utilizó Entity Framework Core con el enfoque Code First. Para almacenar los archivos el sistema utiliza el servicio AWS S3 garantizando la seguridad de los datos, ya que el bucket utilizado es privado y el acceso se realiza a través del servidor para proteger las credenciales.
+
+Las mejoras obtenidas tras implementar la solución tecnológica fueron la mejora en la organización y gestión de los documentos, obteniendo la centralización de los documentos, y eliminando el uso de herramientas externas. Así como la trazabilidad de acciones por área
+
+El aporte principal del proyecto es la centralización de acciones disponibles, ya que el sistema permite subir los archivos y despúes consultarlos, elminarlos o generar su QR 
+
+Palabras clave

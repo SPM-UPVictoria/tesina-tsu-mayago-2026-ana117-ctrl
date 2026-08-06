@@ -1,1 +1,16 @@
 \section{Conclusiones}
+% - Conclusiones
+% - Trabajo futuro
+% - Resumen
+El presente trabajo tuvo como propósito desarrollar un sistema web de gestión documental y generación de códigos QR. El sistema cumple con el ojetivo general de centralizar la carga, conversión, almacenamiento y gestión de documentos, imágenes y enlaces URL.
+Además se integra al mecanismo de autenticación de los sistemas de escritorio existentes de la institución, lo cual garantiza que su uso sea único para el personal y la seguridad los documentos durante todo su ciclo de vida.
+
+% Para desarrollar el sistema se analizaron los requerimientos para definir los flujos de trabajo y las acciones del usuario, después el desarrollo del sistema se guio en la arquitectura MVC para la separación de responsabilidades en un futuro. 
+Como resultado, el sistema cumple con los requisitos para ambos módulos: El módulo de conversión permite recibir ODT, DOC, DOCX para su  conversión a PDF, e imágenes y URLs para su almacenamiento. El módulo de gestión documental permite consultar, visualizar, descargar y eliminar los archivos almacenados en el sistema, integra la funcionalidad de la generación de códigos QR vinculados a cada documento con un identificador único, los cuales funcionan correctamente al escanearlos desde cualquier dispositivo.
+El sistema integra distintas tecnologías en el backend exitosamente y utiliza el almacenamiento en la nube garantizando disponibilidad y acceso a los archivos e imagenes.
+
+Como sugerencias de mejoras para mi proyecto reconozco las siguientes: la implementación de limpieza automática de la carpeta local para no acumular archivos temporales, Agregar paginación en la lista de gestión documental para hacer más fácil la navegación cuando sean muhcos archivos, y Agregar compresión de imágenes antes de subirlas a S3 para optimizar el almacenamiento.
+
+En el aspecto de experiencia personal y profesional, el desarrollo de este sistema me hizo trabajar con tecnologías que no habia trabajdo, me ayudo a conocer la arquitectura MVC e implementarla en un proyecto, así como el Entity Framework para crear y gestionar la base de datos en SQL Server. También en la escuela he realizado un curso de AWS pero este sistema me ayudó a utilizarlo en la vida real y todas sus ventajas.
+Después de trabajar en un entorno de institución real, pude notar que al menos en esta área el trabajo es más individual, a diferencia de la escuela que siempre en proyectos grandes los hacemos en equipo.
+

@@ -304,18 +304,23 @@ Calificación final & \multicolumn{2}{c|}{ } \\ \hline
 \clearpage
 \ClearWallPaper
 \thispagestyle{fancy}
-\addcontentsline{toc}{section}{Resumen}
+%esto estaba asi en la plantilla
+%\addcontentsline{toc}{section}{Resumen}
 %\vspace*{1cm}
-\section*{Resumen}
 
+%esto estaba como \section*{Resumen}
+\input{resumen}
 
 
 
 \clearpage
 \thispagestyle{fancy}
-\addcontentsline{toc}{section}{Abstract}
+%esto estaba asi en la plantilla
+%\addcontentsline{toc}{section}{Abstract}
 %\vspace*{1cm}
-\section*{Abstract}
+
+%esto estaba como \section*{Abstract}
+\input{abstract}
 
 \clearpage
 %\renewcommand{\indexname}{Contenido temático}
@@ -346,6 +351,9 @@ Calificación final & \multicolumn{2}{c|}{ } \\ \hline
 
 \clearpage
 \input{conclusiones}
+
+\clearpage
+\input{trabajosFuturos}
 
 %\clearpage
 %\section*{Bibliografía}
