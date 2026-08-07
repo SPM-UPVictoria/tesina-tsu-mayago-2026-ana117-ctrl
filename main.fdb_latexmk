@@ -1,14 +1,14 @@
 # Fdb version 3
-["biber main"] 1785951598 "main.bcf" "main.bbl" "main" 1785975910
+["biber main"] 1786069168 "main.bcf" "main.bbl" "main" 1786081760
   "Referencias.bib" 1783740562 12776 a3633dab7d723b4cc3dee1c9dec121e2 ""
-  "main.bcf" 1785975910 109820 a0e83f8eb3f7477a32d39f710eccc780 "pdflatex"
+  "main.bcf" 1786081760 109820 a0e83f8eb3f7477a32d39f710eccc780 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1785975904 "/home/anaaz/estadias/tesina-tsu-mayago-2026-ana117-ctrl/main.tex" "main.pdf" "main" 1785975910
+["pdflatex"] 1786081754 "/home/anaaz/estadias/tesina-tsu-mayago-2026-ana117-ctrl/main.tex" "main.pdf" "main" 1786081760
   "/etc/texmf/web2c/texmf.cnf" 1779218431 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/anaaz/.texlive2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1779317618 1405656 74e209f3f5e4d4053889bfff596a9b66 ""
-  "/home/anaaz/estadias/tesina-tsu-mayago-2026-ana117-ctrl/main.tex" 1785975904 20804 f6c057b3194a5ed108b8ae2e57f7cdfe ""
+  "/home/anaaz/estadias/tesina-tsu-mayago-2026-ana117-ctrl/main.tex" 1786077801 20790 3d94651d42dbef4d4795892e4df3e72d ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm" 1136768653 3584 13049b61b922a28b158a38aeff75ee9b ""
@@ -262,7 +262,7 @@
   "Membrete2023.pdf" 1779215519 259207 12c98cc2947acf63d1a72d52ce31a405 ""
   "UTYP.png" 1779215519 37831 4ef8c60a90da178fa76c40dc51540bdf ""
   "abstract.tex" 1785975622 27 ca678694a75e516a70b7ca393f0ea9de ""
-  "conclusiones.tex" 1785960732 2534 a532c47d727a7bc61bea4b47e80086f6 ""
+  "conclusiones.tex" 1786063199 2678 bde4e7aa4da933e6f1f4611d566e4abf ""
   "documentosDigitalizados/CartaAceptacion.pdf" 1778560134 315344 bf32c0f3bf38fd7b4856321df261d230 ""
   "documentosDigitalizados/CartaLiberacion.pdf" 1779215519 37353 fe0e5803f869f1c1e00df142f69ca031 ""
   "documentosDigitalizados/CartaPresentacion.pdf" 1778560195 316599 2938c530ef0b836c46b27b5ff0f3bc3c ""
@@ -298,17 +298,17 @@
   "img/vista-ver-imagen.png" 1785388610 197400 c35ea7150cc4b5f090c0fe5e339633ad ""
   "img/vista-ver-qr-doc.png" 1785388622 118293 bf846773d2d9a90c642bf0ea7ea58c0a ""
   "introduccion.tex" 1784857496 22467 5f93325f750040bee22af490f860a36d ""
-  "main.aux" 1785975910 30790 bd8324d65fab6dd2427bd7b226db55c6 "pdflatex"
-  "main.bbl" 1785951599 38152 d905bd6e2d37ecd9baab9c5ef6c61ffc "biber main"
-  "main.out" 1785975910 11286 23438cd7f26072e682ea9fb5797ee440 "pdflatex"
-  "main.run.xml" 1785975910 2306 628e0087c61ee8036d936d14edcd02fc "pdflatex"
-  "main.tex" 1785975904 20804 f6c057b3194a5ed108b8ae2e57f7cdfe ""
-  "main.toc" 1785975910 7358 aca9b557ad5b82b93431dc707c180ce4 "pdflatex"
+  "main.aux" 1786081760 30790 bd8324d65fab6dd2427bd7b226db55c6 "pdflatex"
+  "main.bbl" 1786069169 38152 d905bd6e2d37ecd9baab9c5ef6c61ffc "biber main"
+  "main.out" 1786081760 11286 23438cd7f26072e682ea9fb5797ee440 "pdflatex"
+  "main.run.xml" 1786081760 2306 628e0087c61ee8036d936d14edcd02fc "pdflatex"
+  "main.tex" 1786077801 20790 3d94651d42dbef4d4795892e4df3e72d ""
+  "main.toc" 1786081760 7358 aca9b557ad5b82b93431dc707c180ce4 "pdflatex"
   "marcoTeorico.tex" 1783741199 16213 e0ee5dbc6c89db092af8ea109bfb67d5 ""
   "metodologia.tex" 1785606707 12418 640bf1c89aaee74e582a69410eb9efcb ""
   "resultados.tex" 1785951584 9486 2a2a945665aa8f8c10cb48ec67a3fae1 ""
-  "resumen.tex" 1785972221 1725 5058190ea0fee47110cdecaff806a732 ""
-  "trabajosFuturos.tex" 1785969761 1820 2e228d0c73e20d0ede6dd4eb819ff586 ""
+  "resumen.tex" 1786081753 3573 0f9886bf55d169fd9308e99adabb3d34 ""
+  "trabajosFuturos.tex" 1786062245 1311 3f814bb0918699303247ff8505e279b2 ""
   (generated)
   "main.aux"
   "main.bcf"
