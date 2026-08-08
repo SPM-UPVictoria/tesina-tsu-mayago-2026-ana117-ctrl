@@ -1,0 +1,79 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Resumen}{\es@scroman {iii}}{section.1}%
+\contentsline {section}{\numberline {2}Abstract}{\es@scroman {iv}}{section.2}%
+\contentsline {section}{\numberline {3}Introducción}{1}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Antecedentes}{2}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Antecedentes de la Empresa}{2}{subsubsection.3.1.1}%
+\contentsline {paragraph}{Descripción General}{2}{paragraph*.1}%
+\contentsline {paragraph}{Reseña Histórica}{2}{paragraph*.2}%
+\contentsline {paragraph}{Misión}{3}{paragraph*.3}%
+\contentsline {paragraph}{Visión}{3}{paragraph*.4}%
+\contentsline {paragraph}{Departamento de Informática y Contexto del Proyecto}{3}{paragraph*.5}%
+\contentsline {subsubsection}{\numberline {3.1.2}Antecedentes Teoricos}{3}{subsubsection.3.1.2}%
+\contentsline {paragraph}{Gestión documental en instituciones gubernamentales de México}{3}{paragraph*.6}%
+\contentsline {paragraph}{Digitalización en el Poder Judicial mexicano}{4}{paragraph*.7}%
+\contentsline {paragraph}{Sistemas de gestión documental con códigos QR}{4}{paragraph*.8}%
+\contentsline {paragraph}{Almacenamiento en la nube para sistemas documentales}{5}{paragraph*.9}%
+\contentsline {subsubsection}{\numberline {3.1.3}Tabla comparativa: Justificación del Desarrollo }{5}{subsubsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.2}Definición del Problema}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Objetivos}{7}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Objetivo General}{7}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Objetivos Específicos}{7}{subsubsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.4}Justificación}{8}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Alcances y Limitaciones}{9}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}Alcances}{9}{subsubsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.2}Limitaciones}{9}{subsubsection.3.5.2}%
+\contentsline {section}{\numberline {4}Marco Teórico}{10}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Organización y gestión de documentos electrónicos}{10}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Conceptos fundamentales}{10}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Impacto en la eficiencia institucional}{11}{subsubsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.2}Arquitectura Modelo-Vista-Controlador (MVC)}{11}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Definición y principios del patrón}{11}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Componentes y flujo de interacción}{11}{subsubsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.3}Funcionamiento y características de los códigos QR}{12}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Arquitectura física y estructura matricial}{12}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Mecanismo de decodificación y corrección de errores}{13}{subsubsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.4}Protocolo HTTPS y seguridad en las aplicaciones web}{14}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Importancia en la gestión documental}{14}{subsubsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.5}Bases de datos relacionales}{15}{subsection.4.5}%
+\contentsline {subsubsection}{\numberline {4.5.1}Integridad referencial y normalización}{15}{subsubsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.6}Almacenamiento en la nube}{15}{subsection.4.6}%
+\contentsline {subsubsection}{\numberline {4.6.1}Uso en ámbitos corporativos y legales}{16}{subsubsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.7}Usabilidad y experiencia de usuario (UX)}{16}{subsection.4.7}%
+\contentsline {subsubsection}{\numberline {4.7.1}Conceptos de Usabilidad y Experiencia de Usuario}{16}{subsubsection.4.7.1}%
+\contentsline {subsubsection}{\numberline {4.7.2}Principios de evaluación e interacción}{17}{subsubsection.4.7.2}%
+\contentsline {subsubsection}{\numberline {4.7.3}Impacto en la adopción de sistemas de gestión documental}{17}{subsubsection.4.7.3}%
+\contentsline {section}{\numberline {5}Metodología}{18}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Propuesta de solución}{18}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Beneficios del sistema propuesto}{18}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Diagramas de flujo del sistema}{18}{subsubsection.5.1.2}%
+\contentsline {paragraph}{Flujo del módulo de conversión y carga de archivos}{18}{paragraph*.16}%
+\contentsline {paragraph}{Flujo del módulo de Gestión Documental}{19}{paragraph*.18}%
+\contentsline {subsection}{\numberline {5.2}Diseño del sistema}{20}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Mockups de interfaz}{20}{subsubsection.5.2.1}%
+\contentsline {paragraph}{Módulo de conversión y carga de archivos}{20}{paragraph*.20}%
+\contentsline {paragraph}{Módulo de Gestión Documental}{21}{paragraph*.22}%
+\contentsline {subsection}{\numberline {5.3}Desarrollo del sistema}{22}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Diagrama de caso de uso}{22}{subsubsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.2}Diagrama de entidad-relación de la base de datos}{23}{subsubsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3}Diagramas de actividades}{24}{subsubsection.5.3.3}%
+\contentsline {paragraph}{Registro de URL}{24}{paragraph*.26}%
+\contentsline {paragraph}{Conversión de documento y carga de imagen}{24}{paragraph*.28}%
+\contentsline {paragraph}{Gestión de archivos}{25}{paragraph*.30}%
+\contentsline {subsubsection}{\numberline {5.3.4}Diagramas de secuencia}{26}{subsubsection.5.3.4}%
+\contentsline {paragraph}{Proceso de Autenticación vía AuthToken}{26}{paragraph*.32}%
+\contentsline {paragraph}{Proceso de Conversión y Generación de Código QR}{27}{paragraph*.34}%
+\contentsline {section}{\numberline {6}Resultados}{30}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Pantallas del sistema y su funcionamiento}{30}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Pantalla del módulo de Conversión y Carga de Archivos}{30}{subsubsection.6.1.1}%
+\contentsline {paragraph}{Formulario de documentos e imágenes}{30}{paragraph*.36}%
+\contentsline {paragraph}{Formulario de URL}{31}{paragraph*.41}%
+\contentsline {subsubsection}{\numberline {6.1.2}Pantalla del módulo de Gestión Documental}{33}{subsubsection.6.1.2}%
+\contentsline {paragraph}{Vista de la tabla al aplicar un filtro}{34}{paragraph*.46}%
+\contentsline {paragraph}{Vista al seleccionar la opción de visualizar un documento o imagen}{34}{paragraph*.48}%
+\contentsline {paragraph}{Vista al generar un código QR}{35}{paragraph*.52}%
+\contentsline {paragraph}{Vista al seleccionar la opción de eliminar un archivo}{36}{paragraph*.54}%
+\contentsline {section}{\numberline {7}Conclusiones}{38}{section.7}%
+\contentsline {section}{\numberline {8}Trabajos Futuros}{39}{section.8}%
+\contentsline {section}{Bibliografía}{40}{section.8}%
+\contentsline {section}{Anexos}{43}{section.8}%

@@ -1,51 +1,130 @@
 \section{Metodología}
+\subsection{Propuesta de solución}
+\label{propuesta_solucion}
+La solución propuesta consiste en desarrollar un sistema web desde cero siguiendo la arquitectura MVC con el framework ASP.NET Core (.NET 10), con persistencia de datos y almacenamiento en la nube. El sistema consta de dos módulos, el módulo de conversión y carga de archivos, que permite subir documentos en distintos formatos para su conversión a PDF, así como imágenes y enlaces. Y el módulo de Gestión Documental, que permite ver todos los archivos almacenados en el sistema y generar códigos QR para cada uno de ellos, así como la visualización, la eliminación o la descarga de los archivos, todo desde una misma plataforma.
 
-Los métodos y herramientas utilizadas son la descripción detallada de las etapas
-(o pasos, procedimiento) de desarrollo en que se dividió el proyecto y están
-íntimamente relacionadas con los objetivos operativos. Se compara con una
-receta de cocina, es decir, describir a detalle las actividades y acciones realizadas
-en cada etapa de desarrollo, empleando un orden cronológico y en función de los
-objetivos operativos. Sus características son:
-\begin{itemize}
-\item Descripción detallada de las etapas (o pasos) desarrolladas, las cuales están
-relacionadas con cada objetivo operativos. Dependiendo del número de
-objetivos, será el número de etapas de desarrollo reportadas.
-\item En cada etapa de desarrollo, describir las herramientas académicas, técnicas
-y computacionales que se utilizaron, indicando roles y responsabilidades.
-Además, describir las asignaturas o aprendizajes que se obtuvieron durante tu
-formación académica y fueron útiles en el proceso. Así mismo, describir
-herramientas, equipos, tecnologías, etc., que se utilizaron durante el proyecto o
-se aprendieron en la unidad económica.
-\end{itemize}
+El proceso de autenticación se integra con los sistemas de escritorio existentes en la institución, los cuales generan un token de autenticación conformado por el nombre de usuario y su contraseña. Por lo que al acceder al sistema por ese token, el sistema registrará los datos del usuario y la sesion.
 
-\textit{El informe debe estar soportado por referencias, ademas incluir figuras y tablas. En los siguientes parrafos se ejemplifica como usar dichos elementos. }
+\subsubsection{Beneficios del sistema propuesto}
+Al implementar esta propuesta la gestión documental del PJETAM mejorará en la accesibilidad de información, al facilitar el referenciar los documentos mediante su código QR de forma digital o impresa. El sistema elimina la necesidad de usar herramientas externas, y favorece al proceso de almacenamiento y conversión de archivos. Además de mejorar la organización de los documentos por el registro de las acciones de cada usuario.
 
-De acuerdo con Ivan \cite{Sistema:2018:Ivan}, todos mienten, de la misma forma que Dr. House lo afirma de manera continua a lo largo de las 8 temporadas de la serie. 
+\subsubsection{Diagramas de flujo del sistema}
+Para entender como interactúan las acciones del usuario y los componentes del sistema, se realizaron diagramas de flujo que se presentan a continuación, estos muestran las acciones del usuario y como las va a tratar el sistema, si se almacenan en base de datos, en la nube o se modifica la interfaz de usuario.
 
-Los sistemas de información constituyen un conjunto organizado de recursos —personas, datos, procesos y tecnología— que interactúan para recolectar, procesar, almacenar y distribuir información relevante dentro de una organización. Su propósito principal es apoyar la toma de decisiones, la coordinación y el control, así como facilitar el análisis y la visualización de información estratégica \cite{laudon2020, stair2018}. En el contexto actual, caracterizado por la digitalización y la globalización, los sistemas de información han evolucionado hacia plataformas integradas que permiten la gestión eficiente del conocimiento y la automatización de procesos empresariales \cite{turban2019}. Además, el uso de tecnologías emergentes como la inteligencia artificial y el análisis de datos ha ampliado sus capacidades, permitiendo generar valor a partir de grandes volúmenes de información \cite{davenport2018}.
-
-Por otra parte, la implementación de sistemas de información implica retos importantes relacionados con la alineación estratégica, la seguridad de la información y la gestión del cambio organizacional. Es fundamental que estos sistemas estén alineados con los objetivos del negocio para maximizar su impacto y retorno de inversión \cite{ward2016}. Asimismo, la protección de datos y la ciberseguridad se han convertido en aspectos críticos debido al incremento de amenazas digitales \cite{whitman2018}. Finalmente, el éxito de un sistema de información depende en gran medida de la aceptación por parte de los usuarios y de una adecuada gestión del cambio, lo que requiere capacitación, comunicación efectiva y liderazgo organizacional \cite{heeks2006}.
-
-
-En la figura \ref{fig:my_label}, se muestra una pantalla de una aplicación para contar las calorías de la comida mexicana. (Si la figura se mueve a la siguiente página, es NORMAL, no muevan nada!).
+\paragraph{Flujo del módulo de conversión y carga de archivos}
+El diagrama de la Figura \ref{fig:diagrama_1} muestra el flujo del sistema al convertir y almacenar un archivo, ya sea un documento o un enlace, ilustra el flujo desde que el usuario ingresa hasta que el archivo queda registrado en la base de datos y ya visible en el módulo de gestión.
 \begin{figure}[!tbh]
     \centering
-    \includegraphics[width=0.5\linewidth]{img/calorias1.png}
-    \caption{Aplicacion ``Mexican Food with Chilly'' \cite{Microsoft:Concepto}}
-    \label{fig:my_label}
+    \includegraphics[width=0.9\linewidth]{img/diagrama_conversion.png}
+    \caption{Diagrama de flujo: Módulo de Conversión y Carga de archivos. Fuente: elaboración propia}
+    \label{fig:diagrama_1}
 \end{figure}
 
-En la tabla \ref{tab:my_label}, se muestra una tabla con el listado de los mejores futbolistas del mundo mundial. 
-
-\begin{table}[!tbh]
+\paragraph{Flujo del módulo de Gestión Documental}
+La Figura \ref{fig:diagrama_2} muestra el flujo de este módulo, en el cual se pueden gestionar todos los archivos almacenados en el sistema, en la lista solo se muestran los archivos que están activos es decir que no han sido eliminados, esto porque el sistema usa eliminación lógica. Por cada archivo se pueden hacer cuatro acciones, entre ellas la creación de códigos QR para cada archivo, los cuales tambien se guardan en la base de datos con las relaciones de su archivo.
+\begin{figure}[!tbh]
     \centering
-    \begin{tabular}{c|c} \hline
-         Estudiante &  Nacionalidad \\ \hline
-         Lionel Messi & Argentina  \\
-         Cristiano Ronaldo & Portuguesa  \\
-         Hector Hermoso Herrera & Mexicana \\ 
-         \hline \hline
-    \end{tabular}
-    \caption{Otro ejemplo de tabla}
-    \label{tab:my_label}
-\end{table}
+    \includegraphics[width=0.9\linewidth]{img/diagrama_gestion.png}
+    \caption{Diagrama de flujo: Módulo de Gestión Documental. Fuente: elaboración propia}
+    \label{fig:diagrama_2}
+\end{figure}
+
+\subsection{Diseño del sistema}
+\label{diseño_sistema}
+\subsubsection{Mockups de interfaz}
+Para la propuesta del sistema se realizaron dos vistas principales para dividir las funcionalidades de los módulos del sistema.
+
+\paragraph{Módulo de conversión y carga de archivos}
+\begin{figure}[!tbh]
+    \centering
+    \includegraphics[width=0.7\linewidth]{img/Mockup-Modulo de conversion y carga de archivos.png}
+    \caption{Prototipo de alta fidelidad del módulo de Conversión y Carga de archivos. Fuente: elaboración propia}
+    \label{fig:mockup-1}
+\end{figure}
+El diseño del módulo de conversión y carga de archivos se muestra en la Figura \ref{fig:mockup-1}. La pantalla se divide en dos secciones diferentes con su formulario, uno para carga de documentos o imágenes, en el cual debe de seleccionar el tipo de documento, para facilitar la búsqueda de documentos en el módulo de gestión y el otro para registrar las URLs.
+Ambas secciones comparten la misma página para agrupar en un solo lugar todas las formas para subir archivos al sistema.
+
+\paragraph{Módulo de Gestión Documental}
+\begin{figure}[!tbh]
+    \centering
+    \includegraphics[width=0.7\linewidth]{img/Mockup-Modulo de gestión documental.png}
+    \caption{Prototipo de alta fidelidad del módulo de Gestión Documental. Fuente: elaboración propia}
+    \label{fig:mockup-2}
+\end{figure}
+El otro módulo del sistema es el de Gestión Documental, cuyo diseño se ilustra en la Figura \ref{fig:mockup-2} , la pantalla muestra una tabla con todos los archivos registrados en el sistema, incluyendo el nombre, tipo de documento, área que subió el archivo y fecha en el que lo subieron. En la parte superior izquierda se incluye un filtro de búsqueda para encontrar archivos más fácilmente por tipo o área y una barra de búsqueda para rastrear un archivo por nombre.
+
+\subsection{Desarrollo del sistema}
+\subsubsection{Diagrama de caso de uso}
+Antes de iniciar a diseñar el sistema se deben de tener claro los requerimientos del sistema, entender el problema del usuario implica identificar que funciones debe tener el sistema para satisfacer sus necesidades. 
+
+Para definir el alcance del sistema se identificaron las acciones disponibles para el usuario mediante un diagrama de caso de uso, como se muestra en la Figura \ref{fig:caso-uso}
+
+Antes de tener el proceso de autenticación claro, se definieron las acciones que iba a ofrecer el sistema y los usuarios que lo van a utilizar.
+\begin{figure}[!tbh]
+    \centering
+    \includegraphics[width=0.7\linewidth]{img/caso de uso- diagrama.png}
+    \caption{Diagrama caso de uso del sistema. Fuente: elaboración propia}
+    \label{fig:caso-uso}
+\end{figure}
+
+\subsubsection{Diagrama de entidad-relación de la base de datos}
+El diagrama de entidad-relación de la Figura \ref{fig:modelo-er} corresponde al modelo utilizado para este sistema, la base de datos en SQL Server, consta de cinco entidades y sus relaciones entre sí. Todos los identificadores, que también son las llaves primarias, utilizan el tipo de dato ULID para mayor seguridad y para garantizar que el identificador sea único.
+
+La entidad Area representa las áreas en las que se divide la institución, y a las cuales están relacionados cada usuario o empleado, y así organizar los archivos por área para facilitar su gestión posteriormente. Un Area puede tener múltiples usuarios y un usuario puede estar relacionado a múltiples archivos, la entidad Archivo registra todos los metadatos de los archivos subidos al sistema y se relaciona con la tabla de códigos QR para vincular cada archivo a su código QR.
+
+La entidad Usuario también se relaciona con la entidad Log\_acceso la cual se encarga de registrar todas las acciones realizadas por un usuario en el sistema.
+\begin{figure}[!tbh]
+    \centering
+    \includegraphics[width=0.7\linewidth]{img/modelo ER.png}
+    \caption{Modelo ER del sistema. Fuente: elaboración propia}
+    \label{fig:modelo-er}
+\end{figure}
+
+\subsubsection{Diagramas de actividades}
+Para ilustrar el comportamiento del sistema ante cada acción del usuario, es necesario mostrar los diagramas de actividades de los principales flujos de los procesos del sistema.
+
+\paragraph{Registro de URL} El sistema actúa de distinta manera cuando se trata de una URL, el formulario es distinto y la forma en que se procesan los datos también lo es. Como se muestra en la Figura \ref{fig:actividad-url} el sistema valida que haya una sesión activa y después guarda la URL para ser convertida a QR cuando se necesite.
+\begin{figure}[!tbh]
+    \centering
+    \includegraphics[width=0.7\linewidth]{img/diagrama-actividad-url.png}
+    \caption{Diagrama de actividades: Registro de URL. Fuente: elaboración propia}
+    \label{fig:actividad-url}
+\end{figure}
+
+\paragraph{Conversión de documento y carga de imagen} El proceso para validar la sesión es el mismo que el mostrado en el diagrama de registro de URL \ref{fig:actividad-url}. Por lo que en la Figura \ref{fig:actividad-conversion} se omite este procedimiento y solo se muestra el comportamiento del sistema ante distintas acciones del usuario al momento de querer convertir un archivo, y se pueden observar las tecnologías que se van a utilizar en cada fase del proceso
+\begin{figure}[!tbh]
+    \centering
+    \includegraphics[width=0.7\linewidth]{img/diagrama-actividad-conversion-.png}
+    \caption{Diagrama de actividades: Conversión y Carga de archivos. Fuente: elaboración propia}
+    \label{fig:actividad-conversion}
+\end{figure}
+
+\paragraph{Gestión de archivos} Finalmente, otro proceso fundamental en este sistema es el módulo de Gestión Documental, representado en la Figura \ref{fig:actividad-gestion} en el cual se interactua con lo archivos. Las acciones disponibles son la visualización o descarga de archivos desde AWS S3, la eliminación del archivo en donde no se elimina el registro solo cambia el estado del archivo en la base de datos, esto es necesario para mantener un registro total de los archivos. Y por último la funcionalidad de generar códigos QR para cada archivo o enlace activo en el sistema, los cuales también se guardan en la base de datos en sus tablas correspondientes.
+\begin{figure}[!tbh]
+    \centering
+    \includegraphics[width=0.7\linewidth]{img/diagrama-actividad-gestion.png}
+    \caption{Diagrama de actividades: Gestión de Archivos. Fuente: elaboración propia}
+    \label{fig:actividad-gestion}
+\end{figure}
+
+\subsubsection{Diagramas de secuencia}
+\paragraph{Proceso de Autenticación vía AuthToken}
+La Figura \ref{fig:sec-autenticacion} es el diagrama de secuencia del proceso de autenticación del sistema, este proceso inicia cuando el usuario accede al sistema mediante un enlace ya predeterminado por la institución. Este enlace contiene el parámetro AuthToken que esta compuesto por el nombre de usuario y la contraseña. Los componentes del sistema que interactúan son el AuthMiddleware el cual detiene la petición y evalúa si existe una sesión activa o no, y el AuthService que se ejecuta si no existe un sesión y consultará la base de datos para verificar si ya existe un usuario con ese nombre para actualizar su último acceso, si no existe un usuario crea el área con el nombre de usuario y los vincula.
+Una vez identificado el usuario, el Middleware guarda su identificador, nombre y área en la sesión del navegador, para que el sistema reconozca al usuario en todas las pantallas posteriores sin necesidad de repetir el proceso.
+\begin{figure}[!tbh]
+    \centering
+    \includegraphics[width=0.7\linewidth]{img/secuencia-autenticacion.png}
+    \caption{Diagrama de secuencia: Proceso de Auntenticación vía AuthToken. Fuente: elaboración propia}
+    \label{fig:sec-autenticacion}
+\end{figure}
+
+\paragraph{Proceso de Conversión y Generación de Código QR}
+En la Figura \ref{fig:sec-convertir} se observa el diagrama de secuencia del módulo de conversión y carga de archivos, en el cual hay se puede convertir un documento a PDF, almacenar una imagen o una URL. El sistema evalúa que tipo de archivo es y depende de eso ocurre un flujo de procesos distintos. En el almacenamiento de imágenes y documentos el sistema sube los archivos a AWS S3,, pero en la URL solo se registra en la base de datos. Después del proceso de conversión, se observa el proceso de la creación de códigos QR, en el cual el archivo QrService obtiene los datos del archivo, genera el código y posteriormente lo sube a S3, finalmente registra la relación del QR con el archivo al que pertenece en la base de datos. 
+
+Al final del diagrama esta el proceso ejecutado por el archivo LogService, el cual registra toda acción de los usuarios en su tabla correspondiente de la BD, esto para mayor seguridad y transparencia con el manejo de información. Y por último, el sistema muestra la vista correspondiente al usuario.
+\begin{figure}[!tbh]
+    \centering
+    \includegraphics[width=0.9\linewidth]{img/secuencia-convertir.png}
+    \caption{Diagrama de secuencia: Procesos de Conversión y Generación de Códigos QR. Fuente: elaboración propia}
+    \label{fig:sec-convertir}
+\end{figure}
